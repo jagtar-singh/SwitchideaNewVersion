@@ -1,0 +1,57 @@
+#chart-pop-up {
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+  width: 150px;
+  height: 112.5px;
+  background-size: cover;
+  background-image: url("../data/graph.svg");
+}
+
+#chart-pop-up .chart-pop-up-date, #chart-pop-up .chart-pop-up-views {
+  color: #5A5B5C;
+  font-size: 14px;
+  text-align: center;
+  margin: 12px;
+}
+
+#chart-pop-up .chart-pop-up-improvement {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.chart-green {
+  color: #51BD8B;
+}
+
+.chart-red {
+  color: #DC1F26;
+}
+
+#chart-title p {
+  display: inline-block;
+}
+
+#chart-title .chart-title-number {
+  font-size: 28px;
+  font-weight:600;
+  color: #2E62AE;
+  margin: 10px 5px 10px 15px;
+}
+
+#chart-title .chart-title-number-text {
+  font-size: 14px;
+  color: #5A5B5C;
+}
+
+#chart-title .chart-title-persent {
+  font-size: 28px;
+  font-weight:600;
+  margin: 10px 5px 10px 15px;
+}
+
+#chart-title .chart-title-persent-text {
+  font-size: 14px;
+}
+
