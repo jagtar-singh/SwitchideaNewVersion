@@ -1,0 +1,29 @@
+
+@font-face {
+	font-family: 'Conv_ProximaNova-Regular';
+	src: url('../fonts/ProximaNova-Regular.eot');
+	src: local('☺'), url('../fonts/ProximaNova-Regular.woff') format('woff'), url('../fonts/ProximaNova-Regular.ttf') format('truetype'), url('../fonts/ProximaNova-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Conv_Avenir-LT-Std-35-Light_5169';
+	src: url('../fonts/Avenir-LT-Std-35-Light_5169.eot');
+	src: local('☺'), url('../fonts/Avenir-LT-Std-35-Light_5169.woff') format('woff'), url('../fonts/Avenir-LT-Std-35-Light_5169.ttf') format('truetype'), url('../fonts/Avenir-LT-Std-35-Light_5169.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'avenirheavy';
+    src: url('../fonts/aeh-webfont.eot');
+    src: url('../fonts/aeh-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/aeh-webfont.woff2') format('woff2'),
+         url('../fonts/aeh-webfont.woff') format('woff'),
+         url('../fonts/aeh-webfont.ttf') format('truetype'),
+         url('../fonts/aeh-webfont.svg#avenirheavy') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
