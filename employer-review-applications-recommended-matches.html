@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Switchidea</title>
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Custom styles for this template -->
+<link href="css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="css/dark-mode.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+<!-- Nav -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+  <div class="container"> <a class="navbar-brand" href="index-students.html"><img src="img/switchidea-logo-dark.png" alt="" title=""  srcset="img/switchidea-logo-dark.svg" /></a>
+    <form action="http://jaggidesigner.com/Demos/SwitchIdea/." class="form-inline search-new d-none d-md-block">
+      <div class="input-group">
+        <div class="input-group-prepend clearable search-I-C">
+          <input type="text" class="form-control" placeholder="Search by skill, domain, or college" aria-label="Searchinternshipscompanies" aria-describedby="basic-addon1">
+          <span class="clearable_clear">&times;</span> </div>
+        <div class="input-group-append clearable search-L">
+          <input type="text" class="form-control" placeholder="Location" aria-label="Location" aria-describedby="basic-addon2">
+          <span class="clearable_clear">&times;</span> </div>
+        <div class="input-group-append clearable search-btn-cnt">
+          <button value="Search" type="submit" class="search-btn"><img src="img/icons/magnifying-glass.png" alt="" title=""  srcset="img/icons/magnifying-glass.svg" height="19" /></button>
+        </div>
+      </div>
+    </form>
+    <button class="navbar-toggler close-animate" type="button" data-toggle="offcanvas" data-target="#MainNav" id="MainNavLink" aria-label="Toggle navigation"> <span></span> <span></span> <span></span> </button>
+    <div class="navbar-collapse offcanvas-collapse" id="MainNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item d-block d-lg-none"> <a class="nav-link" href="#">Home</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#">Find Interns</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#">Help Needed</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#">Post Internship</a> </li>
+        <li class="nav-item dropdown"> <a class="user-nav-pic ml-2 dropdown-toggle" href="#" id="AccountDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="img/students/profile-pic3.jpg" alt="" title="" />
+        <span class="status available"></span></a>
+          <div class="dropdown-menu dropdown-menu-lg-right profile-submenu" aria-labelledby="AccountDropdown"> <a class="dropdown-item" href="#">Profile</a> <a class="dropdown-item" href="#">Resources</a> <a class="dropdown-item" href="#">My Postings</a> <a class="dropdown-item" href="#">Team</a> <a class="dropdown-item" href="#">Settings</a> <a class="dropdown-item cursor-pointer"><div class="custom-control custom-switch darkSwitch-cnt">
+  <input type="checkbox" class="custom-control-input" id="darkSwitch">
+  <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+</div></a> <a class="dropdown-item" href="#">Logout</a> </div>
+        </li>
+      </ul>
+    </div>
+    <div class="offcanvas-backdrop"></div>
+  </div>
+</nav>
+
+<!-- Main Content Area -->
+<main role="main" class="content-area pt-0">
+  <div class="container">
+    <div class="emp-rev-app-page pt-5">
+      <div class="row mb-3">
+        <div class="col-md">
+          <div class="mb-3">
+            <h3 class="mb-3"><strong>Business Development Sales Internship</strong> <a class="ml-1" data-container="body" data-toggle="popover" data-placement="bottom" data-content="<h6 class='mb-2'><strong>Featured Internship</strong> <span class='badge badge-success'>New</span></h6>This employer paid to post their internship and reach candidates like you.<a class='close custom-close'></a>" data-original-title="" title=""><img src="img/icons/premium.png" alt="" title="" srcset="img/icons/premium.svg" height="17"></a></h3>
+            <h4><strong>Mottled Technologies Pvt Ltd - Mumbai and more - Posted: 20 April 2017</strong></h4>
+          </div>
+        </div>
+        <div class="col-md-auto">
+          <div class="dropdown"> <a class="dropdown-toggle btn btn-default dark-brdr" href="#" id="InternManageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Manage</a>
+            <div class="dropdown-menu dropdown-menu-lg-right" aria-labelledby="InternManageDropdown"> <a class="dropdown-item" href="#">Edit Internship</a> <a class="dropdown-item" href="#" data-toggle="modal" data-target="#ShareInternshipModal">Share Internship</a> <a class="dropdown-item" href="#">View Internship</a> <a class="dropdown-item" href="#">Close Internship</a> <a class="dropdown-item" href="#">Upgrade</a> </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-tabs">
+        <ul class="nav font-weight-medium">
+          <li class="nav-item"> <a class="nav-link active" href="#">Candidates</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#">Pipeline <span class="badge badge-danger rounded-circle">9</span></a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#">Settings</a> </li>
+        </ul>
+      </div>
+      <div class="page-box main-tabs-subnav">
+        <div class="row">
+          <div class="col-auto"> <a class="btn btn-default dark-brdr" href="#">21 Applicants <span class="badge badge-danger rounded-circle noti">2</span></a> </div>
+          <div class="col-auto"> <a class="btn btn-default dark-brdr active" href="#">Recommended matches - BETA</a> </div>
+        </div>
+      </div>
+      <div class="shadow-box recommended-matches-msgbox mt-4" id="ActionLoadingAreas1">
+        <div class="row mb-4">
+          <div class="col">
+            <h3><strong>Because you messaged <span class="font-weight-bold">Akash A.</span></strong></h3>
+          </div>
+          <div class="col-auto">
+            <div class="row">
+              <div class="col-auto"><button class="btn btn-dark mr-1" id="ActionLoadingall">Message all with 1-click</button></div>
+              <div class="col-auto"><a href="#" class="custom-close mt-n2" id="ActionLoading2"></a></div>
+            </div>
+          </div>
+        </div>
+        
+        
+        
+        
+        <!-- Action Loading JS
+    ================================================== --> 
+<script>
+		
+		$(document).ready(function(){
+			
+			var limt=3;
+			var i;
+			//var area="ActionLoadingArea"
+			
+			var gp=$("#getPost").html();
+			$("#getPost").html('');
+			
+			
+			for(i = 1; i <= limt; i++){
+				$("#getPost").append(gp);
+				$('#ActionLoadingArea').attr("id","ActionLoadingArea"+i);
+				$('#ActionLoading').attr("id",i);
+				//$("#ActionLoadingArea"+i+" .black").text('gurpreet'+i);
+				
+			}
+			
+			$('#ActionLoadingall').on('click', function() {
+				$("#ActionLoadingAreas1").addClass("loading-div");
+  setTimeout(function() { $("#ActionLoadingAreas1").hide(3000); }, 3000)
+				});
+			
+			
+			var rec=limt;
+			$('.ActionLoadingbt').on('click', function() {
+				var getid= $(this).attr('id');
+				action_execute(getid,rec);
+				rec=rec-1;
+			});
+			
+			
+			function action_execute(getid,rec){
+				if(rec <= 1){
+					$("#ActionLoadingAreas1").addClass("loading-div");
+  setTimeout(function() { $("#ActionLoadingAreas1").hide(3000); }, 3000)	
+				} else {
+					$("#ActionLoadingArea"+getid).addClass("loading-div");
+                 setTimeout(function() { $("#ActionLoadingArea"+getid).hide(3000);}, 3000)
+				} 
+			}
+			
+		});
+		
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+$("#ActionLoading7, #ActionLoading8").click(function() {
+   $("#ActionLoadingArea6").addClass("loading-div");
+   setTimeout(function() { $("#ActionLoadingArea6").removeClass("loading-div")(3000); }, 3000)
+   setTimeout(function() { $(".fadeover").show(3000); }, 3000)
+});
+$("#ActionLoading2").click(function() {
+   $("#ActionLoadingAreas1").hide();
+});
+});
+</script>
+        
+        
+        
+        <div class="row" id="getPost">
+
+
+
+          <div class="col-md-4" id="ActionLoadingArea">
+            <div class="msg-widget">
+              <div class="media">
+                <div class="student-pic mr-2 rounded-circle"> <img src="img/students/profile-pic4.png" alt="" title="" /> </div>
+                <div class="media-body">
+                  <h4><strong><a href="#" class="black">Venkatesh R.</a></strong></h4>
+                  <div class="rated rising-star mb-1"> <a data-container="body" data-toggle="popover" data-placement="bottom" data-content="Rising talent shows strong potential based on their profile and early success on Switchidea. <a href='#'>Learn more.</a><a class='close custom-close'></a>" data-original-title="" title="">
+                    <svg preserveAspectRatio="xMidYMid meet" data-bbox="0 3.162 126.729 120.405" viewBox="0 3.162 126.729 120.405" data-type="shape" role="img" width="12">
+                      <g>
+                        <path d="M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z" style="fill: #ff9900"></path>
+                      </g>
+                    </svg>
+                    RISING STAR</a></div>
+                  <div class="alpha-7 det">Pandit Deendayal Petroleum University, Gandhinagar - B.E. / B.Tech
+                    Mumbai, India</div>
+                </div>
+              </div>
+              <div class="test-icon-helper mt-3">
+                <ul class="list-unstyled">
+                  <li>
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15px" height="15px" viewBox="184 184 144 144" enable-background="new 184 184 144 144" xml:space="preserve">
+                      <path fill="#05b169" d="M256,184c-39.702,0-72,32.298-72,72s32.298,72,72,72s72-32.298,72-72S295.702,184,256,184z"></path>
+                      <path fill="#FAFAFA" d="M292.492,240.742l-39,38.999c-1.17,1.17-2.706,1.759-4.242,1.759s-3.072-0.589-4.242-1.759l-19.5-19.499  c-2.347-2.346-2.347-6.139,0-8.484c2.345-2.347,6.137-2.347,8.483,0l15.258,15.257l34.759-34.757c2.346-2.347,6.137-2.347,8.483,0  C294.838,234.604,294.838,238.396,292.492,240.742z"></path>
+                    </svg>
+                    Search Engine Optimization (SEO)</li>
+                  <li>
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15px" height="15px" viewBox="184 184 144 144" enable-background="new 184 184 144 144" xml:space="preserve">
+                      <path fill="#05b169" d="M256,184c-39.702,0-72,32.298-72,72s32.298,72,72,72s72-32.298,72-72S295.702,184,256,184z"></path>
+                      <path fill="#FAFAFA" d="M292.492,240.742l-39,38.999c-1.17,1.17-2.706,1.759-4.242,1.759s-3.072-0.589-4.242-1.759l-19.5-19.499  c-2.347-2.346-2.347-6.139,0-8.484c2.345-2.347,6.137-2.347,8.483,0l15.258,15.257l34.759-34.757c2.346-2.347,6.137-2.347,8.483,0  C294.838,234.604,294.838,238.396,292.492,240.742z"></path>
+                    </svg>
+                    PHP</li>
+                </ul>
+              </div>
+              <div class="msg-btn-cont">
+                <button type="button" class="btn btn-block btn-link ActionLoadingbt" id="ActionLoading">1-click message</button>
+              </div>
+            </div>
+          </div>
+          
+       
+          
+          
+          
+        </div>
+      </div>
+      
+      
+      <div class="row justify-content-center mt-5">
+      <div class="col-lg-10">
+      
+      <div class="shadow-box recommended-matches-details" id="ActionLoadingArea6">
+      <div class="fadeover"></div>
+      <div class="page-box main-details mb-4">
+      
+      <div class="row gutter15">
+      <div class="col">
+      
+      
+      <div class="media">
+                <div class="profile-pic mr-3"><img src="img/students/profile-pic.png" alt="Profile Image" title="Profile Image"></div>
+      <div class="media-body">
+      
+      <h3 class="mb-2"><strong><a href="#" class="black">Venkatesh R.</a></strong>
+      <div class="rated rising-star mb-1"> <a data-container="body" data-toggle="popover" data-placement="bottom" data-content="Rising talent shows strong potential based on their profile and early success on Switchidea. <a href='#'>Learn more.</a><a class='close custom-close'></a>" data-original-title="" title="">
+                    <svg preserveAspectRatio="xMidYMid meet" data-bbox="0 3.162 126.729 120.405" viewBox="0 3.162 126.729 120.405" data-type="shape" role="img" width="20">
+                      <g>
+                        <path d="M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z" style="fill: #ff9900"></path>
+                      </g>
+                    </svg>
+                    RISING STAR</a></div></h3>
+          <h5><strong>Pandit Deendayal Petroleum University, Gandhinagar - B.E. / B.Tech
+Mumbai, India</strong></h5>        
+      
+      
+      <div class="socials mb-1"> <a href="#" target="_blank"><img src="img/icons/dribbble-logo.png" alt="" title="" srcset="img/icons/dribbble-logo.svg" height="22"></a> <a href="#" target="_blank"><img src="img/icons/linkedin-logo.png" alt="" title="" srcset="img/icons/linkedin-logo.svg" height="22"></a> <a href="#" target="_blank"><img src="img/icons/github-logo.png" alt="" title="" srcset="img/icons/github-logo.svg" height="22"></a> <a href="#" target="_blank"><img src="img/icons/behance.png" alt="" title="" srcset="img/icons/behance.svg" height="22"></a> <a href="#" target="_blank"><img src="img/icons/stack-overflow.png" alt="" title="" srcset="img/icons/stack-overflow.svg" height="22"></a> <a href="#" target="_blank"><img src="img/icons/youtube.png" alt="" title="" srcset="img/icons/youtube.svg" height="22"></a> <a href="#" target="_blank"><img src="img/icons/internet.png" alt="" title="" srcset="img/icons/internet.svg" height="22"></a> <a href="#" target="_blank"><img src="img/icons/kaggle.png" alt="" title="" srcset="img/icons/kaggle.svg" height="22"></a> <a href="#" target="_blank"><img src="img/icons/researchgate-logo.png" alt="" title="" srcset="img/icons/researchgate-logo.svg" height="22"></a> </div>
+      
+      
+      <a href="#">View public profile 
+      <svg class="svg-icon-align" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="14px" viewBox="0 0 144 144" enable-background="new 0 0 144 144" xml:space="preserve">
+<path fill="#1652f0" d="M135.123,0H85.609c-4.895,0-8.875,3.982-8.875,8.875c0,4.894,3.98,8.876,8.875,8.876h28.088l-46.853,46.85  c-1.677,1.677-2.6,3.905-2.6,6.276c0,2.372,0.923,4.6,2.6,6.274c1.677,1.679,3.905,2.602,6.277,2.602c2.371,0,4.6-0.923,6.277-2.6  l46.85-46.852v28.086c0,4.895,3.982,8.875,8.875,8.875c4.896,0,8.877-3.98,8.877-8.875V8.874C144,3.982,140.02,0,135.123,0z   M102.012,128.784H15.215V41.987h65.281l15.215-15.215H7.609C3.407,26.772,0,30.178,0,34.38v102.013C0,140.594,3.407,144,7.609,144  h102.012c4.201,0,7.607-3.406,7.607-7.607V48.289l-15.217,15.216V128.784z"/>
+</svg>
+      </a>
+      
+      
+      </div>
+      </div>
+      
+      
+      </div>
+      <div class="col-auto">
+      
+      <button class="btn btn-default border-0 mb-3" id="ActionLoading6">Skip</button>
+      <button class="btn btn-default dark-brdr mb-3" id="ActionLoading7">Not interested</button>
+      <button class="btn btn-dark mb-3" id="ActionLoading8">1-click massage</button>
+      
+      
+      <div class="text-right"><button class="btn shadow-btn"><i class="fa fa-eye"></i> Preview message</button></div>
+      
+      </div>
+      </div>
+      
+      </div>
+      
+      
+      <div class="shadow-box">
+      <div class="mb-4">
+      <h4 class="font-weight-bold mb-2">Skills & Competencies</h4>
+      <div>
+                  <span class="skills-tag verified">Content Writing</span>
+                  <span class="skills-tag verified">English Language</span>
+                  <span class="skills-tag">Market Research</span>
+                  <span class="skills-tag">Article Writing</span>
+                  <span class="skills-tag">Creative Writing</span>
+                  <span class="skills-tag">Proofreading</span>
+                  </div>
+                  </div>
+                  <div class="mb-4">
+                  <h4 class="font-weight-bold mb-2">Open to new opportunities</h4>
+                  <p>Venkatesh is presently available for new projects related to Website Development & Designing and IT & Computers before 29th September, 2019. The convenient hours to reach Venkatesh over the call is between 5 PM - 8 PM from Monday to Friday.</p>
+                  </div>
+                  
+                  <h4 class="font-weight-bold mb-2">Recommended For</h4>
+                  <div class="project-preferences mb-4" id="project-preferences">
+            <ul class="list-unstyled">
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Data Science and Engineering</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Chatbot Development & Automation</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Python Programming</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Models Analysis & Development</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Statistical Research Work</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Predictive Modelling and Analysis</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Data Science and Engineering</a></li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Chatbot Development & Automation</a></li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Python Programming</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Models Analysis & Development</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Statistical Research Work</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Predictive Modelling and Analysis</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Data Science and Engineering</a></li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Chatbot Development & Automation</a></li>
+              
+              
+              
+              
+              
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Python Programming</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Models Analysis & Development</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Statistical Research Work</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Predictive Modelling and Analysis</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Data Science and Engineering</a></li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Chatbot Development & Automation</a></li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Data Science and Engineering</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Chatbot Development & Automation</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Python Programming</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Models Analysis & Development</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Statistical Research Work</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Data Science and Engineering</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Chatbot Development & Automation</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Python Programming</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Models Analysis & Development</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Statistical Research Work</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Data Science and Engineering</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Chatbot Development & Automation</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Python Programming</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Models Analysis & Development</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Statistical Research Work</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Data Science and Engineering</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Chatbot Development & Automation</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Python Programming</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Models Analysis & Development</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Statistical Research Work</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Data Science and Engineering</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Chatbot Development & Automation</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Python Programming</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Models Analysis & Development</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Statistical Research Work</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Data Science and Engineering</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Chatbot Development & Automation</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Python Programming</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Models Analysis & Development</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Statistical Research Work</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Data Science and Engineering</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Chatbot Development & Automation</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Python Programming</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Models Analysis & Development</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Statistical Research Work</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Data Science and Engineering</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Chatbot Development & Automation</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Python Programming</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Models Analysis & Development</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Statistical Research Work</a> </li>
+            </ul>
+          </div>
+                  
+                  
+      </div>
+      
+      
+      <div class="shadow-box mt-5">
+      <h4 class="font-weight-bold mb-3">Personal Information</h4>
+      
+      <div class="media">
+      <img src="img/switchidea-logo-icon.png" class="align-self-center mr-3" width="35" alt="" title="" />
+      <div class="media-body">
+      <h5>Akash's profile</h5>
+      <a href="#">www.switchidea.com/akash-angle</a>
+      </div>
+      </div>
+      
+      </div>
+      
+      </div>
+      
+      </div>
+      </div>
+      
+      
+    </div>
+  </div>
+</main>
+
+<!-- Newsletter Section -->
+<div class="newsletter-section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-7">
+        <h4>Get the latest trends and tips for intern recruiting, retention and branding.</h4>
+      </div>
+      <div class="col-md-5">
+        <div class="input-group">
+          <input type="text" class="form-control">
+          <img src="img/icons/e-mail-envelope.png" alt="" title=""  srcset="img/icons/e-mail-envelope.svg" height="23" class="newsletter-img" />
+          <div class="input-group-append"> <a class="input-group-addon btn btn-primary" href="#"> Subscribe </a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="">
+  <div class="footer1">
+    <div class="container">
+      <div class="footer-menu">
+        <div class="row">
+          <div class="col-lg-9">
+            <div class="row">
+              <div class="col-auto">
+                <h3><strong>Categories</strong></h3>
+                <ul class="list-unstyled">
+                  <li><a href="#">Business Development</a></li>
+                  <li><a href="#">Web Development</a></li>
+                  <li><a href="#">Mobile App Development</a></li>
+                  <li><a href="#">Social Media Marketing</a></li>
+                  <li><a href="#">Content Writing</a></li>
+                  <li><a href="#">Information Technology</a></li>
+                  <li><a href="#">Human Resources</a></li>
+                  <li><a href="#">Graphic & Design</a></li>
+                  <li><a href="#">Core Engineering</a></li>
+                  <li><a href="#">Business Development</a></li>
+                  <li><a href="#">Research & Development</a></li>
+                  <li><a href="#">AI & Machine Learning</a></li>
+                  <li><a href="#">Accounting & Finance</a></li>
+                  <li><a href="#">Digital Marketing</a></li>
+                </ul>
+              </div>
+              <div class="col-auto">
+                <h3><strong>Locations</strong></h3>
+                <ul class="list-unstyled">
+                  <li><a href="#">Internships in Mumbai</a></li>
+                  <li><a href="#">Internships in Delhi</a></li>
+                  <li><a href="#">Internships in Bangalore</a></li>
+                  <li><a href="#">Internships in Pune</a></li>
+                  <li><a href="#">Internships in Hyderabad</a></li>
+                  <li><a href="#">Internships in Chennai</a></li>
+                  <li><a href="#">Internships in Kolkata</a></li>
+                  <li><a href="#">Internships in Ahmedabad</a></li>
+                  <li><a href="#">Remote Internships</a></li>
+                </ul>
+              </div>
+              <div class="col-auto">
+                <h3><strong>Get to Know Us</strong></h3>
+                <ul class="list-unstyled">
+                  <li><a href="#">About Switch Idea</a></li>
+                  <li><a href="#">Project-Based Internship Test (PBIT)</a></li>
+                  <li><a href="#">National Talent Acquisition Test (NTAT)</a></li>
+                  <li><a href="#">Verify Scores</a></li>
+                  <li><a href="#">FAQs</a></li>
+                  <li><a href="#">Help Center</a></li>
+                  <li><a href="#">Switch Idea Internship Blog</a></li>
+                  <li><a href="#">Join Us</a></li>
+                  <li><a href="#">Resources</a></li>
+                  <li><a href="#">Terms and Conditions</a></li>
+                  <li><a href="#">Privacy</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">National Internship Helpline</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 text-center">
+            <h3 class="mb-3"><strong>More with Switchidea</strong></h3>
+            <div class="exam-logos">
+              <div class="exam-logos-cols"> <img src="img/PBIT-logo-badge.png" alt="" title="" class="d-block d-lg-none" /> <img src="img/PBIT-logo-badge-small_footer.png" alt="" title="" class="d-none d-lg-block" /> </div>
+              <div class="exam-logos-cols"> <img src="img/NTAT-logo-icon.png" alt="" title="" class="d-block d-lg-none" /> <img src="img/NTAT-logo-icon-small_footer.png" alt="" title="" class="d-none d-lg-block" /> </div>
+            </div>
+            <div class="clearfix mb-4"></div>
+            <h3 class="mb-3"><strong>Connect with us</strong></h3>
+            <h2 class="mb-3"> <a href="https://www.facebook.com/switchidea" target="_blank" class="mr-1 ml-1"><i class="fa fa-facebook"></i></a> <a href="https://twitter.com/switch_idea" target="_blank" class="mr-1 ml-1"><i class="fa fa-twitter"></i></a> <a href="https://www.youtube.com/channel/UC6x2CCv2wi7sozC0fbnXG3w" target="_blank" class="mr-1 ml-1"><i class="fa fa-youtube-play"></i></a> <a href="https://www.linkedin.com/company/switch-idea/" target="_blank" class="mr-1 ml-1"><i class="fa fa-linkedin"></i></a> <a href="https://www.instagram.com/switch_idea/" target="_blank" class="mr-1 ml-1"><i class="fa fa-instagram"></i></a> </h2>
+            <h3><a class="tel" href="tel:+91-9555-141-142"><strong>+91 9555 141 142</strong></a></h3>
+            <h4 class="mt-3">Made with <img src="img/icons/heart-outline-footer.png" alt="" title=""  srcset="img/icons/heart-outline-footer.svg" height="20" /> in India</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer2">
+    <div class="container"> </div>
+  </div>
+</div>
+
+<!-- Feedback/Report Modal -->
+<div class="modal fade mobile-modal" id="FeedbackReportModal" tabindex="-1" role="dialog" aria-labelledby="FeedbackReportModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body"> <a href="#" class="custom-close" data-dismiss="modal" aria-label="Close"></a>
+        <div class="modal-mobile-header media"> <a href="#" class="modal-thumbs align-self-center mr-2"><img src="img/company-logo/company-logo-sample.png" class="rounded-circle" alt="" title=""></a>
+          <div class="modal-title media-body align-self-center">
+            <h4><a href="#">Anchal S.</a></h4>
+          </div>
+        </div>
+        <ul class="share-options">
+          <li><a class="save-btn" href="#" data-toggle="modal" data-target="#SaveListModal" data-dismiss="modal"><span class="center-share-options gray"><img src="img/icons/heart.png" alt="" title="" srcset="img/icons/heart.svg" width="15"><img src="img/icons/heart-red.png" alt="" title="" srcset="img/icons/heart-red.svg" class="red-heart" width="15"> Save Candidate</span></a></li>
+          <li><a href="#"><span class="gray"><i class="fa fa-user-o gray"></i>&nbsp; View Profile</span></a></li>
+          <li><a href="#"><span class="gray"><i class="fa fa-edit gray"></i>&nbsp; Send feedback</span></a></li>
+          <li><a href="#"><span class="gray"><i class="fa fa-flag gray"></i>&nbsp; Report</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- More Option Modal -->
+<div class="modal fade mobile-modal" id="MoreOptionsModal" tabindex="-1" role="dialog" aria-labelledby="MoreOptionsModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body"> <a href="#" class="custom-close" data-dismiss="modal" aria-label="Close"></a>
+        <div class="modal-mobile-header media mb-0"> <a href="#" class="modal-thumbs align-self-center mr-2"><img src="img/students/profile-pic.png" class="rounded-circle" alt="" title=""></a>
+          <div class="modal-title media-body align-self-center">
+            <h4><a href="#">Venkatesh R.</a></h4>
+          </div>
+        </div>
+        <ul class="share-options">
+          <li><a href="#"><span class="center-share-options gray"><img src="img/icons/phone-call.png" alt="" title=""  srcset="img/icons/phone-call.svg" width="17" /> Call Student-name</span></a></li>
+          <li><a href="#"><span class="center-share-options gray"><img src="img/icons/down-arrow.png" alt="" title=""  srcset="img/icons/down-arrow.svg" width="17" /> Download Resume</span></a></li>
+          <li><a class="save-btn" href="#" data-toggle="modal" data-target="#SaveListModal" data-dismiss="modal"><span class="center-share-options gray"><img src="img/icons/heart.png" alt="" title=""  srcset="img/icons/heart.svg" width="17" /><img src="img/icons/heart-red.png" alt="" title=""  srcset="img/icons/heart-red.svg"  width="17" class="red-heart" /> Save Candidate</span></a></li>
+          <li><a href="#" data-toggle="modal" data-target="#ShareModal" data-dismiss="modal"><span class="center-share-options gray"><img src="img/icons/export.png" alt="" title=""  srcset="img/icons/export.svg" width="17" /> Share Profile</span></a></li>
+          <li><a href="#"><span class="center-share-options gray"><i class="fa fa-flag gray"></i>&nbsp; Report / Block</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Save List Modal -->
+<div class="modal fade mobile-modal SaveListModal" id="SaveListModal" tabindex="-1" role="dialog" aria-labelledby="SaveListLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body"> <a href="#" class="custom-close" data-dismiss="modal" aria-label="Close"></a>
+        <div class="modal-mobile-header media"> <a href="#" class="modal-thumbs align-self-center mr-2"><img src="img/company-logo/company-logo-sample.png" class="rounded-circle" alt="" title=""></a>
+          <div class="modal-title media-body align-self-center">
+            <h4><a href="#">Anchal S.</a></h4>
+          </div>
+        </div>
+        <div class="savelist-header">
+          <div class="row align-items-start no-gutters">
+            <div class="col-3"><a href="#" id="CancelListButton">Cancel</a></div>
+            <div class="col-6">
+              <h4 class="text-center black"><strong>Saved Lists</strong></h4>
+            </div>
+            <div class="col-3 text-right"> <a href="#" data-dismiss="modal" aria-label="Close" id="DoneListButton">Done</a> <a href="#" class="gray" id="CreateListButton">Create</a> </div>
+          </div>
+        </div>
+        <input type="text" placeholder="Create a new list" class="form-control create-list-input" />
+        <ul class="savelist-options list-unstyled">
+          <li class="added-list"><a href="#">Video People<span class="total-save">Total 5 Gigs</span> <i class="savelist-icon"><img src="img/icons/rounded-add-button.png" alt="" title=""  srcset="img/icons/rounded-add-button.svg" height="20" /></i> <i class="savelist-icon added-icon"><img src="img/icons/profile-check.png" alt="" title="" height="21" /></i> <i class="savelist-icon loading-icon"><img src="img/icons/loading.gif" alt="" title="" height="21" /></i> </a></li>
+          <li><a href="#">Graphic Design<span class="total-save">Total 10 Gigs</span> <i class="savelist-icon"><img src="img/icons/rounded-add-button.png" alt="" title=""  srcset="img/icons/rounded-add-button.svg" height="20" /></i> <i class="savelist-icon added-icon"><img src="img/icons/profile-check.png" alt="" title="" height="21" /></i> <i class="savelist-icon loading-icon"><img src="img/icons/loading.gif" alt="" title="" height="21" /></i> </a></li>
+          <li><a href="#">Data Entry<span class="total-save">Total 3 Gigs</span> <i class="savelist-icon"><img src="img/icons/rounded-add-button.png" alt="" title=""  srcset="img/icons/rounded-add-button.svg" height="20" /></i> <i class="savelist-icon added-icon"><img src="img/icons/profile-check.png" alt="" title="" height="21" /></i> <i class="savelist-icon loading-icon"><img src="img/icons/loading.gif" alt="" title="" height="21" /></i> </a></li>
+          <li class="saving-list"><a href="#">Research Work<span class="total-save">Total 7 Gigs</span> <i class="savelist-icon"><img src="img/icons/rounded-add-button.png" alt="" title=""  srcset="img/icons/rounded-add-button.svg" height="20" /></i> <i class="savelist-icon added-icon"><img src="img/icons/profile-check.png" alt="" title="" height="21" /></i> <i class="savelist-icon loading-icon"><img src="img/icons/loading.gif" alt="" title="" height="21" /></i> </a></li>
+          <li><a href="#">IT Internships<span class="total-save">Total 2 Gigs</span> <i class="savelist-icon"><img src="img/icons/rounded-add-button.png" alt="" title=""  srcset="img/icons/rounded-add-button.svg" height="20" /></i> <i class="savelist-icon added-icon"><img src="img/icons/profile-check.png" alt="" title="" height="21" /></i> <i class="savelist-icon loading-icon"><img src="img/icons/loading.gif" alt="" title="" height="21" /></i> </a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Create New Save List Modal -->
+<div class="modal fade bd-example-modal-sm" id="CreateNewSaveList" tabindex="-1" role="dialog" aria-labelledby="CreateNewSaveListLabel" aria-hidden="true">
+  <div class="modal-dialog  modal-dialog-centered modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="CreateNewSaveListLabel">Name your new list</h5>
+        <a class="custom-close" data-dismiss="modal" aria-label="Close"></a> </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="List Name" />
+        </div>
+        <div class="row">
+          <div class="col-md-4 ml-md-auto">
+            <button type="button" class="btn btn-block btn-primary" data-dismiss="modal">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Share Modal -->
+<div class="modal fade mobile-modal ShareModal" id="ShareModal" tabindex="-1" role="dialog" aria-labelledby="ShareModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body"> <a href="#" class="custom-close" data-dismiss="modal" aria-label="Close"></a>
+        <div class="modal-mobile-header media mb-0"> <a href="#" class="modal-thumbs align-self-center mr-2"><img src="img/company-logo/company-logo-sample.png" class="rounded-circle" alt="" title=""></a>
+          <div class="modal-title media-body align-self-center">
+            <h4><a href="#">Anchal S.</a></h4>
+          </div>
+        </div>
+        <div class="ShareModal text-center"> <a class="dropdown-item" href="#"><i class="fa fa-facebook-square"></i> Facebook</a> <a class="dropdown-item" href="#"><i class="fa fa-twitter"></i> Twitter</a> <a class="dropdown-item" href="#"><i class="fa fa-linkedin-square"></i> Linkedin</a> <a class="dropdown-item" href="#"><img src="img/icons/whatsapp-colored.png" alt="" title=""  srcset="img/icons/whatsapp-colored.svg" height="20" class="whatsapp-icon" /> WhatsApp</a> <a class="dropdown-item" id="copylink1" href="https://www.google.com/"><i class="fa fa-link"></i> Copy Link</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Save Toast -->
+<div class="custom-toast-cont d-none">
+  <div class="toast" id="SaveToast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="5000">
+    <div class="toast-body">
+      <div class="row gutter10 align-items-center">
+        <div class="col-auto">
+          <svg class="rounded" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="22px" viewBox="184 184 144 144" enable-background="new 184 184 144 144" xml:space="preserve">
+            <path fill="#05b169" d="M256,184c-39.702,0-72,32.298-72,72s32.298,72,72,72s72-32.298,72-72S295.702,184,256,184z"></path>
+            <path fill="#FAFAFA" d="M292.492,240.742l-39,38.999c-1.17,1.17-2.706,1.759-4.242,1.759s-3.072-0.589-4.242-1.759l-19.5-19.499  c-2.347-2.346-2.347-6.139,0-8.484c2.345-2.347,6.137-2.347,8.483,0l15.258,15.257l34.759-34.757c2.346-2.347,6.137-2.347,8.483,0  C294.838,234.604,294.838,238.396,292.492,240.742z"></path>
+          </svg>
+        </div>
+        <div class="col">
+          <h5><strong>The item saved in: MCQ Question Creators.</strong></h5>
+        </div>
+        <div class="col-auto">
+          <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Share Internship Modal -->
+<div class="modal fade" id="ShareInternshipModal" tabindex="-1" role="dialog" aria-labelledby="ShareInternshipModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+    <div class="modal-header"><h4 class="mb-1 mt-1"><strong>Share Internship</strong></h4><a href="#" class="custom-close" data-dismiss="modal" aria-label="Close"></a></div>
+      <div class="modal-body"> 
+      <div class="text-center mt-4 mb-4">
+      
+      
+      <h3 class="mb-3">Which network would you like to share to?</h3>
+      <div class="ShareInternshipIcons">
+      <a href="#"><i class="fa fa-linkedin-square"></i></a>
+      <a href="#"><i class="fa fa-twitter-square"></i></a>
+      <a href="#"><i class="fa fa-facebook-square"></i></a>
+      </div>
+      
+      
+      </div>
+      
+      
+      
+      
+      </div>
+      
+      <div class="modal-footer"><div class="text-right">
+      <button class="btn btn-dark" data-dismiss="modal">Cancel</button>
+      </div></div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Action Notifications Toasts -->
+<div class="noti-toast-cont">
+    <div class="toast" id="NotIntrestedCandidateMsg" role="alert" aria-live="assertive" aria-atomic="true" data-delay="3000">
+        <a href="#" class="custom-close small" data-dismiss="toast"></a>
+        <div class="toast-body">
+        <div class="media">
+        <svg class="mr-2 mt-1" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" viewBox="0 0 144 144" enable-background="new 0 0 144 144" xml:space="preserve">
+<path fill="#333333" d="M72,0C32.299,0,0,32.3,0,72s32.299,72,72,72s72-32.299,72-72S111.701,0,72,0z M72,130.909  c-32.483,0-58.909-26.427-58.909-58.909S39.517,13.09,72,13.09c32.482,0,58.909,26.427,58.909,58.91  C130.909,104.482,104.482,130.909,72,130.909z M71.999,30.545c-4.812,0-8.726,3.917-8.726,8.731c0,4.81,3.914,8.723,8.726,8.723  s8.726-3.913,8.726-8.723C80.725,34.462,76.811,30.545,71.999,30.545z M72,61.091c-3.615,0-6.545,2.932-6.545,6.545v39.273  c0,3.614,2.931,6.545,6.545,6.545c3.615,0,6.546-2.931,6.546-6.545V67.636C78.546,64.021,75.615,61.091,72,61.091z"/>
+</svg>
+        <div class="media-body">Akash A is saved as an 'archived candidate' in your pipeline.</div>
+        </div>
+        </div>
+    </div>
+  </div>
+
+
+<!-- Custom Fonts-->
+<link href="css/fonts.css" rel="stylesheet" type="text/css">
+<!-- Font Awesome-->
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+
+<!-- JavaScript
+    ================================================== --> 
+<!-- jQuery first, then Popper.js, then Bootstrap JS --> 
+<script src="js/jquery-3.3.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<!-- Custom JS --> 
+<script src="js/custom.js"></script> 
+<script src="js/dark-mode-switch.min.js"></script> 
+<!-- Filters Dropdown close JS
+    ================================================== --> 
+<script type="text/javascript">
+$(document).on('click', '.search-filter .dropdown-menu', function (e) {
+  e.stopPropagation();
+});
+$(".search-done .btn").click(function() {
+   $(".dropdown").removeClass("show");
+   $(".dropdown-menu").removeClass("show");
+   $(".dropdown-backdrop").hide();
+});
+</script> 
+<!-- Create Alert JS
+    ================================================== --> 
+<script type="text/javascript">
+$("#CreateAlert").click(function() {
+   $("#CreateAlert").addClass("alert-creating");
+   setTimeout(function() { $("#CreateAlert").hide(1500); }, 1500)
+   setTimeout(function() { $("#AlertCreated").show(1500); }, 1500)
+});
+$("#CreateAlert2").click(function() {
+   $("#CreateAlert2").addClass("alert-creating");
+   setTimeout(function() { $("#CreateAlert2").hide(1500); }, 1500)
+   setTimeout(function() { $("#AlertCreated2").show(1500); }, 1500)
+});
+</script> 
+<!-- jquery sticky-sidebar JS
+    ================================================== --> 
+<script type="text/javascript" src="js/sticky-sidebar.js"></script> 
+<script type="text/javascript">
+if ( $(window).width() > 991) {
+  var stickySidebar = new StickySidebar('.sidebar', {
+			topSpacing: 70,
+			bottomSpacing: 35,
+			containerSelector: '.content-area',
+			innerWrapperSelector: '.sidebar_inner'
+		});
+}
+</script> 
+<!-- Equal Height JS
+    ================================================== --> 
+<script type="text/javascript">
+
+equalheight = function(container){
+
+var currentTallest = 0,
+     currentRowStart = 0,
+     rowDivs = new Array(),
+     $el,
+     topPosition = 0;
+ $(container).each(function() {
+
+   $el = $(this);
+   $($el).height('auto')
+   topPostion = $el.position().top;
+
+   if (currentRowStart != topPostion) {
+     for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+       rowDivs[currentDiv].height(currentTallest);
+     }
+     rowDivs.length = 0; // empty the array
+     currentRowStart = topPostion;
+     currentTallest = $el.height();
+     rowDivs.push($el);
+   } else {
+     rowDivs.push($el);
+     currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
+  }
+   for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+     rowDivs[currentDiv].height(currentTallest);
+   }
+ });
+}
+
+$(window).load(function() {
+  equalheight('.profile-horizontal .profile-widget-container');
+});
+$(window).resize(function(){
+  equalheight('.profile-horizontal .profile-widget-container');
+});
+
+$(window).load(function() {
+  equalheight('.profile-vertical .profile-widget-container');
+});
+$(window).resize(function(){
+  equalheight('.profile-vertical .profile-widget-container');
+});
+
+</script> 
+<!-- Show more Project Preferences JS
+    ================================================== --> 
+<script>
+var step_nbr = 50;
+var min_nbr = 8;
+
+$('#project-preferences ul').each(function() {
+  var LiN = $(this).find('li').length;
+   
+  if (LiN > 4) {
+    $('li', this).eq(7).nextAll().hide().addClass('toggleable');
+    $(this).append('<li class="more">Show ' + (LiN - 8) + ' more preferences <span class="arrow"></span></li>');
+  }
+});
+
+$('#project-preferences ul').on('click', '.more', function() {
+  var visible_lis = $('#project-preferences ul li:visible').length;
+
+  if ($(this).hasClass('less')) {
+
+    $(this).prevAll('li:not(.toggleable)').slice(0, step_nbr).addClass('toggleable').hide();
+
+    if ($('li:visible').length <= (min_nbr + 1)) {
+      $(this).text('Show ' + (LiN - 8) + ' more preferences').removeClass('less');
+    }
+
+  } else {
+	 
+    $(this).siblings('li.toggleable').slice(0, step_nbr).removeClass('toggleable').show();
+    var LiNs = $('#project-preferences ul').find('li').length;
+	$(this).html('<li class="more">Show ' + (LiNs - (visible_lis+step_nbr)) + ' more preferences <span class="arrow"></span></li>');
+
+    if ($('li.toggleable').length == 0) {
+      $(this).text('').addClass('less');
+    }
+  }
+
+});
+</script>
+<!-- Employers filter fixed on scroll JS
+    ================================================== --> 
+<script>
+$(document).on("scroll",function(){
+	if($(document).scrollTop()>300){
+		$(".emp-rev-app-filters").addClass("fixed-filters");
+		}
+	else{
+		$(".emp-rev-app-filters").removeClass("fixed-filters");
+		}
+	});
+</script>
+<!-- Action Notification Toasts JS
+    ================================================== -->
+<script>
+$(document).ready(function(){
+	$("#ActionLoading6").click(function(){
+        $("#NotIntrestedCandidateMsg").toast('show');
+    });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,1335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Switchidea</title>
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Custom styles for this template -->
+<link href="css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="css/dark-mode.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+
+<!-- Nav -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+  <div class="container"> <a class="navbar-brand" href="index-students.html"><img src="img/switchidea-logo-dark.png" alt="" title=""  srcset="img/switchidea-logo-dark.svg" /></a>
+    <form action="." class="form-inline search-new d-none d-md-block">
+      <div class="input-group">
+        <div class="input-group-prepend clearable search-I-C">
+          <input type="text" class="form-control" placeholder="Search by skill, domain, or college" aria-label="Searchinternshipscompanies" aria-describedby="basic-addon1">
+          <span class="clearable_clear">&times;</span> </div>
+        <div class="input-group-append clearable search-L">
+          <input type="text" class="form-control" placeholder="Location" aria-label="Location" aria-describedby="basic-addon2">
+          <span class="clearable_clear">&times;</span> </div>
+        <div class="input-group-append clearable search-btn-cnt">
+          <button value="Search" type="submit" class="search-btn"><img src="img/icons/magnifying-glass.png" alt="" title=""  srcset="img/icons/magnifying-glass.svg" height="19" /></button>
+        </div>
+      </div>
+    </form>
+    <button class="navbar-toggler close-animate" type="button" data-toggle="offcanvas" data-target="#MainNav" id="MainNavLink" aria-label="Toggle navigation"> <span></span> <span></span> <span></span> </button>
+    <div class="navbar-collapse offcanvas-collapse" id="MainNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item d-block d-lg-none"> <a class="nav-link" href="#">Home</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#">Find Interns</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#">Help Needed</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#">Post Internship</a> </li>
+        <li class="nav-item dropdown"> <a class="user-nav-pic ml-2 dropdown-toggle" href="#" id="AccountDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="img/students/profile-pic3.jpg" alt="" title="" /> <span class="status available"></span></a>
+          <div class="dropdown-menu dropdown-menu-lg-right profile-submenu" aria-labelledby="AccountDropdown"> <a class="dropdown-item" href="#">Profile</a> <a class="dropdown-item" href="#">Resources</a> <a class="dropdown-item" href="#">My Postings</a> <a class="dropdown-item" href="#">Team</a> <a class="dropdown-item" href="#">Settings</a> <a class="dropdown-item cursor-pointer"><div class="custom-control custom-switch darkSwitch-cnt">
+  <input type="checkbox" class="custom-control-input" id="darkSwitch">
+  <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+</div></a> <a class="dropdown-item" href="#">Logout</a> </div>
+        </li>
+      </ul>
+    </div>
+    <div class="offcanvas-backdrop"></div>
+  </div>
+</nav>
+
+<!-- Main Content Area -->
+<main role="main" class="content-area pt-0">
+  <div class="post-page">
+    <div class="container">
+      <div class="row justify-content-center mb-3">
+        <div class="col-lg-9 text-center text-white">
+          <h2 class="big mb-2"><strong>Hire interns with confidence</strong></h2>
+          <p class="f-17">Post your internship and contact qualified candidates within minutes. View profiles, skill ratings, portfolios and more.</p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="shadow-box PI-shadow-effect mb-5">
+            <h3 class="small border-bottom mb-3"><strong>Tell us about your internship</strong></h3>
+            <div class="form-group">
+              <label><strong>For which profile are you looking to hire interns?</strong></label>
+              <input type="text" class="form-control" placeholder="Internship title" />
+            </div>
+            <div class="form-group mb-5">
+              <label class="mb-3"><strong>How many interns do you plan to hire?</strong></label>
+              <div id="NOInternRangeDiv">
+                <select id="NOInternRange" name="rating" autocomplete="off">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3" selected="selected">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
+              </div>
+              <div class="border-bottom border-top mt-2 pt-2 pb-2" id="addmoreNOInternsbtnDiv">
+                <div class="row no-gutters align-items-center">
+                  <div class="col-auto">
+                    <svg class="mr-1" preserveAspectRatio="xMidYMid meet" data-bbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" width="18px" viewBox="0 0 512 512" height="18px" data-type="shape" role="img">
+                      <g>
+                        <path fill="#1652f0" d="M437.02 74.98C388.668 26.63 324.379 0 256 0S123.332 26.629 74.98 74.98C26.63 123.332 0 187.621 0 256s26.629 132.668 74.98 181.02C123.332 485.37 187.621 512 256 512s132.668-26.629 181.02-74.98C485.37 388.668 512 324.379 512 256s-26.629-132.668-74.98-181.02zM256 472c-119.102 0-216-96.898-216-216S136.898 40 256 40s216 96.898 216 216-96.898 216-216 216zm20-236.02h90v40h-90v90h-40v-90h-90v-40h90v-90h40zm0 0"></path>
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="col">
+                    <button class="btn btn-link p-0" id="addmoreNOInternsbtn">Need more interns</button>
+                  </div>
+                </div>
+              </div>
+              <div class="addmoreNOInternsdiv" style="display:none;">
+                <div class="brdr-box p-3"> 
+                  <script>
+					$(document).ready(function(){
+						// Read value on page load
+						$("#HMIRangeResult").html($("#HMIRange").val());
+				
+						$(document).on('input', '#HMIRange', function() {
+							$('#HMIRangeResult').html( $(this).val() );
+							//$('.jcf-range-handle').html( $(this).val() );
+						});
+					});        
+				</script>
+                  <h4 class="text-center">
+                    <div class="badge badge-primary"><span id="HMIRangeResult"></span></div>
+                  </h4>
+                  <div class="row justify-content-center mt-3">
+                    <div class="col-md-11">
+                      <input type="range" id="HMIRange" value="20" min="1" max="100" list="testdata1" data-jcf='{"orientation": "horizontal", "range": "min"}'>
+                    </div>
+                  </div>
+                  <div class="row justify-content-center mt-1">
+                    <div class="col-md-12">
+                      <div class="row">
+                        <div class="col-auto small">Min 1</div>
+                        <div class="col"></div>
+                        <div class="col-auto small">Max 100</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group mt-n2">
+              <label><strong>What type of internship do you want to post?</strong></label>
+              <div class="row mt-2">
+                <div class="col-md-6">
+                  <div class="custom-control custom-radio shadow-box h-100">
+                    <input type="radio" id="InternshipType1" name="InternshipType" class="custom-control-input">
+                    <label class="custom-control-label h-100" for="InternshipType1">
+                    <div class="media">
+                      <svg class="mr-2" preserveAspectRatio="xMidYMid meet" data-bbox="0 0 368 368" viewBox="0 0 368 368" xmlns="http://www.w3.org/2000/svg" data-type="color" role="img" width="46" height="46">
+                        <g>
+                          <path d="M232 72v288h-64V248H72v112H8V8h224v64zm-48 128v-48H56v48h128zm0-96V56H56v48h128z" fill="#cce4ff" data-color="1"></path>
+                          <path d="M360 64H240V8c0-4.424-3.584-8-8-8H8C3.584 0 0 3.576 0 8v352c0 4.424 3.584 8 8 8h352c4.416 0 8-3.576 8-8V72c0-4.424-3.584-8-8-8zM160 352H80v-96h80v96zm64 0h-48V248c0-4.424-3.584-8-8-8H72c-4.416 0-8 3.576-8 8v104H16V16h208v336zm128 0h-32v-56c0-4.424-3.584-8-8-8s-8 3.576-8 8v56h-64V80h64v168c0 4.424 3.584 8 8 8s8-3.576 8-8V80h32v272z" fill="#007aff" data-color="2"></path>
+                          <path d="M56 112h128c4.416 0 8-3.576 8-8V56c0-4.424-3.584-8-8-8H56c-4.416 0-8 3.576-8 8v48c0 4.424 3.584 8 8 8zm8-48h112v32H64V64z" fill="#007aff" data-color="2"></path>
+                          <path d="M56 208h128c4.416 0 8-3.576 8-8v-48c0-4.424-3.584-8-8-8H56c-4.416 0-8 3.576-8 8v48c0 4.424 3.584 8 8 8zm8-48h112v32H64v-32z" fill="#007aff" data-color="2"></path>
+                        </g>
+                      </svg>
+                      <div class="media-body text-cont">
+                        <h5><strong>On-site Internship</strong></h5>
+                        <p class="text-black-50">You need interns who will be working from your office</p>
+                      </div>
+                    </div>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="custom-control custom-radio shadow-box h-100">
+                    <input type="radio" id="InternshipType2" name="InternshipType" class="custom-control-input">
+                    <label class="custom-control-label h-100" for="InternshipType2">
+                    <div class="media">
+                      <svg class="mr-2" preserveAspectRatio="xMidYMid meet" data-bbox="0 0 368 368" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 368 368" data-type="color" role="img" width="46" height="46">
+                        <g>
+                          <path d="M340.8 264c12.321-24 19.2-51.2 19.2-80h-96c0 28.8-3.121 56-8.8 80zm0 0" fill="#cce4ff" data-color="1"></path>
+                          <path d="M255.2 104C242 47.04 215.04 8 184 8s-58 39.04-71.2 96c-5.679 24-8.8 51.2-8.8 80h160c0-28.8-3.121-56-8.8-80zm0 0" fill="#cce4ff" data-color="1"></path>
+                          <path d="M184 360c31.04 0 58-39.04 71.2-96H112.8c13.2 56.96 40.16 96 71.2 96zm0 0" fill="#cce4ff" data-color="1"></path>
+                          <path d="M112.8 264c-5.679-24-8.8-51.2-8.8-80H8c0 28.8 6.879 56 19.2 80zm0 0" fill="#cce4ff" data-color="1"></path>
+                          <path fill="#007aff" d="M184 0C114.527 0 51.727 38.457 20.09 100.344 6.762 126.313 0 154.457 0 184s6.762 57.688 20.078 83.64C51.727 329.544 114.528 368 184 368s132.273-38.457 163.91-100.344C361.238 241.687 368 213.543 368 184s-6.762-57.688-20.078-83.64C316.273 38.456 253.472 0 184 0zm151.754 256h-70.77c4.079-20.145 6.368-41.574 6.809-64h79.984c-1.035 22.434-6.425 43.895-16.023 64zM184 352c-24.29 0-47.695-31.055-60.953-80h121.898c-13.234 48.938-36.656 80-60.945 80zm-64.672-96c-4.281-20.016-6.664-41.473-7.121-64h143.578c-.457 22.52-2.84 43.969-7.129 64zm-87.082 0c-9.598-20.098-14.988-41.559-16.023-64h79.984c.441 22.434 2.73 43.863 6.8 64zm0-144h70.77c-4.078 20.145-6.368 41.574-6.809 64H16.223c1.035-22.441 6.425-43.895 16.023-64zM184 16c24.29 0 47.695 31.055 60.953 80H123.055C136.289 47.062 159.71 16 184 16zm64.672 96c4.281 20.016 6.664 41.473 7.121 64H112.207c.457-22.52 2.84-43.969 7.129-64zm23.121 64c-.441-22.434-2.73-43.871-6.8-64h70.76c9.599 20.098 14.99 41.559 16.017 64zm55.297-80h-65.656c-8.274-32.441-20.754-58.145-35.793-74.727C267.566 31.922 303.984 58.375 327.09 96zM142.36 21.273C127.312 37.855 114.831 63.56 106.573 96H40.922c23.094-37.617 59.512-64.078 101.437-74.727zM40.921 272h65.644c8.274 32.441 20.754 58.145 35.793 74.727-41.925-10.649-78.336-37.11-101.437-74.727zm184.719 74.727c15.047-16.582 27.527-42.286 35.785-74.727h65.652c-23.094 37.617-59.512 64.078-101.437 74.727zm0 0" data-color="2"></path>
+                        </g>
+                      </svg>
+                      <div class="media-body text-cont">
+                        <h5><strong>Remote Internship</strong></h5>
+                        <p class="text-black-50">You need interns who don't require to work from your office</p>
+                      </div>
+                    </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="OnsiteInternshipDetails">
+              <div class="form-group mb-3">
+                <label><strong>Location(s)</strong></label>
+                <input type="text" class="form-control" placeholder="Location" />
+              </div>
+            </div>
+            <div class="text-right border-top pt-3" id="ContinuePostsection1">
+              <div class="row gutter15 justify-content-end align-items-center">
+                <div class="col"><strong class="f-14 font-weight-bolder">Press CTRL + ENTER</strong></div>
+                <div class="col-auto">
+                  <input type="submit" id="ContinuePost1" value="Next" class="btn btn-success" />
+                </div>
+              </div>
+            </div>
+            <div id="PostInternshipDetails1" style="display:none;">
+              <h3 class="border-bottom small mb-3"><strong>Tell us more about your internship</strong></h3>
+              <div class="form-group">
+                <label><strong>Intern Responsibilities</strong></label>
+                <textarea class="form-control" rows="8">
+  During the internship tenure, the intern will be working on following verticals (in a group or individually):
+
+​1. Developing creative contents for social media platforms, posting them and managing different social media platforms.
+2. Creating creative ideas for social media platforms.
+3. Engaging with the audience from different social media platforms.
+4. Working on the development of brand awareness and online reputation.
+5. Performing SEO (search engine optimization) and generation of inbound traffic.
+6. Handling Facebook marketing.
+  </textarea>
+              </div>
+              <div class="text-right border-top pt-3" id="ContinuePostsection2">
+                <div class="row gutter15 justify-content-end align-items-center">
+                  <div class="col"><strong class="f-14 font-weight-bolder">Press CTRL + ENTER</strong></div>
+                  <div class="col-auto">
+                    <input type="submit" id="ContinuePost2" value="Next" class="btn btn-success" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="PostInternshipDetails2" style="display:none;">
+              <div class="form-group">
+                <label><strong>What skills are required?</strong></label>
+                <input type="text" class="form-control" name="Skill" value="Skill 1,Skill 2"/>
+                <div class="amsify-suggestags-lista suggested-sills mt-2">
+                  <div class="row gutter10">
+                    <div class="col-auto"><span class="text-black-50">Suggested skills:</span></div>
+                    <div class="col">
+                      <div class="amsify-list vlist list-unstyled"> </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-right border-top pt-3" id="ContinuePostsection21">
+                <div class="row gutter15 justify-content-end align-items-center">
+                  <div class="col"><strong class="f-14 font-weight-bolder">Press CTRL + ENTER</strong></div>
+                  <div class="col-auto">
+                    <input type="submit" id="ContinuePost21" value="Next" class="btn btn-success" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div id="PostInternshipDetails21" style="display:none;">
+              <div class="form-group">
+                <label><strong>Add screening questions <span class="text-muted">(Optionl)</span></strong></label>
+                <div id="addScreeningQuestions"></div>
+                <div><button class="btn shadow-btn" id="addScreeningQuestionsbtn"><i class="fa fa-plus"></i> Add</button></div>
+              </div>
+              <div class="text-right border-top pt-3" id="ContinuePostsection3">
+                <div class="row gutter15 justify-content-end align-items-center">
+                  <div class="col"><strong class="f-14 font-weight-bolder">Press CTRL + ENTER</strong></div>
+                  <div class="col-auto">
+                    <input type="submit" id="ContinuePost3" value="Next" class="btn btn-success" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div id="PostInternshipDetails3" style="display:none;">
+              <div class="form-group">
+                <label><strong>Duration</strong></label>
+                <script>
+					$(document).ready(function(){
+						// Read value on page load
+						$("#PIDRangeResult").html($("#PIDRange").val());
+				
+						$(document).on('input', '#PIDRange', function() {
+							$('#PIDRangeResult').html( $(this).val() );
+						});
+					});        
+				</script>
+                <div class="brdr-box p-3">
+                  <h4 class="text-center">
+                    <div class="badge badge-primary"><span id="PIDRangeResult"></span> Days</div>
+                  </h4>
+                  <div class="row justify-content-center mt-3">
+                    <div class="col-md-11">
+                      <input type="range" id="PIDRange" value="30" min="30" max="365" list="testdata1" data-jcf='{"orientation": "horizontal", "range": "min"}'>
+                    </div>
+                  </div>
+                  <div class="row justify-content-center mt-1">
+                    <div class="col-md-12">
+                      <div class="row">
+                        <div class="col-auto small">Min 30</div>
+                        <div class="col"></div>
+                        <div class="col-auto small">Max 365</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label><strong>Stipend per month</strong></label>
+                <div class="row">
+                  <div class="col-3">
+                  <div class="custom-select">
+                    <select id="PICurrencySelect">
+                      <option value="USD">USD</option>
+                      <option value="NZD">NZD</option>
+                      <option value="AUD">AUD</option>
+                      <option value="GBP">GBP</option>
+                      <option value="HKD">HKD</option>
+                      <option value="SGD">SGD</option>
+                      <option value="EUR">EUR</option>
+                      <option value="CAD">CAD</option>
+                      <option value="INR" selected>INR</option>
+                    </select>
+                    </div>
+                  </div>
+                  <div class="col-6 custom-select">
+                    <select id="PIStipendpermonthSelect">
+                      <option selected>Choose one</option>
+                      <option value="ShortTermInternship">Short-term Internship (5,000 INR - 10,000 INR per month)</option>
+                      <option value="MediumTermInternship">Medium-term Internship (10,000 INR - 25,000 INR per month)</option>
+                      <option value="LongTermInternship">Long-term Internship (25,000 INR - 1,00,000 INR per month)</option>
+                      <option value="CustomizeStipend">Customize Stipend</option>
+                    </select>
+                  </div>
+                  <div class="customoptionselect CustomizeStipend col-12 mt-2" style="display:none;">
+                    <div class="form-group mb-3">
+                      <label class="small mb-1"><strong>Minimum Stipend</strong></label>
+                      <div class="CustomizeStipend-value">
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend"> <span class="input-group-text" id="basic-addon1">₹</span> </div>
+                        <input type="number" min="5000" max="100000" step="500" value="5000" class="form-control" aria-describedby="basic-addon1" />
+                        <select class="input-group-append custom-select col-2">
+                          <option value="per month" selected="">per month</option>
+                          <option value="per hour">per hour</option>
+                        </select>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="form-group mb-3">
+                      <label class="small mb-1"><strong>Maximum Stipend</strong></label>
+                      <div class="CustomizeStipend-value">
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend"> <span class="input-group-text" id="basic-addon2">₹</span> </div>
+                        <input type="number" min="5000" max="100000" step="500" value="6000" class="form-control" aria-describedby="basic-addon2" />
+                        <select class="input-group-append custom-select col-2">
+                          <option value="per month" selected="">per month</option>
+                          <option value="per hour">per hour</option>
+                        </select>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-right border-top pt-3" id="ContinuePostsection4">
+                <div class="row gutter15 justify-content-end align-items-center">
+                  <div class="col"><strong class="f-14 font-weight-bolder">Press CTRL + ENTER</strong></div>
+                  <div class="col-auto">
+                    <input type="submit" id="ContinuePost4" value="Next" class="btn btn-success" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="PostInternshipDetails4" style="display:none;">
+              <div class="form-group">
+                <label><strong>How would you like to interview candidates?</strong></label>
+                <div class="row mt-2">
+                  <div class="col-md-6">
+                    <div class="custom-control custom-radio shadow-box h-100">
+                      <input type="radio" id="InterviewMode1" name="InterviewMode" class="custom-control-input">
+                      <label class="custom-control-label h-100" for="InterviewMode1">
+                      <div class="media">
+                        <svg class="mr-2" preserveAspectRatio="xMidYMid meet" data-bbox="0 40.081 511.999 431.838" width="46" viewBox="0 40.081 511.999 431.838" height="46" xmlns="http://www.w3.org/2000/svg" data-type="color" role="img">
+                          <g>
+                            <path fill="#ffffff" d="M344.177 229.85v17.188a8.016 8.016 0 01-4.431 7.17L336.161 256h96.208l-7.173-3.586a16.034 16.034 0 01-8.863-14.338l-.011-134.382H296.081v64.129c0 29.87 20.452 54.898 48.096 62.027z" data-color="1"></path>
+                            <path fill="#ffffff" d="M119.726 95.677c0 26.563-21.534 48.097-48.097 48.097-26.563 0-48.097-21.534-48.097-48.097 0-26.563 21.534-48.097 48.097-48.097 26.563 0 48.097 21.534 48.097 48.097z" data-color="1"></path>
+                            <path fill="#ffffff" d="M207.634 159.806c0-48.699-31.193-88.177-79.893-88.177s-88.177 39.478-88.177 88.177c0 40.081 39.478 64.129 88.177 64.129s79.893-24.048 79.893-64.129z" data-color="1"></path>
+                            <path fill="#ffffff" d="M95.677 127.742c-10.768-6.705-22.25-16.286-29.164-31.307-16.591 16.034-26.949 38.476-26.949 63.372 0 39.865 39.065 63.848 87.402 64.105z" data-color="1"></path>
+                            <path fill="#ffffff" d="M151.79 272.032H87.661c-35.417 0-64.129 28.712-64.129 64.129v96.194h168.339V312.113c0-22.136-17.945-40.081-40.081-40.081z" data-color="1"></path>
+                            <path fill="#ffffff" d="M87.661 296.081h16.032v-24.048H87.661c-35.417 0-64.129 28.712-64.129 64.129v96.194H47.58v-96.194c.001-22.101 17.981-40.081 40.081-40.081z" data-color="1"></path>
+                            <path fill="#ffffff" d="M119.726 304.097c-17.709 0-32.065-14.356-32.065-32.064v-40.081h64.129v40.081c0 17.708-14.355 32.064-32.064 32.064z" data-color="1"></path>
+                            <path fill="#ffffff" d="M87.661 269.365c11.745 6.758 25.317 10.684 39.812 10.684a79.819 79.819 0 0024.317-3.795v-36.285H87.661z" data-color="1"></path>
+                            <path fill="#ffffff" d="M223.936 320.129H79.645v112.226h144.29c8.854 0 16.032-7.178 16.032-16.032v-80.161c.001-8.855-7.177-16.033-16.031-16.033z" data-color="1"></path>
+                            <path fill="#ffffff" d="M79.645 320.129c-8.854 0-16.032 7.178-16.032 16.032v80.161c0 8.854 7.178 16.032 16.032 16.032h144.29c8.854 0 16.032-7.178 16.032-16.032h-.002l.002-8.016H111.71c-13.282 0-24.048-10.767-24.048-24.048v-64.129z" data-color="1"></path>
+                            <path fill="#ffffff" d="M95.409 127.742c25.484 18.07 61.894 23.928 81.813 25.821 8.189.778 14.38 7.717 14.38 15.943v22.365c0 35.417-28.712 64.129-64.129 64.129s-64.129-28.712-64.129-64.129v-.014a74.47 74.47 0 0119.272-49.99z" data-color="1"></path>
+                            <path fill="#ffffff" d="M167.822 376.242c0 8.854-7.178 16.032-16.032 16.032s-16.032-7.178-16.032-16.032 7.178-16.032 16.032-16.032 16.032 7.178 16.032 16.032z" data-color="1"></path>
+                            <path fill="#ffffff" d="M462.727 271.179L432.369 256h-96.207l-46.404 23.202a32.064 32.064 0 00-17.725 28.679v156.538h208.419v-164.56a32.065 32.065 0 00-17.725-28.68z" data-color="1"></path>
+                            <path fill="#ffffff" d="M328.145 347.409a40.08 40.08 0 00-15.043-31.298l-34.488-27.59c-4.161 5.479-6.583 12.221-6.583 19.36v156.538h56.113v-117.01z" data-color="1"></path>
+                            <path fill="#ffffff" d="M472.435 352.194H360.21c-17.709 0-32.065 14.356-32.065 32.065l24.048 80.161H504.5v-80.161c0-17.71-14.356-32.065-32.065-32.065z" data-color="1"></path>
+                            <path fill="#ffffff" d="M344.177 229.85V103.694H296.08v64.129c.001 29.87 20.453 54.898 48.097 62.027z" data-color="1"></path>
+                            <path fill="#f1f7ff" d="M384.258 55.597h-64.129c-22.136 0-40.081 17.945-40.081 40.081 0 8.854 7.178 16.032 16.032 16.032h8.016c13.282 0 24.048 10.767 24.048 24.048v24.048c0 22.136 17.945 40.081 40.081 40.081h40.081c17.709 0 32.065-14.356 32.065-32.065V111.71c0-30.991-25.123-56.113-56.113-56.113z" data-color="2"></path>
+                            <path fill="#ffffff" d="M384.258 352.194H360.21c-17.709 0-32.065 14.356-32.065 32.065v80.161h24.048v-80.161c.001-17.71 14.356-32.065 32.065-32.065z" data-color="1"></path>
+                            <path fill="#e7f2ff" d="M320.129 55.597c-22.136 0-40.081 17.945-40.081 40.081 0 8.854 7.178 16.032 16.032 16.032h8.016c13.282 0 24.048 10.767 24.048 24.048V55.597z" data-color="3"></path>
+                            <path fill="#ffffff" d="M87.661 191.871v-55.575l-5.045 5.57a74.47 74.47 0 00-19.271 49.99v.015c0 35.417 28.711 64.129 64.129 64.129 4.161 0 8.218-.429 12.158-1.186-29.598-5.685-51.971-31.686-51.971-62.943z" data-color="1"></path>
+                            <path d="M112.617 212.844a7.5 7.5 0 003.765 9.916c5.698 2.562 12.306 3.917 19.108 3.917s13.41-1.354 19.108-3.917a7.5 7.5 0 00-6.151-13.681c-3.779 1.699-8.259 2.597-12.957 2.597s-9.178-.898-12.957-2.597a7.499 7.499 0 00-9.916 3.765z" fill="#007aff" data-color="4"></path>
+                            <path d="M111.441 191.355a7.5 7.5 0 007.5-7.5v-8.016a7.5 7.5 0 00-15 0v8.016a7.5 7.5 0 007.5 7.5z" fill="#007aff" data-color="4"></path>
+                            <path d="M159.538 191.355a7.5 7.5 0 007.5-7.5v-8.016a7.5 7.5 0 00-15 0v8.016a7.5 7.5 0 007.5 7.5z" fill="#007aff" data-color="4"></path>
+                            <path d="M151.791 352.709c-12.976 0-23.532 10.557-23.532 23.532 0 12.976 10.557 23.533 23.532 23.533s23.532-10.557 23.532-23.533c0-12.975-10.557-23.532-23.532-23.532zm0 32.065c-4.705 0-8.532-3.828-8.532-8.533s3.828-8.532 8.532-8.532 8.532 3.828 8.532 8.532c0 4.706-3.828 8.533-8.532 8.533z" fill="#007aff" data-color="4"></path>
+                            <path d="M487.952 347.867v-48.008c0-15.083-8.38-28.643-21.871-35.388l-37.531-18.766a8.486 8.486 0 01-4.716-7.629l-.01-33.863c14.125-6.046 24.047-20.08 24.047-36.391v-56.113c0-35.076-28.537-63.613-63.613-63.613h-64.129c-26.236 0-47.581 21.345-47.581 47.581 0 10.353 6.724 19.16 16.032 22.3v49.846c0 30.667 19.502 57.673 48.097 67.591v11.942l-50.274 25.137c-13.49 6.745-21.871 20.305-21.871 35.388v116.974h-18.923a24.181 24.181 0 001.858-9.315v-78.596c0-13.407-10.908-24.315-24.315-24.315H199.37v-.516c0-23.684-17.396-43.377-40.082-46.984v-9.108c20.508-10.213 35.465-29.961 39.006-53.412 10.862-11.484 16.839-26.61 16.839-42.802 0-25.933-8.407-49.83-23.672-67.288-16.008-18.307-38.733-28.39-63.989-28.39-3.371 0-6.7.178-9.981.519C107.212 49.4 89.896 40.081 71.36 40.081c-30.656 0-55.597 24.94-55.597 55.597 0 16.056 6.782 31.044 18.717 41.606a95.58 95.58 0 00-2.685 22.523c0 20.687 9.725 39.349 26.7 51.323 3.778 13.512 11.42 25.419 21.665 34.454v19.343c-35.983 3.762-64.128 34.272-64.128 71.234v88.694H7.5a7.5 7.5 0 000 15h257.032v24.564a7.5 7.5 0 0015 0V307.881c0-3.169.609-6.224 1.722-9.049l27.668 23.057a32.493 32.493 0 0111.723 25.029v117.501a7.5 7.5 0 0015 0v-80.161c0-13.545 11.02-24.565 24.564-24.565h112.226c13.545 0 24.564 11.02 24.564 24.565v80.161a7.5 7.5 0 0015 0v-80.161c.001-16.311-9.922-30.346-24.047-36.391zM30.764 95.677c0-22.385 18.211-40.597 40.597-40.597 11.298 0 21.965 4.757 29.554 12.802-27.347 7.914-49.687 27.727-61.029 53.442-5.867-7.171-9.122-16.151-9.122-25.647zm25.171 92.344c-5.952-7.998-9.139-17.636-9.139-28.214 0-44.486 36.192-80.678 80.677-80.678 21.167 0 39.389 8.044 52.697 23.264 12.874 14.723 19.964 35.113 19.964 57.414 0 3.498-.355 6.89-1.032 10.16v-.461c0-12.198-9.101-22.262-21.17-23.409-18.835-1.791-54.038-7.351-78.185-24.474a7.5 7.5 0 00-9.897 1.083l-12.792 14.125a81.807 81.807 0 00-21.123 51.19zm14.909 3.835a66.842 66.842 0 0117.332-44.955l8.476-9.359c26.451 16.255 60.902 21.685 79.861 23.487 4.327.411 7.589 4.055 7.589 8.476v22.365c0 31.225-25.404 56.629-56.629 56.629s-56.629-25.403-56.629-56.643zm73.446 69.631v2.529c0 13.545-11.02 24.564-24.565 24.564s-24.564-11.02-24.564-24.564v-8.25a71.16 71.16 0 0032.313 7.734c5.791 0 11.418-.709 16.816-2.013zm88.178 154.053c0 5.136-4.179 9.315-9.315 9.315H80.428c-5.136 0-9.315-4.179-9.315-9.315v-39.298a7.5 7.5 0 00-15 0v39.298c0 3.299.663 6.444 1.858 9.315H31.032v-88.694c0-29.795 23.134-54.271 52.381-56.453 6.087 14.031 20.069 23.872 36.312 23.872 16.202 0 30.154-9.794 36.265-23.769 15.987 2.068 28.381 15.76 28.381 32.301v.516H80.428c-13.407 0-24.315 10.908-24.315 24.315v7.233a7.5 7.5 0 0015 0v-7.233c0-5.136 4.179-9.315 9.315-9.315h111.414l.029.001.029-.001h31.253c5.136 0 9.315 4.179 9.315 9.315zm71.113-247.717V119.21h.516c9.125 0 16.548 7.424 16.548 16.549v24.048c0 26.236 21.345 47.581 47.581 47.581h8.015a7.5 7.5 0 000-15h-8.015c-17.965 0-32.581-14.616-32.581-32.581v-24.048c0-17.396-14.152-31.549-31.548-31.549h-8.016c-4.705 0-8.532-3.828-8.532-8.532 0-17.965 14.616-32.581 32.581-32.581h64.129c26.805 0 48.613 21.808 48.613 48.613v56.113c0 13.545-11.02 24.564-24.564 24.564a7.5 7.5 0 000 15c.174 0 .345-.011.518-.013l.009 30.707a23.545 23.545 0 002.427 10.419h-59.583v-18.65a7.5 7.5 0 00-5.627-7.262c-25.007-6.449-42.471-28.969-42.471-54.765zm169.371 176.883c-.173-.002-.343-.013-.516-.013H360.209c-9.276 0-17.811 3.217-24.564 8.584v-6.359a47.455 47.455 0 00-17.12-36.553l-27.739-23.116c.747-.48 1.517-.935 2.325-1.339l44.82-22.41h92.668l28.774 14.388c8.376 4.188 13.579 12.606 13.579 21.971z" fill="#007aff" data-color="4"></path>
+                          </g>
+                        </svg>
+                        <div class="media-body text-cont">
+                          <h5><strong>Face-to-Face</strong></h5>
+                          <p class="text-black-50">A meeting between you and the candidate at your office</p>
+                        </div>
+                      </div>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="custom-control custom-radio shadow-box h-100">
+                      <input type="radio" id="InterviewMode2" name="InterviewMode" class="custom-control-input">
+                      <label class="custom-control-label h-100" for="InterviewMode2">
+                      <div class="media">
+                        <svg class="mr-2" preserveAspectRatio="xMidYMid meet" data-bbox="0.053 0 512.056 512.105" width="46" viewBox="0.053 0 512.056 512.105" height="46" xmlns="http://www.w3.org/2000/svg" data-type="color" role="img">
+                          <g>
+                            <path fill="#ffffff" d="M341.441 8.535c-5.699-.02-11.398.266-17.066.852-81.492 7.593-145.066 69.289-145.066 144.215a134.184 134.184 0 0031.23 85.503 8.335 8.335 0 011.793 6.997 134.644 134.644 0 01-24.062 52.734 101.55 101.55 0 01-7.852 9.816 4.265 4.265 0 00-.176 5.364 4.27 4.27 0 005.211 1.293 360.919 360.919 0 0165.277-25.774 108.12 108.12 0 0122.274-3.668 8.196 8.196 0 013.5.598c15.262 6 31.289 9.851 47.613 11.433 5.719.512 11.438.77 17.324.77 89.516 0 162.133-64.941 162.133-145.066 0-80.13-72.617-145.067-162.133-145.067zm0 0" data-color="1"></path>
+                            <path fill="#ffffff" d="M469.441 153.602c0 75.007-63.66 136.789-145.324 144.296a176.746 176.746 0 01-47.613-11.433 8.196 8.196 0 00-3.5-.598 108.12 108.12 0 00-22.274 3.668 360.919 360.919 0 00-65.277 25.774 4.27 4.27 0 01-5.21-1.293 4.265 4.265 0 01.175-5.364 101.55 101.55 0 007.852-9.816 134.644 134.644 0 0024.062-52.734 8.335 8.335 0 00-1.793-6.997 134.184 134.184 0 01-31.23-85.503c0-74.926 63.574-136.622 145.066-144.215 81.492 7.593 145.066 69.289 145.066 144.215zm0 0" data-color="1"></path>
+                            <path fill="#ffffff" d="M349.547 464.215a136.406 136.406 0 01-79.957 37.715 170.853 170.853 0 01-22.953 1.535 192.31 192.31 0 01-40.192-4.352c-43.18-9.386-78.593-35.07-109.484-65.62-3.07-3.157-5.973-6.227-9.043-9.302-3.074-3.07-6.145-5.972-9.305-9.043-30.547-30.89-56.234-66.304-65.62-109.484-10.837-50.09-2.22-105.984 34.902-143.105A38.823 38.823 0 0150.71 160c16.207-13.437 39.984-12.328 54.871 2.559l38.824 38.828a40.733 40.733 0 010 57.683l-26.965 26.97a16.992 16.992 0 00-1.96 21.843 422.235 422.235 0 0040.617 48.129 417.096 417.096 0 0044.886 38.144 46.034 46.034 0 003.243 2.473c6.785 4.762 16.015 3.93 21.843-1.961l26.965-26.965a27.393 27.393 0 012.902-2.562c16.18-13.43 39.93-12.32 54.786 2.562l38.824 38.824a40.74 40.74 0 010 57.688zm0 0" data-color="1"></path>
+                            <path fill="#e7edff" d="M315.414 472.746a128.276 128.276 0 01-45.824 29.184 170.853 170.853 0 01-22.953 1.535 192.31 192.31 0 01-40.192-4.352c-43.18-9.386-78.593-35.07-109.484-65.62-3.07-3.157-5.973-6.227-9.043-9.302-3.074-3.07-6.145-5.972-9.305-9.043-30.547-30.89-56.234-66.304-65.62-109.484-10.837-50.09-2.22-105.984 34.902-143.105A38.823 38.823 0 0150.71 160a40.568 40.568 0 0120.734 11.094l38.828 38.828a40.733 40.733 0 010 57.684L83.31 294.57a16.997 16.997 0 00-1.965 21.844 421.993 421.993 0 0040.62 48.129 421.993 421.993 0 0048.13 40.621 16.997 16.997 0 0021.843-1.965l9.047-9.043a46.034 46.034 0 003.243 2.473c6.785 4.762 16.015 3.93 21.843-1.961l26.965-26.965a27.393 27.393 0 012.902-2.562 41.321 41.321 0 0120.653 11.093l38.824 38.829a40.724 40.724 0 0111.969 28.84 40.726 40.726 0 01-11.969 28.843zm0 0" data-color="2"></path>
+                            <path fill="#ffffff" d="M384.11 93.867c0 23.563-19.106 42.668-42.669 42.668s-42.668-19.105-42.668-42.668c0-23.566 19.106-42.668 42.668-42.668s42.668 19.102 42.668 42.668zm0 0" data-color="1"></path>
+                            <path fill="#e6f0fd" d="M358.508 93.867c0-23.566-13.371-42.668-29.867-42.668-16.493 0-29.868 19.102-29.868 42.668 0 23.563 13.375 42.668 29.868 42.668 16.496 0 29.867-19.105 29.867-42.668zm0 0" data-color="3"></path>
+                            <path fill="#ffffff" d="M315.84 136.535h51.203c18.852 0 34.133 15.281 34.133 34.133v59.73a8.534 8.534 0 01-8.535 8.536H290.242a8.534 8.534 0 01-8.535-8.536v-59.73c0-18.852 15.285-34.133 34.133-34.133zm0 0" data-color="1"></path>
+                            <path fill="#e7edff" d="M315.84 136.535h25.601c18.852 0 34.133 15.281 34.133 34.133v59.73a8.533 8.533 0 01-8.531 8.536h-76.8a8.534 8.534 0 01-8.536-8.536v-59.73c0-18.852 15.285-34.133 34.133-34.133zm0 0" data-color="2"></path>
+                            <path fill="#e7edff" d="M212.332 246.102a134.644 134.644 0 01-24.062 52.734 101.55 101.55 0 01-7.852 9.816 4.265 4.265 0 00-.176 5.364 4.27 4.27 0 005.211 1.293 522.075 522.075 0 0124.559-11.352 102.08 102.08 0 003.855-5.121 134.596 134.596 0 0024.067-52.734 8.335 8.335 0 00-1.793-6.997 134.14 134.14 0 01-31.23-85.503c0-74.926 63.57-136.622 145.066-144.215 1.27-.137 2.558-.196 3.828-.297-4.094-.274-8.192-.555-12.364-.555-5.699-.02-11.398.266-17.066.852-81.492 7.593-145.066 69.289-145.066 144.215a134.184 134.184 0 0031.23 85.503 8.335 8.335 0 011.793 6.997zm0 0" data-color="2"></path>
+                            <path fill="#e7edff" d="M341.441 298.668c4.266 0 8.48-.281 12.68-.574-1.457-.094-2.953-.067-4.402-.196a176.808 176.808 0 01-47.617-11.433 8.169 8.169 0 00-3.497-.598 98.004 98.004 0 00-16.804 2.485 178.455 178.455 0 0042.316 9.546c5.719.512 11.438.77 17.324.77zm0 0" data-color="2"></path>
+                            <path fill="#e7edff" d="M122.563 433.492c-3.075-3.156-5.973-6.226-9.047-9.3-3.07-3.07-6.145-5.973-9.301-9.044-30.55-30.89-56.235-66.304-65.621-109.484-10.836-50.09-2.219-105.984 34.902-143.105A38.022 38.022 0 0176.313 160a40.54 40.54 0 0113.003-7.203A39.65 39.65 0 0050.711 160a38.823 38.823 0 00-2.816 2.559c-37.122 37.12-45.739 93.015-34.903 143.105 9.387 43.18 35.074 78.594 65.621 109.484 3.16 3.07 6.23 5.973 9.305 9.043 3.07 3.075 5.973 6.145 9.043 9.301" data-color="2"></path>
+                            <path fill="#e7edff" d="M341.441 17.066a168.003 168.003 0 00-98.652 31.95 132.501 132.501 0 00-54.95 104.586h-17.066a142.054 142.054 0 0117.067-66.563 158.935 158.935 0 0144.785-51.695A185.089 185.089 0 01341.441 0zm0 0" data-color="2"></path>
+                            <path d="M72.64 421.152c3.055 3.047 6.11 5.977 9.32 9.082 3.005 3.133 5.974 6.204 9.044 9.274 38.035 37.746 74.156 59.332 113.656 67.933a198.84 198.84 0 0042.172 4.61 151.993 151.993 0 00108.793-41.813 49.305 49.305 0 0014.457-34.875 49.298 49.298 0 00-14.457-34.875l-38.863-38.863a49.304 49.304 0 00-69.742 0l-26.973 26.973a8.412 8.412 0 01-10.836 1.035 400.796 400.796 0 01-46.969-39.637 400.889 400.889 0 01-39.793-47.062v-.059a8.406 8.406 0 011.078-10.777L150.5 265.12c19.227-19.273 19.227-50.476 0-69.75l-38.86-38.86a49.304 49.304 0 00-69.745 0C5.867 192.476-8.031 248.91 4.656 307.472c8.617 39.5 30.2 75.62 67.985 113.68zM53.938 168.566a32.251 32.251 0 0145.61 0l38.8 38.852c12.583 12.605 12.583 33.016 0 45.621l-26.972 26.973c-8.82 8.812-10.008 22.695-2.816 32.879a417.245 417.245 0 0041.539 49.171 416.734 416.734 0 0049.05 41.418c10.149 7.352 24.149 6.165 32.915-2.789l26.964-26.972c12.762-12.188 32.848-12.188 45.61 0l38.863 38.86a32.251 32.251 0 010 45.62c-31.867 31.852-82.441 44.024-135.273 32.57-36.188-7.886-69.63-28.023-105.243-63.359-2.984-2.98-5.859-5.973-9.386-9.574a1053.065 1053.065 0 01-8.965-8.73c-35.356-35.63-55.469-69.079-63.371-105.258-11.375-52.848.793-103.426 32.656-135.29zm0 0" fill="#007aff" data-color="4"></path>
+                            <path d="M52.578 299.11a8.533 8.533 0 008.117-11.239c-15.941-47.785 3.106-68.785 4.035-69.777a8.528 8.528 0 00-.164-11.965 8.532 8.532 0 00-11.968-.031c-1.153 1.132-27.657 28.57-8.118 87.175a8.536 8.536 0 008.098 5.836zm0 0" fill="#007aff" data-color="4"></path>
+                            <path d="M218.844 467.625a127.918 127.918 0 0040.488 7.168 67.123 67.123 0 0046.688-15.266 8.529 8.529 0 000-11.945 8.591 8.591 0 00-12.032-.195c-.855.851-21.82 20.035-69.777 4.043-4.477-1.492-9.316.93-10.809 5.406-1.492 4.477.93 9.316 5.407 10.809zm0 0" fill="#007aff" data-color="4"></path>
+                            <path d="M341.441 42.668a51.145 51.145 0 00-47.199 31.309 51.144 51.144 0 0010.61 55.636c-18.618 4.961-31.598 21.785-31.676 41.055v59.73c0 9.426 7.64 17.067 17.066 17.067h102.399c9.425 0 17.066-7.64 17.066-17.067v-59.73c-.078-19.27-13.059-36.094-31.676-41.055a51.144 51.144 0 0010.61-55.636c-7.989-18.993-26.598-31.332-47.2-31.309zm0 17.066c18.852 0 34.133 15.282 34.133 34.133 0 18.852-15.281 34.133-34.133 34.133-18.851 0-34.132-15.281-34.132-34.133 0-18.851 15.28-34.133 34.132-34.133zm51.2 110.934v59.73H290.242v-59.73c0-14.14 11.461-25.602 25.598-25.602h51.203c14.137 0 25.598 11.461 25.598 25.602zm0 0" fill="#007aff" data-color="4"></path>
+                            <path d="M278.04 29.355a9.966 9.966 0 004.503-4.43l.512-1.51c.14-.556.207-1.13.199-1.708a5.788 5.788 0 000-1.602 13.41 13.41 0 00-.402-1.664 8.837 8.837 0 00-4.422-4.925 8.074 8.074 0 00-3.41-.715 9.391 9.391 0 00-8.211 5.484 8.77 8.77 0 00.195 6.512 9.637 9.637 0 004.746 4.55 8.475 8.475 0 006.29.008zm0 0" fill="#007aff" data-color="4"></path>
+                            <path d="M174.008 303.02a12.802 12.802 0 00-2.067 13.68 12.801 12.801 0 0011.582 7.566 12.954 12.954 0 005.692-1.332c36.379-17.918 65.484-27.793 84.113-28.579a184.429 184.429 0 0068.113 12.844c94.106 0 170.668-68.906 170.668-153.597C512.11 68.906 435.547 0 341.441 0l-17.843.852c-5.895.855-11.828 1.488-17.688 2.562a8.534 8.534 0 00-6.785 9.984 8.53 8.53 0 009.984 6.782c5.325-.953 10.727-1.516 16.086-2.313l16.246-.8c84.696 0 153.602 61.253 153.602 136.535s-68.906 136.53-153.602 136.53a167.335 167.335 0 01-61.84-11.62 17.238 17.238 0 00-6.945-1.203c-18.238.8-43.258 8.378-74.496 22.543a143.35 143.35 0 0022.543-52.051 16.794 16.794 0 00-3.574-14.125 125.519 125.519 0 01-29.29-80.074 132.501 132.501 0 0154.95-104.586c2.149-1.614 4.461-3.02 6.68-4.547a8.966 8.966 0 002.414-11.75 8.21 8.21 0 00-11.887-2.45c-2.465 1.704-5.016 3.266-7.414 5.067a158.959 158.959 0 00-44.742 51.703c-27.633 50.746-21.192 113.27 16.215 157.313a128.254 128.254 0 01-30.047 58.668zm0 0" fill="#007aff" data-color="4"></path>
+                          </g>
+                        </svg>
+                        <div class="media-body text-cont">
+                          <h5><strong>Telephone / Video</strong></h5>
+                          <p class="text-black-50">An interview with the candidate over a video or voice call</p>
+                        </div>
+                      </div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="PostInternshipDetails5" style="display:none;">
+              <div class="form-group">
+                <label><strong>Do you need a helping hand?</strong></label>
+                <div class="row mt-2">
+                  <div class="col-md-6">
+                    <div class="custom-control custom-radio shadow-box h-100">
+                      <input type="radio" id="HelpingHand1" name="HelpingHand" class="custom-control-input">
+                      <label class="custom-control-label h-100" for="HelpingHand1">
+                      <div class="media">
+                        <svg class="mr-2" preserveAspectRatio="xMidYMid meet" data-bbox="0 1 60 58" height="46" width="46" viewBox="0 1 60 58" xmlns="http://www.w3.org/2000/svg" data-type="color" role="img">
+                          <g>
+                            <path fill="#007AFF" d="M52.179 40.5l-5.596 8.04-3.949-3.241a1 1 0 10-1.268 1.545l4.786 3.929a.995.995 0 00.771.217c.276-.038.524-.19.684-.419l6.214-8.929a1 1 0 10-1.642-1.142z" data-color="1"></path>
+                            <path fill="#007AFF" d="M54.164 35.163A27.54 27.54 0 0055 28.5C55 13.337 42.664 1 27.5 1S0 13.337 0 28.5c0 8.01 3.444 15.229 8.927 20.259l-.026.023.891.751c.056.047.117.086.173.133.477.396.972.772 1.476 1.136.159.115.318.23.479.341.535.369 1.085.719 1.646 1.051l.366.211a27.69 27.69 0 001.881.981l.141.064a27.259 27.259 0 006.65 2.105l.185.033c.723.125 1.455.225 2.197.292.09.008.181.013.271.021.741.06 1.487.099 2.243.099a27.35 27.35 0 009.503-1.702C39.389 57.168 42.984 59 47 59c7.168 0 13-5.832 13-13 0-4.522-2.323-8.508-5.836-10.837zM2 28.5C2 14.439 13.439 3 27.5 3S53 14.439 53 28.5c0 1.903-.214 3.804-.639 5.666-.017-.008-.036-.013-.053-.021-.376-.169-.762-.32-1.156-.453-.034-.011-.067-.026-.101-.037-.411-.135-.83-.251-1.258-.345l-.06-.016c-.417-.09-.841-.158-1.271-.207l-.09-.014A13.504 13.504 0 0047 33c-5.923 0-10.923 3.986-12.485 9.413a2.208 2.208 0 01-.697-1.613v-2.957c.198-.243.405-.518.617-.817a20.344 20.344 0 002.616-5.123 3.63 3.63 0 002.085-3.289v-3.545c0-.866-.318-1.708-.886-2.369v-4.667c.052-.52.236-3.448-1.883-5.864C34.524 10.065 31.541 9 27.5 9s-7.024 1.065-8.867 3.168c-2.119 2.416-1.935 5.346-1.883 5.864v4.667a3.645 3.645 0 00-.886 2.369v3.545a3.64 3.64 0 001.339 2.821c.81 3.173 2.476 5.575 3.092 6.389v2.894a2.23 2.23 0 01-1.162 1.958l-7.907 4.313a7.301 7.301 0 00-.752.477C5.276 42.792 2 36.022 2 28.5zm23.605 25.422c-.109-.008-.218-.015-.326-.025a25.538 25.538 0 01-1.893-.234l-.077-.014a25.545 25.545 0 01-4.005-1.009 25.625 25.625 0 01-3.601-1.544c-.067-.035-.135-.068-.201-.103a25.756 25.756 0 01-1.94-1.156 25.598 25.598 0 01-1.343-.936l-.133-.104.097-.054 7.907-4.313a4.23 4.23 0 002.204-3.714v-3.603l-.233-.278c-.021-.025-2.176-2.634-2.999-6.215l-.091-.396-.341-.221a1.657 1.657 0 01-.769-1.392v-3.545c0-.465.198-.898.557-1.223l.33-.298v-5.57l-.009-.131c-.003-.024-.298-2.429 1.396-4.36C21.583 11.837 24.06 11 27.5 11c3.425 0 5.897.83 7.346 2.466 1.692 1.911 1.415 4.361 1.413 4.381l-.009 5.701.33.298c.359.324.557.758.557 1.223v3.545a1.65 1.65 0 01-1.181 1.574l-.498.154-.16.496a18.457 18.457 0 01-2.496 5.032 11.75 11.75 0 01-.736.948l-.248.283V40.8c0 1.587.868 3.015 2.268 3.746A13.17 13.17 0 0034 46c0 .292.01.583.029.873.007.103.021.205.031.307.009.096.018.191.029.287.01.09.015.181.027.27.023.17.056.338.086.507.02.115.035.231.058.345l.003.012c.006.03.015.058.021.088.031.146.068.291.104.436.025.101.045.202.072.302.024.088.055.173.081.26.034.116.07.231.108.345.024.072.042.145.067.216.07.201.15.399.23.596l.003.008a13.477 13.477 0 00.343.77c.034.071.064.143.099.213.023.046.05.09.074.136.084.163.173.322.264.48.027.047.051.096.078.143A25.252 25.252 0 0127.5 54a25.43 25.43 0 01-1.895-.078zM47 57c-3.661 0-6.901-1.805-8.902-4.564-.083-.114-.158-.231-.236-.347-.054-.08-.111-.158-.162-.239a14.403 14.403 0 01-.127-.208c-.045-.074-.085-.15-.128-.225-.069-.122-.143-.241-.207-.365-.047-.091-.089-.185-.134-.278l-.035-.076c-.075-.157-.153-.312-.221-.472-.036-.085-.063-.173-.097-.258-.077-.199-.155-.398-.221-.602-.031-.095-.055-.193-.083-.289a10.862 10.862 0 01-.18-.691c-.014-.063-.025-.127-.038-.191l-.036-.181a11.452 11.452 0 01-.103-.672l-.009-.079c-.009-.082-.022-.164-.029-.246A11.043 11.043 0 0136 46a11.081 11.081 0 01.169-1.853l.074-.433C37.298 38.742 41.719 35 47 35c.446 0 .89.034 1.332.089.101.012.199.031.299.046.365.055.728.127 1.086.219.075.019.15.037.225.058.882.247 1.735.601 2.537 1.063C55.773 38.377 58 41.93 58 46c0 6.065-4.935 11-11 11z" data-color="1"></path>
+                          </g>
+                        </svg>
+                        <div class="media-body text-cont">
+                          <h5><strong>Standard Posting</strong></h5>
+                          <p class="text-black-50">Free to post, your internship will go live and start receiving applications from candidates</p>
+                          <h5 class="mt-2"><strong>FREE</strong></h5>
+                        </div>
+                      </div>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="custom-control custom-radio shadow-box h-100">
+                      <input type="radio" id="HelpingHand2" name="HelpingHand" class="custom-control-input">
+                      <label class="custom-control-label h-100" for="HelpingHand2">
+                      <div class="media">
+                        <svg class="mr-2" preserveAspectRatio="xMidYMid meet" data-bbox="0 1 60 58" height="46" width="46" viewBox="0 1 60 58" xmlns="http://www.w3.org/2000/svg" data-type="color" role="img">
+                          <g>
+                            <path fill="#007AFF" d="M54.164 35.163A27.54 27.54 0 0055 28.5C55 13.337 42.664 1 27.5 1S0 13.337 0 28.5c0 8.01 3.444 15.229 8.927 20.259l-.026.023.891.751c.056.047.117.086.173.133.477.396.972.772 1.476 1.136.159.115.318.23.479.341.535.369 1.085.719 1.646 1.051l.366.211a27.69 27.69 0 001.881.981l.141.064a27.259 27.259 0 006.65 2.105l.185.033c.723.125 1.455.225 2.197.292.09.008.181.013.271.021.741.06 1.487.099 2.243.099a27.35 27.35 0 009.503-1.702C39.389 57.168 42.984 59 47 59c7.168 0 13-5.832 13-13 0-4.522-2.323-8.508-5.836-10.837zM2 28.5C2 14.439 13.439 3 27.5 3S53 14.439 53 28.5c0 1.903-.214 3.804-.639 5.666-.017-.008-.036-.013-.053-.021-.376-.169-.762-.32-1.156-.453-.034-.011-.067-.026-.101-.037-.411-.135-.83-.251-1.258-.345l-.06-.016c-.417-.09-.841-.158-1.271-.207l-.09-.014A13.504 13.504 0 0047 33c-5.923 0-10.923 3.986-12.485 9.413a2.208 2.208 0 01-.697-1.613v-2.957c.198-.243.405-.518.617-.817a20.344 20.344 0 002.616-5.123 3.63 3.63 0 002.085-3.289v-3.545c0-.866-.318-1.708-.886-2.369v-4.667c.052-.52.236-3.448-1.883-5.864C34.524 10.065 31.541 9 27.5 9s-7.024 1.065-8.867 3.168c-2.119 2.416-1.935 5.346-1.883 5.864v4.667a3.645 3.645 0 00-.886 2.369v3.545a3.64 3.64 0 001.339 2.821c.81 3.173 2.476 5.575 3.092 6.389v2.894a2.23 2.23 0 01-1.162 1.958l-7.907 4.313a7.301 7.301 0 00-.752.477C5.276 42.792 2 36.022 2 28.5zm23.605 25.422c-.109-.008-.218-.015-.326-.025a25.538 25.538 0 01-1.893-.234l-.077-.014a25.545 25.545 0 01-4.005-1.009 25.625 25.625 0 01-3.601-1.544c-.067-.035-.135-.068-.201-.103a25.756 25.756 0 01-1.94-1.156 25.598 25.598 0 01-1.343-.936l-.133-.104.097-.054 7.907-4.313a4.23 4.23 0 002.204-3.714v-3.603l-.233-.278c-.021-.025-2.176-2.634-2.999-6.215l-.091-.396-.341-.221a1.657 1.657 0 01-.769-1.392v-3.545c0-.465.198-.898.557-1.223l.33-.298v-5.57l-.009-.131c-.003-.024-.298-2.429 1.396-4.36C21.583 11.837 24.06 11 27.5 11c3.425 0 5.897.83 7.346 2.466 1.692 1.911 1.415 4.361 1.413 4.381l-.009 5.701.33.298c.359.324.557.758.557 1.223v3.545a1.65 1.65 0 01-1.181 1.574l-.498.154-.16.496a18.457 18.457 0 01-2.496 5.032 11.75 11.75 0 01-.736.948l-.248.283V40.8c0 1.587.868 3.015 2.268 3.746A13.17 13.17 0 0034 46c0 .292.01.583.029.873.007.103.021.205.031.307.009.096.018.191.029.287.01.09.015.181.027.27.023.17.056.338.086.507.02.115.035.231.058.345l.003.012c.006.03.015.058.021.088.031.146.068.291.104.436.025.101.045.202.072.302.024.088.055.173.081.26.034.116.07.231.108.345.024.072.042.145.067.216.07.201.15.399.23.596l.003.008a13.477 13.477 0 00.343.77c.034.071.064.143.099.213.023.046.05.09.074.136.084.163.173.322.264.48.027.047.051.096.078.143A25.252 25.252 0 0127.5 54a25.43 25.43 0 01-1.895-.078zM47 57c-3.661 0-6.901-1.805-8.902-4.564-.083-.114-.158-.231-.236-.347-.054-.08-.111-.158-.162-.239a14.403 14.403 0 01-.127-.208c-.045-.074-.085-.15-.128-.225-.069-.122-.143-.241-.207-.365-.047-.091-.089-.185-.134-.278l-.035-.076c-.075-.157-.153-.312-.221-.472-.036-.085-.063-.173-.097-.258-.077-.199-.155-.398-.221-.602-.031-.095-.055-.193-.083-.289a10.862 10.862 0 01-.18-.691c-.014-.063-.025-.127-.038-.191l-.036-.181a11.452 11.452 0 01-.103-.672l-.009-.079c-.009-.082-.022-.164-.029-.246A11.043 11.043 0 0136 46a11.081 11.081 0 01.169-1.853l.074-.433C37.298 38.742 41.719 35 47 35c.446 0 .89.034 1.332.089.101.012.199.031.299.046.365.055.728.127 1.086.219.075.019.15.037.225.058.882.247 1.735.601 2.537 1.063C55.773 38.377 58 41.93 58 46c0 6.065-4.935 11-11 11z" data-color="1"></path>
+                            <path fill="#007AFF" d="M53 45h-5v-5a1 1 0 10-2 0v5h-5a1 1 0 100 2h5v5a1 1 0 102 0v-5h5a1 1 0 100-2z" data-color="1"></path>
+                          </g>
+                        </svg>
+                        <div class="media-body text-cont">
+                          <h5><strong>Premium Posting</strong></h5>
+                          <p class="text-black-50">Premium postings are displayed prominently in the search results and attract more applicants.</p>
+                          <h5 class="mt-2"><strong><span class="text-danger">ONLY ₹250.00</span> <s>₹1,250.00</s></strong></h5>
+                        </div>
+                      </div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-right mb-3"><a href="javascript:void(0);" id="posting-advanced-options"><strong><span class="show-hide-text">- Hide</span> advanced options</strong></a></div>
+              <div class="posting-advanced-options">
+                <div class="shadow-box mb-3">
+                  <label class="checkbox-container" for="CheckFeaturedPosting">
+                  <div class="row gutter15 align-items-center">
+                    <div class="col-auto"> <span class="badge badge-featured badge-round badge-md ml-1">Featured</span> </div>
+                    <div class="col"> <span class="text-black-50">Featured postings stand out at the top and are highlighted with a badge.</span> </div>
+                    <div class="col-3">
+                      <h5><strong><span class="text-danger">ONLY ₹500.00</span><br>
+                        <s>₹1,250.00</s></strong></h5>
+                    </div>
+                  </div>
+                  <input type="checkbox" id="CheckFeaturedPosting">
+                  <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="shadow-box mb-5">
+                  <label class="checkbox-container" for="CheckExtendedPosting">
+                  <div class="row gutter15 align-items-center">
+                    <div class="col-auto"> <span class="badge badge-extended badge-round badge-md ml-1">Extended</span> </div>
+                    <div class="col"> <span class="text-black-50">Extended postings remain active for 30 days to attract more applicants.</span> </div>
+                    <div class="col-3">
+                      <h5><strong>₹750.00</strong></h5>
+                    </div>
+                  </div>
+                  <input type="checkbox" id="CheckExtendedPosting">
+                  <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="text-right border-top pt-3" id="ContinuePostsection6">
+                <div class="row gutter15 justify-content-end align-items-center">
+                  <div class="col"><strong class="f-14 font-weight-bolder">Press CTRL + ENTER</strong></div>
+                  <div class="col-auto">
+                    <input type="submit" id="ContinuePost6" value="Next" class="btn btn-success" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="PostInternshipDetails6" style="display:none;">
+              <div class="form-group">
+                <label><strong>Featured Company video<span class="text-black-50"> - Optional</span></strong></label>
+                <input type="text" class="form-control" placeholder="YouTube URL" />
+              </div>
+              <div class="text-right border-top pt-3" id="ContinuePostsection7">
+                <div class="row gutter15 justify-content-end align-items-center">
+                  <div class="col"><strong class="f-14 font-weight-bolder">Press CTRL + ENTER</strong></div>
+                  <div class="col-auto">
+                    <input type="submit" id="ContinuePost7" value="Next" class="btn btn-success" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="PostInternshipDetails7" style="display:none;">
+              <div class="form-group">
+                <label><strong>Are you registered on Switchidea?</strong></label>
+                <div class="row mt-2">
+                  <div class="col-md-6">
+                    <div class="custom-control custom-radio shadow-box h-100">
+                      <input type="radio" id="RegisteredPostYes" name="RegisteredPost" class="custom-control-input">
+                      <label class="custom-control-label h-100" for="RegisteredPostYes">
+                      <div class="media">
+                        <svg class="mr-2" preserveAspectRatio="xMidYMid meet" data-bbox="0 1 60 58" height="46" width="46" viewBox="0 1 60 58" xmlns="http://www.w3.org/2000/svg" data-type="color" role="img">
+                          <g>
+                            <path fill="#007AFF" d="M52.179 40.5l-5.596 8.04-3.949-3.241a1 1 0 10-1.268 1.545l4.786 3.929a.995.995 0 00.771.217c.276-.038.524-.19.684-.419l6.214-8.929a1 1 0 10-1.642-1.142z" data-color="1"></path>
+                            <path fill="#007AFF" d="M54.164 35.163A27.54 27.54 0 0055 28.5C55 13.337 42.664 1 27.5 1S0 13.337 0 28.5c0 8.01 3.444 15.229 8.927 20.259l-.026.023.891.751c.056.047.117.086.173.133.477.396.972.772 1.476 1.136.159.115.318.23.479.341.535.369 1.085.719 1.646 1.051l.366.211a27.69 27.69 0 001.881.981l.141.064a27.259 27.259 0 006.65 2.105l.185.033c.723.125 1.455.225 2.197.292.09.008.181.013.271.021.741.06 1.487.099 2.243.099a27.35 27.35 0 009.503-1.702C39.389 57.168 42.984 59 47 59c7.168 0 13-5.832 13-13 0-4.522-2.323-8.508-5.836-10.837zM2 28.5C2 14.439 13.439 3 27.5 3S53 14.439 53 28.5c0 1.903-.214 3.804-.639 5.666-.017-.008-.036-.013-.053-.021-.376-.169-.762-.32-1.156-.453-.034-.011-.067-.026-.101-.037-.411-.135-.83-.251-1.258-.345l-.06-.016c-.417-.09-.841-.158-1.271-.207l-.09-.014A13.504 13.504 0 0047 33c-5.923 0-10.923 3.986-12.485 9.413a2.208 2.208 0 01-.697-1.613v-2.957c.198-.243.405-.518.617-.817a20.344 20.344 0 002.616-5.123 3.63 3.63 0 002.085-3.289v-3.545c0-.866-.318-1.708-.886-2.369v-4.667c.052-.52.236-3.448-1.883-5.864C34.524 10.065 31.541 9 27.5 9s-7.024 1.065-8.867 3.168c-2.119 2.416-1.935 5.346-1.883 5.864v4.667a3.645 3.645 0 00-.886 2.369v3.545a3.64 3.64 0 001.339 2.821c.81 3.173 2.476 5.575 3.092 6.389v2.894a2.23 2.23 0 01-1.162 1.958l-7.907 4.313a7.301 7.301 0 00-.752.477C5.276 42.792 2 36.022 2 28.5zm23.605 25.422c-.109-.008-.218-.015-.326-.025a25.538 25.538 0 01-1.893-.234l-.077-.014a25.545 25.545 0 01-4.005-1.009 25.625 25.625 0 01-3.601-1.544c-.067-.035-.135-.068-.201-.103a25.756 25.756 0 01-1.94-1.156 25.598 25.598 0 01-1.343-.936l-.133-.104.097-.054 7.907-4.313a4.23 4.23 0 002.204-3.714v-3.603l-.233-.278c-.021-.025-2.176-2.634-2.999-6.215l-.091-.396-.341-.221a1.657 1.657 0 01-.769-1.392v-3.545c0-.465.198-.898.557-1.223l.33-.298v-5.57l-.009-.131c-.003-.024-.298-2.429 1.396-4.36C21.583 11.837 24.06 11 27.5 11c3.425 0 5.897.83 7.346 2.466 1.692 1.911 1.415 4.361 1.413 4.381l-.009 5.701.33.298c.359.324.557.758.557 1.223v3.545a1.65 1.65 0 01-1.181 1.574l-.498.154-.16.496a18.457 18.457 0 01-2.496 5.032 11.75 11.75 0 01-.736.948l-.248.283V40.8c0 1.587.868 3.015 2.268 3.746A13.17 13.17 0 0034 46c0 .292.01.583.029.873.007.103.021.205.031.307.009.096.018.191.029.287.01.09.015.181.027.27.023.17.056.338.086.507.02.115.035.231.058.345l.003.012c.006.03.015.058.021.088.031.146.068.291.104.436.025.101.045.202.072.302.024.088.055.173.081.26.034.116.07.231.108.345.024.072.042.145.067.216.07.201.15.399.23.596l.003.008a13.477 13.477 0 00.343.77c.034.071.064.143.099.213.023.046.05.09.074.136.084.163.173.322.264.48.027.047.051.096.078.143A25.252 25.252 0 0127.5 54a25.43 25.43 0 01-1.895-.078zM47 57c-3.661 0-6.901-1.805-8.902-4.564-.083-.114-.158-.231-.236-.347-.054-.08-.111-.158-.162-.239a14.403 14.403 0 01-.127-.208c-.045-.074-.085-.15-.128-.225-.069-.122-.143-.241-.207-.365-.047-.091-.089-.185-.134-.278l-.035-.076c-.075-.157-.153-.312-.221-.472-.036-.085-.063-.173-.097-.258-.077-.199-.155-.398-.221-.602-.031-.095-.055-.193-.083-.289a10.862 10.862 0 01-.18-.691c-.014-.063-.025-.127-.038-.191l-.036-.181a11.452 11.452 0 01-.103-.672l-.009-.079c-.009-.082-.022-.164-.029-.246A11.043 11.043 0 0136 46a11.081 11.081 0 01.169-1.853l.074-.433C37.298 38.742 41.719 35 47 35c.446 0 .89.034 1.332.089.101.012.199.031.299.046.365.055.728.127 1.086.219.075.019.15.037.225.058.882.247 1.735.601 2.537 1.063C55.773 38.377 58 41.93 58 46c0 6.065-4.935 11-11 11z" data-color="1"></path>
+                          </g>
+                        </svg>
+                        <div class="media-body text-cont">
+                          <h5><strong>Yes, I've an account</strong></h5>
+                          <p class="text-black-50">Log in to your employer account to post this internship</p>
+                        </div>
+                      </div>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="custom-control custom-radio shadow-box h-100">
+                      <input type="radio" id="RegisteredPostNo" name="RegisteredPost" class="custom-control-input">
+                      <label class="custom-control-label h-100" for="RegisteredPostNo">
+                      <div class="media">
+                        <svg class="mr-2" preserveAspectRatio="xMidYMid meet" data-bbox="0 1 60 58" height="46" width="46" viewBox="0 1 60 58" xmlns="http://www.w3.org/2000/svg" data-type="color" role="img">
+                          <g>
+                            <path fill="#007AFF" d="M54.164 35.163A27.54 27.54 0 0055 28.5C55 13.337 42.664 1 27.5 1S0 13.337 0 28.5c0 8.01 3.444 15.229 8.927 20.259l-.026.023.891.751c.056.047.117.086.173.133.477.396.972.772 1.476 1.136.159.115.318.23.479.341.535.369 1.085.719 1.646 1.051l.366.211a27.69 27.69 0 001.881.981l.141.064a27.259 27.259 0 006.65 2.105l.185.033c.723.125 1.455.225 2.197.292.09.008.181.013.271.021.741.06 1.487.099 2.243.099a27.35 27.35 0 009.503-1.702C39.389 57.168 42.984 59 47 59c7.168 0 13-5.832 13-13 0-4.522-2.323-8.508-5.836-10.837zM2 28.5C2 14.439 13.439 3 27.5 3S53 14.439 53 28.5c0 1.903-.214 3.804-.639 5.666-.017-.008-.036-.013-.053-.021-.376-.169-.762-.32-1.156-.453-.034-.011-.067-.026-.101-.037-.411-.135-.83-.251-1.258-.345l-.06-.016c-.417-.09-.841-.158-1.271-.207l-.09-.014A13.504 13.504 0 0047 33c-5.923 0-10.923 3.986-12.485 9.413a2.208 2.208 0 01-.697-1.613v-2.957c.198-.243.405-.518.617-.817a20.344 20.344 0 002.616-5.123 3.63 3.63 0 002.085-3.289v-3.545c0-.866-.318-1.708-.886-2.369v-4.667c.052-.52.236-3.448-1.883-5.864C34.524 10.065 31.541 9 27.5 9s-7.024 1.065-8.867 3.168c-2.119 2.416-1.935 5.346-1.883 5.864v4.667a3.645 3.645 0 00-.886 2.369v3.545a3.64 3.64 0 001.339 2.821c.81 3.173 2.476 5.575 3.092 6.389v2.894a2.23 2.23 0 01-1.162 1.958l-7.907 4.313a7.301 7.301 0 00-.752.477C5.276 42.792 2 36.022 2 28.5zm23.605 25.422c-.109-.008-.218-.015-.326-.025a25.538 25.538 0 01-1.893-.234l-.077-.014a25.545 25.545 0 01-4.005-1.009 25.625 25.625 0 01-3.601-1.544c-.067-.035-.135-.068-.201-.103a25.756 25.756 0 01-1.94-1.156 25.598 25.598 0 01-1.343-.936l-.133-.104.097-.054 7.907-4.313a4.23 4.23 0 002.204-3.714v-3.603l-.233-.278c-.021-.025-2.176-2.634-2.999-6.215l-.091-.396-.341-.221a1.657 1.657 0 01-.769-1.392v-3.545c0-.465.198-.898.557-1.223l.33-.298v-5.57l-.009-.131c-.003-.024-.298-2.429 1.396-4.36C21.583 11.837 24.06 11 27.5 11c3.425 0 5.897.83 7.346 2.466 1.692 1.911 1.415 4.361 1.413 4.381l-.009 5.701.33.298c.359.324.557.758.557 1.223v3.545a1.65 1.65 0 01-1.181 1.574l-.498.154-.16.496a18.457 18.457 0 01-2.496 5.032 11.75 11.75 0 01-.736.948l-.248.283V40.8c0 1.587.868 3.015 2.268 3.746A13.17 13.17 0 0034 46c0 .292.01.583.029.873.007.103.021.205.031.307.009.096.018.191.029.287.01.09.015.181.027.27.023.17.056.338.086.507.02.115.035.231.058.345l.003.012c.006.03.015.058.021.088.031.146.068.291.104.436.025.101.045.202.072.302.024.088.055.173.081.26.034.116.07.231.108.345.024.072.042.145.067.216.07.201.15.399.23.596l.003.008a13.477 13.477 0 00.343.77c.034.071.064.143.099.213.023.046.05.09.074.136.084.163.173.322.264.48.027.047.051.096.078.143A25.252 25.252 0 0127.5 54a25.43 25.43 0 01-1.895-.078zM47 57c-3.661 0-6.901-1.805-8.902-4.564-.083-.114-.158-.231-.236-.347-.054-.08-.111-.158-.162-.239a14.403 14.403 0 01-.127-.208c-.045-.074-.085-.15-.128-.225-.069-.122-.143-.241-.207-.365-.047-.091-.089-.185-.134-.278l-.035-.076c-.075-.157-.153-.312-.221-.472-.036-.085-.063-.173-.097-.258-.077-.199-.155-.398-.221-.602-.031-.095-.055-.193-.083-.289a10.862 10.862 0 01-.18-.691c-.014-.063-.025-.127-.038-.191l-.036-.181a11.452 11.452 0 01-.103-.672l-.009-.079c-.009-.082-.022-.164-.029-.246A11.043 11.043 0 0136 46a11.081 11.081 0 01.169-1.853l.074-.433C37.298 38.742 41.719 35 47 35c.446 0 .89.034 1.332.089.101.012.199.031.299.046.365.055.728.127 1.086.219.075.019.15.037.225.058.882.247 1.735.601 2.537 1.063C55.773 38.377 58 41.93 58 46c0 6.065-4.935 11-11 11z" data-color="1"></path>
+                            <path fill="#007AFF" d="M53 45h-5v-5a1 1 0 10-2 0v5h-5a1 1 0 100 2h5v5a1 1 0 102 0v-5h5a1 1 0 100-2z" data-color="1"></path>
+                          </g>
+                        </svg>
+                        <div class="media-body text-cont">
+                          <h5><strong>No, I'm new here</strong></h5>
+                          <p class="text-black-50">Create your employer account to post this internship</p>
+                        </div>
+                      </div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="DontHaveAccountDetails">
+                <div class="alert alert-info alert-dismissible fade show" role="alert">
+                  <div class="row gutter10">
+                    <div class="col-auto">
+                      <svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fit="" preserveAspectRatio="xMidYMid meet" focusable="false">
+                        <path d="M12,2 C6.48,2 2,6.48 2,12 C2,17.52 6.48,22 12,22 C17.52,22 22,17.52 22,12 C22,6.48 17.52,2 12,2 Z M13,17 L11,17 L11,11 L13,11 L13,17 Z M13,9 L11,9 L11,7 L13,7 L13,9 Z" fill-rule="nonzero" fill="#1652f0"></path>
+                      </svg>
+                    </div>
+                    <div class="col f-14"> We recommend you create your employer account while posting an internship. Chat with candidates 1-on-1 and only hire them when you're happy with their skills. </div>
+                  </div>
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                </div>
+                <div class="form-group">
+                  <label><strong>What is your name?</strong></label>
+                  <input type="text" class="form-control" placeholder="Full Name" />
+                </div>
+                <div class="form-group">
+                  <label><strong>What is your job title?</strong></label>
+                  <input type="text" class="form-control" placeholder="Job Title" />
+                </div>
+                <div class="form-group">
+                  <label><strong>What is your work email address?</strong></label>
+                  <input type="text" class="form-control" placeholder="Email" />
+                </div>
+                <div class="form-group">
+                  <label><strong>Where is the company headquartered?</strong></label>
+                  <input type="text" class="form-control" placeholder="Company Headquarter Location" />
+                </div>
+                <div class="form-group">
+                  <label><strong>Company Name</strong></label>
+                  <input type="text" class="form-control" placeholder="Company" />
+                </div>
+                <div class="form-group">
+                  <label><strong>Industry</strong></label>
+                  <select class="custom-select">
+<option value="Industry" selected>Industry</option>
+<option value="Accounting">Accounting</option>
+<option value="Airlines/Aviation">Airlines/Aviation</option>
+<option value="Alternative Dispute Resolution">Alternative Dispute Resolution</option>
+<option value="Alternative Medicine">Alternative Medicine</option> 
+<option value="Animation">Animation</option>
+<option value="Apparel & Fashion">Apparel & Fashion</option>
+<option value="Architecture & Planning">Architecture & Planning</option>
+<option value="Arts & Crafts">Arts & Crafts</option>
+<option value="Automotive">Automotive</option>
+<option value="Aviation & Aerospace">Aviation & Aerospace</option>
+<option value="Banking Biotechnology">Banking Biotechnology</option>
+<option value="Broadcast Media">Broadcast Media</option>
+<option value="Building Materials">Building Materials</option>
+<option value="Business Supplies & Equipment">Business Supplies & Equipment</option>
+<option value="Capital Markets">Capital Markets</option>
+<option value="Chemicals">Chemicals</option>
+<option value="Civic & Social Organization">Civic & Social Organization</option>
+<option value="Civil Engineering">Civil Engineering</option>
+<option value="Commercial Real Estate">Commercial Real Estate</option>
+<option value="Computer & Network Security">Computer & Network Security</option>
+<option value="Computer Games">Computer Games</option>
+<option value="Computer Hardware">Computer Hardware</option>
+<option value="Computer Networking">Computer Networking</option>
+<option value="Computer Software">Computer Software</option>
+<option value="Construction">Construction</option>
+<option value="Consumer Electronics">Consumer Electronics</option>
+<option value="Consumer Goods">Consumer Goods</option>
+<option value="Consumer Services">Consumer Services</option>
+<option value="Cosmetics">Cosmetics</option>
+<option value="Dairy">Dairy</option>
+<option value="Defence & Space">Defence & Space</option>
+<option value="Design">Design</option>
+<option value="E-learning">E-learning</option>
+<option value="Education Management">Education Management</option>
+<option value="Electrical & Electronic Manufacturing">Electrical & Electronic Manufacturing</option>
+<option value="Entertainment">Entertainment</option>
+<option value="Environmental Services">Environmental Services</option>
+<option value="Events Services">Events Services</option>
+<option value="Executive Office">Executive Office</option>
+<option value="Facilities Services">Facilities Services</option>
+<option value="Farming">Farming</option>
+<option value="Financial Services">Financial Services</option>
+<option value="Fine Art">Fine Art</option>
+<option value="Fishery">Fishery</option>
+<option value="Food & Beverages">Food & Beverages</option>
+<option value="Food Production">Food Production</option>
+<option value="Fundraising">Fundraising</option>
+<option value="Furniture">Furniture</option>
+<option value="Gambling & Casinos">Gambling & Casinos</option>
+<option value="Glass, Ceramics & Concrete">Glass, Ceramics & Concrete</option>
+<option value="Government Administration">Government Administration</option>
+<option value="Government Relations">Government Relations</option>
+<option value="Graphic Design">Graphic Design</option>
+<option value="Health, Wellness & Fitness">Health, Wellness & Fitness</option>
+<option value="Higher Education">Higher Education</option>
+<option value="Hospital & Health Care">Hospital & Health Care</option>
+<option value="Hospitality">Hospitality</option>
+<option value="Human Resources">Human Resources</option>
+<option value="Import & Export">Import & Export</option>
+<option value="Individual & Family Services">Individual & Family Services</option>
+<option value="Industrial Automation">Industrial Automation</option>
+<option value="Information Services">Information Services</option>
+<option value="Information Technology & Services">Information Technology & Services</option>
+<option value="Insurance">Insurance</option>
+<option value="International Affairs">International Affairs</option>
+<option value="International Trade & Development">International Trade & Development</option>
+<option value="Internet">Internet</option>
+<option value="Investment Banking">Investment Banking</option>
+<option value="Investment Management">Investment Management</option>
+<option value="Judiciary">Judiciary</option>
+<option value="Law Enforcement">Law Enforcement</option>
+<option value="Law Practice">Law Practice</option>
+<option value="Legal Services">Legal Services</option>
+<option value="Legislative Office">Legislative Office</option>
+<option value="Leisure, Travel & Tourism">Leisure, Travel & Tourism</option>
+<option value="Libraries">Libraries</option>
+<option value="Logistics & Supply Chain">Logistics & Supply Chain</option>
+<option value="Luxury Goods & Jewelry">Luxury Goods & Jewelry</option>
+<option value="Machinery">Machinery</option>
+<option value="Management Consulting">Management Consulting</option>
+<option value="Maritime">Maritime</option>
+<option value="Market Research">Market Research</option>
+<option value="Marketing & Advertising">Marketing & Advertising</option>
+<option value="Mechanical Or Industrial Engineering">Mechanical Or Industrial Engineering</option>
+<option value="Media Production">Media Production</option>
+<option value="Medical Device">Medical Device</option>
+<option value="Medical Practice">Medical Practice</option>
+<option value="Mental Health Care">Mental Health Care</option>
+<option value="Military">Military</option>
+<option value="Mining & Metals">Mining & Metals</option>
+<option value="Mobile Games">Mobile Games</option>
+<option value="Motion Pictures & Film">Motion Pictures & Film</option>
+<option value="Museums & Institutions">Museums & Institutions</option>
+<option value="Music">Music</option>
+<option value="Nanotechnology">Nanotechnology</option>
+<option value="Newspapers">Newspapers</option>
+<option value="Non-profit Organization Management">Non-profit Organization Management</option>
+<option value="Oil & Energy">Oil & Energy</option>
+<option value="Online Media">Online Media</option>
+<option value="Outsourcing/Offshoring">Outsourcing/Offshoring</option>
+<option value="Package/Freight Delivery">Package/Freight Delivery</option>
+<option value="Packaging & Containers">Packaging & Containers</option>
+<option value="Paper & Forest Products">Paper & Forest Products</option>
+<option value="Performing Arts">Performing Arts</option>
+<option value="Pharmaceuticals">Pharmaceuticals</option>
+<option value="Philanthropy">Philanthropy</option>
+<option value="Photography">Photography</option>
+<option value="Plastics">Plastics</option>
+<option value="Political Organization">Political Organization</option>
+<option value="Primary/Secondary Education">Primary/Secondary Education</option>
+<option value="Printing">Printing</option>
+<option value="Professional Training & Coaching">Professional Training & Coaching</option>
+<option value="Program Development">Program Development</option>
+<option value="Public Policy">Public Policy</option>
+<option value="Public Relations & Communications">Public Relations & Communications</option>
+<option value="Public Safety">Public Safety</option>
+<option value="Publishing">Publishing</option>
+<option value="Railroad Manufacture">Railroad Manufacture</option>
+<option value="Ranching">Ranching</option>
+<option value="Real Estate">Real Estate</option>
+<option value="Recreational Facilities & Services">Recreational Facilities & Services</option>
+<option value="Religious Institutions">Religious Institutions</option>
+<option value="Renewables & Environment">Renewables & Environment</option>
+<option value="Research">Research</option>
+<option value="Restaurants">Restaurants</option>
+<option value="Retail">Retail</option>
+<option value="Security & Investigations">Security & Investigations</option>
+<option value="Semiconductors">Semiconductors</option>
+<option value="Shipbuilding">Shipbuilding</option>
+<option value="Sporting Goods">Sporting Goods</option>
+<option value="Sports">Sports</option>
+<option value="Staffing & Recruiting">Staffing & Recruiting</option>
+<option value="Supermarkets">Supermarkets</option>
+<option value="Telecommunications">Telecommunications</option>
+<option value="Textiles">Textiles</option>
+<option value="Think Tanks">Think Tanks</option>
+<option value="Tobacco">Tobacco</option>
+<option value="Translation & Localization">Translation & Localization</option>
+<option value="Transportation/Trucking/Railroad">Transportation/Trucking/Railroad</option>
+<option value="Utilities">Utilities</option>
+<option value="Venture Capital & Private Equity">Venture Capital & Private Equity</option>
+<option value="Veterinary">Veterinary</option>
+<option value="Warehousing">Warehousing</option>
+<option value="Wholesale">Wholesale</option>
+<option value="Wine & Spirits">Wine & Spirits</option>
+<option value="Wireless">Wireless</option>
+<option value="Writing & Editing">Writing & Editing</option>
+
+                   </select>
+                </div>
+                <div class="form-group">
+                
+                <script>
+                jQuery(document).ready(function () {
+				   $("#HaveWebsite").click(function () {
+					  $('.HaveWebsite').attr("disabled", $(this).is(":checked"));
+					  $('.HaveWebsite').val("", $(this).is(":checked"));
+				   });
+				});
+                </script>
+                
+                  <label><strong>Company Website</strong></label>
+                  <input type="text" class="form-control HaveWebsite" placeholder="URL" />
+                  <div class="custom-control custom-checkbox mt-2">
+  <input type="checkbox" class="custom-control-input" id="HaveWebsite">
+  <label class="custom-control-label" for="HaveWebsite">My organization doesn't have a website</label>
+</div>
+                </div>
+                <div class="form-group">
+                  <label><strong>Tell us more about your company</strong></label>
+                  <textarea class="form-control" placeholder="Company overview" rows="8"></textarea>
+                </div>
+                <div class="row mb-2">
+                  <div class="col-md-4">
+                    <div class="file-upload row gutter15 form-group">
+                      <div class="col-auto">
+                        <div class="image-upload-wrap">
+                          <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+                          <div class="drag-text"> <img src="img/file-upload-placeholder.jpg" alt="" title="" /> </div>
+                        </div>
+                        <div class="file-upload-content"> <img class="file-upload-image" src="#" alt="your image" />
+                          <div class="image-title-wrap mt-2">
+                            <button type="button" onclick="removeUpload()" class="btn btn-danger btn-sm">Remove</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <label><strong>Company Logo</strong></label>
+                        <button class="btn btn-outline-dark btn-block" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Logo</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <div class="form-group">
+                      <label><strong>Company Size<span class="text-black-50"> - Optional</span></strong></label>
+                      <select class="custom-select">
+                        <option value="LinkedIn" selected>Company Size</option>
+                        <option value="F1-2 employees">1-2 employees</option>
+                        <option value="2-10 employees">2-10 employees</option>
+                        <option value="11-50 employees">11-50 employees</option>
+                        <option value="51-200 employees">51-200 employees</option>
+                        <option value="201-500 employees">201-500 employees</option>
+                        <option value="501-1,000 employees">501-1,000 employees</option>
+                        <option value="1001-5,000 employees">1001-5,000 employees</option>
+                        <option value="5,001-10,000 employees">5,001-10,000 employees</option>
+                        <option value="10,001+ employees">10,001+ employees</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="add-social-links">
+                  <div class="form-group">
+                    <label><strong>Social links<span class="text-black-50"> - Optional</span></strong></label>
+                    <div class="container-fluid" id="addanothersocial">
+                      <div class="input-group row mb-3">
+                        <input type="text" class="form-control col-9" aria-label="Add Social Links" placeholder="https://in.linkedin.com/company/username">
+                        <select class="input-group-append custom-select col-3">
+                          <option value="LinkedIn" selected>LinkedIn</option>
+                          <option value="Facebook">Facebook</option>
+                          <option value="Twitter">Twitter</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row mt-3 no-gutters align-items-center">
+                      <div class="col-auto">
+                        <svg class="mr-1" preserveAspectRatio="xMidYMid meet" data-bbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" width="18px" viewBox="0 0 512 512" height="18px" data-type="shape" role="img">
+                          <g>
+                            <path fill="#1652f0" d="M437.02 74.98C388.668 26.63 324.379 0 256 0S123.332 26.629 74.98 74.98C26.63 123.332 0 187.621 0 256s26.629 132.668 74.98 181.02C123.332 485.37 187.621 512 256 512s132.668-26.629 181.02-74.98C485.37 388.668 512 324.379 512 256s-26.629-132.668-74.98-181.02zM256 472c-119.102 0-216-96.898-216-216S136.898 40 256 40s216 96.898 216 216-96.898 216-216 216zm20-236.02h90v40h-90v90h-40v-90h-90v-40h90v-90h40zm0 0"></path>
+                          </g>
+                        </svg>
+                      </div>
+                      <div class="col">
+                        <button class="btn btn-link p-0" id="addanothersocialbtn">Add another social link</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="PostInternshipDetails8" style="display:none;">
+              <div class="row gutter15 justify-content-end  align-items-center border-top pt-3">
+                <div class="col-auto">
+                  <h5 class="font-weight-bold">Total: ₹250.00 INR</h5>
+                </div>
+                <div class="col-auto">
+                  <input type="submit" value="Preview" class="btn btn-outline-dark">
+                </div>
+                <div class="col-auto">
+                  <input type="submit" value="Post internship" class="btn btn-success">
+                </div>
+              </div>
+              <div class="border-top small text-black-50 pt-4 mt-3"> By clicking 'Post internship', you agree to the <a href="#" class="text-black-50">Terms & Conditions</a> and <a href="#" class="text-black-50">Privacy Policy</a><br>
+                Copyright © 2020 Switchidea by Mottled Technologies Pvt Limited U72501MH2014PTC253891 </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- Newsletter Section -->
+<div class="newsletter-section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-7">
+        <h4>Get the latest trends and tips for intern recruiting, retention and branding.</h4>
+      </div>
+      <div class="col-md-5">
+        <div class="input-group">
+          <input type="text" class="form-control">
+          <img src="img/icons/e-mail-envelope.png" alt="" title=""  srcset="img/icons/e-mail-envelope.svg" height="23" class="newsletter-img" />
+          <div class="input-group-append"> <a class="input-group-addon btn btn-primary" href="#"> Subscribe </a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="">
+  <div class="footer1">
+    <div class="container">
+      <div class="footer-menu">
+        <div class="row">
+          <div class="col-lg-9">
+            <div class="row">
+              <div class="col-auto">
+                <h3><strong>Categories</strong></h3>
+                <ul class="list-unstyled">
+                  <li><a href="#">Business Development</a></li>
+                  <li><a href="#">Web Development</a></li>
+                  <li><a href="#">Mobile App Development</a></li>
+                  <li><a href="#">Social Media Marketing</a></li>
+                  <li><a href="#">Content Writing</a></li>
+                  <li><a href="#">Information Technology</a></li>
+                  <li><a href="#">Human Resources</a></li>
+                  <li><a href="#">Graphic & Design</a></li>
+                  <li><a href="#">Core Engineering</a></li>
+                  <li><a href="#">Business Development</a></li>
+                  <li><a href="#">Research & Development</a></li>
+                  <li><a href="#">AI & Machine Learning</a></li>
+                  <li><a href="#">Accounting & Finance</a></li>
+                  <li><a href="#">Digital Marketing</a></li>
+                </ul>
+              </div>
+              <div class="col-auto">
+                <h3><strong>Locations</strong></h3>
+                <ul class="list-unstyled">
+                  <li><a href="#">Internships in Mumbai</a></li>
+                  <li><a href="#">Internships in Delhi</a></li>
+                  <li><a href="#">Internships in Bangalore</a></li>
+                  <li><a href="#">Internships in Pune</a></li>
+                  <li><a href="#">Internships in Hyderabad</a></li>
+                  <li><a href="#">Internships in Chennai</a></li>
+                  <li><a href="#">Internships in Kolkata</a></li>
+                  <li><a href="#">Internships in Ahmedabad</a></li>
+                  <li><a href="#">Remote Internships</a></li>
+                </ul>
+              </div>
+              <div class="col-auto">
+                <h3><strong>Get to Know Us</strong></h3>
+                <ul class="list-unstyled">
+                  <li><a href="#">About Switch Idea</a></li>
+                  <li><a href="#">Project-Based Internship Test (PBIT)</a></li>
+                  <li><a href="#">National Talent Acquisition Test (NTAT)</a></li>
+                  <li><a href="#">Verify Scores</a></li>
+                  <li><a href="#">FAQs</a></li>
+                  <li><a href="#">Help Center</a></li>
+                  <li><a href="#">Switch Idea Internship Blog</a></li>
+                  <li><a href="#">Join Us</a></li>
+                  <li><a href="#">Resources</a></li>
+                  <li><a href="#">Terms and Conditions</a></li>
+                  <li><a href="#">Privacy</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">National Internship Helpline</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 text-center">
+            <h3 class="mb-3"><strong>More with Switchidea</strong></h3>
+            <div class="exam-logos">
+              <div class="exam-logos-cols"> <img src="img/PBIT-logo-badge.png" alt="" title="" class="d-block d-lg-none" /> <img src="img/PBIT-logo-badge-small_footer.png" alt="" title="" class="d-none d-lg-block" /> </div>
+              <div class="exam-logos-cols"> <img src="img/NTAT-logo-icon.png" alt="" title="" class="d-block d-lg-none" /> <img src="img/NTAT-logo-icon-small_footer.png" alt="" title="" class="d-none d-lg-block" /> </div>
+            </div>
+            <div class="clearfix mb-4"></div>
+            <h3 class="mb-3"><strong>Connect with us</strong></h3>
+            <h2 class="mb-3"> <a href="https://www.facebook.com/switchidea" target="_blank" class="mr-1 ml-1"><i class="fa fa-facebook"></i></a> <a href="https://twitter.com/switch_idea" target="_blank" class="mr-1 ml-1"><i class="fa fa-twitter"></i></a> <a href="https://www.youtube.com/channel/UC6x2CCv2wi7sozC0fbnXG3w" target="_blank" class="mr-1 ml-1"><i class="fa fa-youtube-play"></i></a> <a href="https://www.linkedin.com/company/switch-idea/" target="_blank" class="mr-1 ml-1"><i class="fa fa-linkedin"></i></a> <a href="https://www.instagram.com/switch_idea/" target="_blank" class="mr-1 ml-1"><i class="fa fa-instagram"></i></a> </h2>
+            <h3><a class="tel" href="tel:+91-9555-141-142"><strong>+91 9555 141 142</strong></a></h3>
+            <h4 class="mt-3">Made with <img src="img/icons/heart-outline-footer.png" alt="" title=""  srcset="img/icons/heart-outline-footer.svg" height="20" /> in India</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer2">
+    <div class="container"> </div>
+  </div>
+</div>
+
+<!-- Custom Fonts-->
+<link href="css/fonts.css" rel="stylesheet" type="text/css">
+<!-- Font Awesome-->
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+
+<!-- JavaScript
+    ================================================== --> 
+<!-- jQuery first, then Popper.js, then Bootstrap JS --> 
+<script src="js/jquery-3.3.1.slim.min.js"></script> 
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<!-- Custom JS --> 
+<script src="js/custom.js"></script> 
+<script src="js/dark-mode-switch.min.js"></script> 
+
+<!-- Select Number Range JS
+    ================================================== -->
+<link rel="stylesheet" href="css/SelectNumberRange.css">
+<script src="js/jquery.barrating.js"></script> 
+
+<!-- Add Screening Questions JS
+    ================================================== --> 
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#addScreeningQuestionsbtn").click(function(){
+        $("#addScreeningQuestions").append('<input type="text" class="form-control mb-3" />');
+    });
+});
+</script> 
+
+<!-- Upload Logo JS
+    ================================================== --> 
+<script type="text/javascript">
+function readURL(input) {
+  if (input.files && input.files[0]) {
+
+    var reader = new FileReader();
+
+    reader.onload = function(e) {
+      $('.image-upload-wrap').hide();
+
+      $('.file-upload-image').attr('src', e.target.result);
+      $('.file-upload-content').show();
+
+      $('.image-title').html(input.files[0].name);
+    };
+
+    reader.readAsDataURL(input.files[0]);
+
+  } else {
+    removeUpload();
+  }
+}
+
+function removeUpload() {
+  $('.file-upload-input').replaceWith($('.file-upload-input').clone());
+  $('.file-upload-content').hide();
+  $('.image-upload-wrap').show();
+}
+$('.image-upload-wrap').bind('dragover', function () {
+        $('.image-upload-wrap').addClass('image-dropping');
+    });
+    $('.image-upload-wrap').bind('dragleave', function () {
+        $('.image-upload-wrap').removeClass('image-dropping');
+});
+</script> 
+
+<!-- Add Social Links JS
+    ================================================== --> 
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#addanothersocialbtn").click(function(){
+        $("#addanothersocial").append('<div class="input-group row mb-3"><input type="text" class="form-control col-9" aria-label="Add Social Links" placeholder="https://in.linkedin.com/company/username"><select class="input-group-append custom-select col-3"><option value="LinkedIn" selected>LinkedIn</option><option value="Facebook">Facebook</option><option value="Twitter">Twitter</option></select></div>');
+    });
+});
+</script> 
+
+<!-- Show/Hide Internship Type JS
+    ================================================== --> 
+<script type="text/javascript">
+function OnsiteInternship(){
+  document.getElementById('OnsiteInternshipDetails').style.display ='block';
+}
+function RemoteInternship(){
+  document.getElementById('OnsiteInternshipDetails').style.display = 'none';
+}
+
+$(function() {
+   $(document).ready(function() {
+	  if ($("#InternshipType1").is(":checked")) {
+       $("#OnsiteInternshipDetails").show();
+     } else {
+       $("#OnsiteInternshipDetails").hide();
+     }
+   });
+ });
+
+ $(function() {
+   $("input[name='InternshipType']").click(function() {
+     if ($("#InternshipType1").is(":checked")) {
+       $("#OnsiteInternshipDetails").show();
+     } else {
+       $("#OnsiteInternshipDetails").hide();
+     }
+   });
+ });
+ 
+ 
+ $(function() {
+   $(document).ready(function() {
+     if ($("#InternshipType1, #InternshipType2").is(":checked")) {
+       $("#ContinuePostsection1").show();
+     } else {
+       $("#ContinuePostsection1").hide();
+     }
+   });
+ });
+
+ $(function() {
+   $("input[name='InternshipType']").click(function() {
+     if ($("#InternshipType1, #InternshipType2").is(":checked")) {
+       $("#ContinuePostsection1").show();
+     } else {
+       $("#ContinuePostsection1").hide();
+     }
+   });
+ });
+ 
+ 
+</script> 
+
+<!-- Interview Type JS
+    ================================================== --> 
+<script type="text/javascript">
+$(function() {
+   $(document).ready(function() {
+     if ($("#InterviewMode1, #InterviewMode2").is(":checked")) {
+       $("#PostInternshipDetails5").show();
+     } else {
+       $("#PostInternshipDetails5").hide();
+     }
+   });
+ });
+
+ $(function() {
+   $("input[name='InterviewMode']").click(function() {
+     if ($("#InterviewMode1, #InterviewMode2").is(":checked")) {
+       $("#PostInternshipDetails5").show();
+     } else {
+       $("#PostInternshipDetails5").hide();
+     }
+   });
+ });
+</script> 
+
+<!-- Post Type Rate JS
+    ================================================== --> 
+<script type="text/javascript">
+$(function() {
+   $(document).ready(function() {
+     if ($("#HelpingHand1, #HelpingHand2").is(":checked")) {
+       $("#ContinuePostsection6").show();
+     } else {
+       $("#ContinuePostsection6").hide();
+     }
+   });
+ });
+
+ $(function() {
+   $("input[name='HelpingHand']").click(function() {
+     if ($("#HelpingHand1, #HelpingHand2").is(":checked")) {
+       $("#ContinuePostsection6").show();
+     } else {
+       $("#ContinuePostsection6").hide();
+     }
+   });
+ });
+</script> 
+
+<!-- Last Step JS
+    ================================================== --> 
+<script type="text/javascript">
+$(function() {
+   $(document).ready(function() {
+     if ($("#RegisteredPostYes, #RegisteredPostNo").is(":checked")) {
+       $("#PostInternshipDetails8").show();
+     } else {
+       $("#PostInternshipDetails8").hide();
+     }
+   });
+ });
+
+ $(function() {
+   $("input[name='RegisteredPost']").click(function() {
+     if ($("#RegisteredPostYes, #RegisteredPostNo").is(":checked")) {
+       $("#PostInternshipDetails8").show();
+     } else {
+       $("#PostInternshipDetails8").hide();
+     }
+   });
+ });
+</script> 
+
+<!-- Continue Post Internship Submit JS
+    ================================================== --> 
+<script type="text/javascript">
+	$(document).ready(function() {
+        $("#ContinuePost1").click(function(e) {
+            e.preventDefault();
+            $("#ContinuePostsection1").hide();
+            $("#PostInternshipDetails1").show();
+        });
+		$("#ContinuePost2").click(function(e) {
+            e.preventDefault();
+            $("#ContinuePostsection2").hide();
+            $("#PostInternshipDetails2").show();
+        });
+		$("#ContinuePost21").click(function(e) {
+            e.preventDefault();
+            $("#ContinuePostsection21").hide();
+            $("#PostInternshipDetails21").show();
+        });
+		$("#ContinuePost3").click(function(e) {
+            e.preventDefault();
+            $("#ContinuePostsection3").hide();
+            $("#PostInternshipDetails3").show();
+        });
+		$("#ContinuePost4").click(function(e) {
+            e.preventDefault();
+            $("#ContinuePostsection4").hide();
+            $("#PostInternshipDetails4").show();
+        });
+		$("#ContinuePost6").click(function(e) {
+            e.preventDefault();
+            $("#ContinuePostsection6").hide();
+            $("#PostInternshipDetails6").show();
+        });
+		$("#ContinuePost7").click(function(e) {
+            e.preventDefault();
+            $("#ContinuePostsection7").hide();
+            $("#PostInternshipDetails7").show();
+        });
+		$("#ContinuePost8").click(function(e) {
+            e.preventDefault();
+            $("#ContinuePostsection8").hide();
+            $("#PostInternshipDetails8").show();
+        });
+    });
+</script> 
+
+<!-- Show/Hide advanced options JS
+    ================================================== --> 
+<script type="text/javascript">
+$("#posting-advanced-options").click(function() {
+  $(".show-hide-text").text(function(i, v) { return v == "+ Show" ? "- Hide" : "+ Show"; });
+  $(".posting-advanced-options").toggle(300);
+});
+</script> 
+
+<!-- Show/Hide User Type JS
+    ================================================== --> 
+<script type="text/javascript">
+$(function() {
+	
+   $(document).ready(function() {
+     if ($("#RegisteredPostNo").is(":checked")) {
+       $("#DontHaveAccountDetails").show();
+     } else {
+       $("#DontHaveAccountDetails").hide();
+     }
+   });
+ });
+
+ $(function() {
+   $("input[name='RegisteredPost']").click(function() {
+     if ($("#RegisteredPostNo").is(":checked")) {
+       $("#DontHaveAccountDetails").show();
+     } else {
+       $("#DontHaveAccountDetails").hide();
+     }
+   });
+ });
+</script> 
+
+<!-- Number of Interns JS
+    ================================================== --> 
+<script type="text/javascript">
+$('#NOInternRange').barrating('show', {
+            theme: 'bars-1to10',
+            showValues: true,
+            showSelectedRating: false
+        });
+</script> 
+
+<!-- add more Number of Interns JS
+    ================================================== --> 
+<script type="text/javascript">
+$("#addmoreNOInternsbtn").click(function() {
+  $(".addmoreNOInternsdiv").show(300);
+  $("#addmoreNOInternsbtnDiv").hide(300);
+  $("#NOInternRangeDiv").hide(300);
+});
+</script> 
+<!-- jcf scripts and styles -->
+<link rel="stylesheet" href="css/jcf.css">
+<script src="js/jcf.js"></script> 
+<script src="js/jcf.number.js"></script> 
+<script src="js/jcf.range.js"></script> 
+<script>
+	$(function() {
+		jcf.replaceAll();
+	});
+</script> 
+<script type="text/javascript">
+$(document).ready(function(){
+	
+	$(".select-items div").click(function(){
+
+	var vv=$(this).attr("data");
+
+	$('select option').removeAttr('selected').filter("[value='"+vv+"']").attr('selected', true).change();
+	});
+	
+    $("select").change(function(){
+        $(this).find("option:selected").each(function(){
+            var optionValue = $(this).attr("value");
+			var $ele = $(this).parent().parent().parent();
+
+            if(optionValue){
+				
+			    $ele.children(".customoptionselect").not("." + optionValue).hide();
+                $ele.children("." + optionValue).show();
+				
+            } else{
+                $(".customoptionselect").hide();
+            }
+			
+        });
+    }).change();
+});
+</script>
+<link rel="stylesheet" type="text/css" href="css/amsify.suggestags.css">
+<script type="text/javascript" src="js/jquery.amsify.suggestags.js"></script> 
+<script type="text/javascript">
+	$('input[name="Skill"]').amsifySuggestags({
+		suggestions: ['Skill 1', 'Skill 2', 'Skill 3', 'Skill 4', 'Skill 5', 'Skill 6', 'Skill 7', 'Skill 8', 'Skill 9', 'Skill 10', 'Skill 11', 'Skill 12'],
+		whiteList: true,
+		tagvLimit: 5
+	});
+</script>
+<script src="js/cutom-select.js"></script>
+</body>
+</html>

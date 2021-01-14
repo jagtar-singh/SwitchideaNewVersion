@@ -1,0 +1,1537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Switchidea</title>
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Custom styles for this template -->
+<link href="css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="css/dark-mode.css">
+</head>
+<body>
+
+<!-- Nav -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+  <div class="container"> <a class="navbar-brand" href="index-students.html"><img src="img/switchidea-logo-dark.png" alt="" title=""  srcset="img/switchidea-logo-dark.svg" /></a>
+    <form action="." class="form-inline search-new d-none d-md-block">
+      <div class="input-group">
+        <div class="input-group-prepend clearable search-I-C">
+          <input type="text" class="form-control" placeholder="Search by skill, domain, or college" aria-label="Searchinternshipscompanies" aria-describedby="basic-addon1">
+          <span class="clearable_clear">&times;</span> </div>
+        <div class="input-group-append clearable search-L">
+          <input type="text" class="form-control" placeholder="Location" aria-label="Location" aria-describedby="basic-addon2">
+          <span class="clearable_clear">&times;</span> </div>
+        <div class="input-group-append clearable search-btn-cnt">
+          <button value="Search" type="submit" class="search-btn"><img src="img/icons/magnifying-glass.png" alt="" title=""  srcset="img/icons/magnifying-glass.svg" height="19" /></button>
+        </div>
+      </div>
+    </form>
+    <button class="navbar-toggler close-animate" type="button" data-toggle="offcanvas" data-target="#MainNav" id="MainNavLink" aria-label="Toggle navigation"> <span></span> <span></span> <span></span> </button>
+    <div class="navbar-collapse offcanvas-collapse" id="MainNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item d-block d-lg-none"> <a class="nav-link" href="#">Home</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#">Find Interns</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#">Help Needed</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#">Post Internship</a> </li>
+        <li class="nav-item dropdown"> <a class="user-nav-pic ml-2 dropdown-toggle" href="#" id="AccountDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="img/students/profile-pic3.jpg" alt="" title="" />
+        <span class="status available"></span>
+        </a>
+          <div class="dropdown-menu dropdown-menu-lg-right profile-submenu" aria-labelledby="AccountDropdown"> <a class="dropdown-item" href="#">Profile</a> <a class="dropdown-item" href="#">Resources</a> <a class="dropdown-item" href="#">My Postings</a> <a class="dropdown-item" href="#">Team</a> <a class="dropdown-item" href="#">Settings</a> <a class="dropdown-item cursor-pointer"><div class="custom-control custom-switch darkSwitch-cnt">
+  <input type="checkbox" class="custom-control-input" id="darkSwitch">
+  <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+</div></a> <a class="dropdown-item" href="#">Logout</a> </div>
+        </li>
+      </ul>
+    </div>
+    <div class="offcanvas-backdrop"></div>
+  </div>
+</nav>
+
+<!-- Filters -->
+<div class="search-filter">
+  <div class="container">
+    <div class="filter-options">
+      <div class="top-search-mobile">
+        <div class="filter-results-box mb-3 d-block d-sm-none">
+          <div class="input-group">
+            <div class="input-group-addon"> <i class="fa fa-search"></i> </div>
+            <input type="search" class="form-control" value="Find internships, candidates, and more">
+          </div>
+        </div>
+        <div class="mobile-search-helper">
+          <div class="search-mobile d-block d-sm-none"> <a href="#" class="custom-close filter-results-box-close"></a>
+            <div class="mobile-search-tabs">
+              <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item"> <a class="nav-link active"  href="#SearchInternships" id="SearchInternshipstab" role="tab" data-toggle="tab">Search Internships</a> </li>
+                <li class="nav-item"> <a class="nav-link"  href="#FindCandidates" id="FindCandidatestab" role="tab" data-toggle="tab">Find Candidates</a> </li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane fade show active" id="SearchInternships">
+                  <form action=".">
+                    <div class="form-group clearable">
+                      <input type="search" name="SearchInternships" class="form-control" placeholder="Search internships or companies" autofocus>
+                      <span class="clearable_clear">&times;</span> </span> </div>
+                    <div class="form-group clearable">
+                      <input type="search" class="form-control" placeholder="Location">
+                      <span class="clearable_clear">&times;</span> </span> </div>
+                    <div class="form-group">
+                      <button value="Search" type="submit" class="btn btn-primary text-uppercase">Search</button>
+                    </div>
+                  </form>
+                  <div id="SearchInternshipsHistory" class="recent-search mt-4">
+                    <div class="recent-search-title"> <a href="#" id="ClearSearchInternshipsHistory" class="clear-recent-search">Clear</a> Recent Searches </div>
+                    <ul>
+                      <li><a href="#">Niranjan</a></li>
+                      <li><a href="#">Jobs in Navi Mumbai, Maharashtra, India</a></li>
+                      <li><a href="#">Jobs in New Delhi, India</a></li>
+                      <li><a href="#">Graphic Designer in Patiala, Punjab, India</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="FindCandidates">
+                  <form action=".">
+                    <div class="form-group clearable">
+                      <input type="search" name="FindCandidates" class="form-control" placeholder="Find Candidates" autofocus>
+                      <span class="clearable_clear">&times;</span> </span> </div>
+                    <div class="form-group clearable">
+                      <input type="search" class="form-control" placeholder="Location">
+                      <span class="clearable_clear">&times;</span> </span> </div>
+                    <div class="form-group">
+                      <button value="Search" type="submit" class="btn btn-primary text-uppercase">Search</button>
+                    </div>
+                  </form>
+                  <div id="FindCandidatesHistory" class="recent-search mt-4">
+                    <div class="recent-search-title"> <a href="#" id="ClearFindCandidatesHistory" class="clear-recent-search">Clear</a> Recent Searches </div>
+                    <ul>
+                      <li><a href="#">Niranjan</a></li>
+                      <li><a href="#">Jobs in Navi Mumbai, Maharashtra, India</a></li>
+                      <li><a href="#">Jobs in New Delhi, India</a></li>
+                      <li><a href="#">Graphic Designer in Patiala, Punjab, India</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="filter-scroll">
+        <div class="filter-helper">
+          <div class="dropdown">
+            <button class="search-dropdown-btn" type="button" id="Categorydropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> Category <span class="caret"></span> </button>
+            <div class="dropdown-menu" aria-labelledby="Categorydropdown">
+              <h3 class="mb-3 f-20 d-block d-sm-none"><strong>Category</strong></h3>
+              <div class="search-bx">
+                <input type="text" placeholder="Add a filter" class="form-control">
+              </div>
+              <div class="search-list">
+                <ul>
+                  <li>
+                    <label class="checkbox-container">Category 1
+                      <input type="checkbox">
+                      <span class="checkmark"></span> </label>
+                  </li>
+                  <li>
+                    <label class="checkbox-container">Category 2
+                      <input type="checkbox">
+                      <span class="checkmark"></span> </label>
+                  </li>
+                  <li>
+                    <label class="checkbox-container">Category 3
+                      <input type="checkbox">
+                      <span class="checkmark"></span> </label>
+                  </li>
+                  <li>
+                    <label class="checkbox-container">Category 4
+                      <input type="checkbox">
+                      <span class="checkmark"></span> </label>
+                  </li>
+                  <li>
+                    <label class="checkbox-container">Category 5
+                      <input type="checkbox">
+                      <span class="checkmark"></span> </label>
+                  </li>
+                  <li>
+                    <label class="checkbox-container">Category 6
+                      <input type="checkbox">
+                      <span class="checkmark"></span> </label>
+                  </li>
+                  <li>
+                    <label class="checkbox-container">Category 7
+                      <input type="checkbox">
+                      <span class="checkmark"></span> </label>
+                  </li>
+                  <li>
+                    <label class="checkbox-container">Category 8
+                      <input type="checkbox">
+                      <span class="checkmark"></span> </label>
+                  </li>
+                  <li>
+                    <label class="checkbox-container">Category 9
+                      <input type="checkbox">
+                      <span class="checkmark"></span> </label>
+                  </li>
+                  <li>
+                    <label class="checkbox-container">Category 10
+                      <input type="checkbox">
+                      <span class="checkmark"></span> </label>
+                  </li>
+                </ul>
+              </div>
+              <div class="search-done text-right">
+                <button class="btn btn-link mr10 search-cancel-btn d-block d-md-none">Cancel</button>
+                <button class="btn btn-primary">Done</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="filter-helper">
+          <div class="dropdown">
+            <button class="search-dropdown-btn" type="button" id="Collegedropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> College <span class="caret"></span> </button>
+            <div class="dropdown-menu" aria-labelledby="Collegedropdown">
+              <h3 class="mb-3 f-20 d-block d-sm-none"><strong>College</strong></h3>
+              <div class="search-bx">
+                <input type="text" placeholder="Add a filter" class="form-control">
+              </div>
+              <div class="search-list">
+                <ul>
+                  <li>
+                    <label class="checkbox-container">College 1
+                      <input type="checkbox">
+                      <span class="checkmark"></span> </label>
+                  </li>
+                  <li>
+                    <label class="checkbox-container">College 2
+                      <input type="checkbox">
+                      <span class="checkmark"></span> </label>
+                  </li>
+                  <li>
+                    <label class="checkbox-container">College 3
+                      <input type="checkbox">
+                      <span class="checkmark"></span> </label>
+                  </li>
+                  <li>
+                    <label class="checkbox-container">College 4
+                      <input type="checkbox">
+                      <span class="checkmark"></span> </label>
+                  </li>
+                  <li>
+                    <label class="checkbox-container">College 5
+                      <input type="checkbox">
+                      <span class="checkmark"></span> </label>
+                  </li>
+                  <li>
+                    <label class="checkbox-container">College 6
+                      <input type="checkbox">
+                      <span class="checkmark"></span> </label>
+                  </li>
+                  <li>
+                    <label class="checkbox-container">College 7
+                      <input type="checkbox">
+                      <span class="checkmark"></span> </label>
+                  </li>
+                  <li>
+                    <label class="checkbox-container">College 8
+                      <input type="checkbox">
+                      <span class="checkmark"></span> </label>
+                  </li>
+                  <li>
+                    <label class="checkbox-container">College 9
+                      <input type="checkbox">
+                      <span class="checkmark"></span> </label>
+                  </li>
+                  <li>
+                    <label class="checkbox-container">College 10
+                      <input type="checkbox">
+                      <span class="checkmark"></span> </label>
+                  </li>
+                </ul>
+              </div>
+              <div class="search-done text-right">
+                <button class="btn btn-link mr10 search-cancel-btn d-block d-md-none">Cancel</button>
+                <button class="btn btn-primary">Done</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="filter-helper">
+          <div class="dropdown">
+            <button class="search-dropdown-btn" type="button" id="Locationdropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> Location <span class="caret"></span> </button>
+            <div class="dropdown-menu" aria-labelledby="Locationdropdown">
+              <h3 class="mb-3 f-20 d-block d-sm-none"><strong>Location</strong></h3>
+              <div class="search-bx">
+                <input type="text" placeholder="Add a filter" class="form-control">
+              </div>
+              <div class="search-list">
+                <ul>
+                  <li>
+                    <label class="checkbox-container">Location 1
+                      <input type="checkbox">
+                      <span class="checkmark"></span> </label>
+                  </li>
+                  <li>
+                    <label class="checkbox-container">Location 2
+                      <input type="checkbox">
+                      <span class="checkmark"></span> </label>
+                  </li>
+                  <li>
+                    <label class="checkbox-container">Location 3
+                      <input type="checkbox">
+                      <span class="checkmark"></span> </label>
+                  </li>
+                  <li>
+                    <label class="checkbox-container">Location 4
+                      <input type="checkbox">
+                      <span class="checkmark"></span> </label>
+                  </li>
+                  <li>
+                    <label class="checkbox-container">Location 5
+                      <input type="checkbox">
+                      <span class="checkmark"></span> </label>
+                  </li>
+                  <li>
+                    <label class="checkbox-container">Location 6
+                      <input type="checkbox">
+                      <span class="checkmark"></span> </label>
+                  </li>
+                  <li>
+                    <label class="checkbox-container">Location 7
+                      <input type="checkbox">
+                      <span class="checkmark"></span> </label>
+                  </li>
+                  <li>
+                    <label class="checkbox-container">Location 8
+                      <input type="checkbox">
+                      <span class="checkmark"></span> </label>
+                  </li>
+                  <li>
+                    <label class="checkbox-container">Location 9
+                      <input type="checkbox">
+                      <span class="checkmark"></span> </label>
+                  </li>
+                  <li>
+                    <label class="checkbox-container">Location 10
+                      <input type="checkbox">
+                      <span class="checkmark"></span> </label>
+                  </li>
+                </ul>
+              </div>
+              <div class="search-done text-right">
+                <button class="btn btn-link mr10 search-cancel-btn d-block d-md-none">Cancel</button>
+                <button class="btn btn-primary">Done</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="filter-helper">
+          <table cellpadding="0" cellspacing="0" width="100%" border="0" height="36px">
+            <tbody>
+              <tr>
+                <td valign="middle" width="50"><div class="onoffswitch">
+                    <input type="checkbox" name="is_remote" class="onoffswitch-checkbox" id="is_remote">
+                    <label class="onoffswitch-label mb0" for="is_remote"> <span class="onoffswitch-inner"></span> <span class="onoffswitch-switch"></span> </label>
+                  </div></td>
+                <td valign="middle"><strong>Show Top Rated First</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="filter-helper mr0"> <a href="#" id="reset-filter" class="btn"><strong class="total-filter font-weight-bolder">4</strong>Reset filters</a> </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Main Content Area -->
+<main role="main" class="content-area pt-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 pt-3"> 
+      
+      
+      
+      
+        <!-- Search Results -->
+        <div class="bs-callout bs-callout-info mb-3">
+          <div class="row align-items-center">
+            <div class="col search-results-text">keyword in location</div>
+            <div class="col-auto">
+              <div class="onoffswitch bell-switch pull-left" id="SaveItem">
+                <input type="checkbox" name="Create_alert" class="onoffswitch-checkbox" id="Create_alert">
+                <label class="onoffswitch-label mb0" for="Create_alert"> <span class="onoffswitch-inner">
+                  <svg viewBox="0 0 25 25" width="25px" height="25px" x="0" y="0" preserveAspectRatio="xMinYMin meet" class="bell bell-disable" focusable="false">
+                    <path d="M7.13,13L4.56,15.52l0.44-1,0.79-6a6.23,6.23,0,0,1,10-4.14L14.51,5.56a4.36,4.36,0,0,0-6.86,3ZM19,14.49s-0.31-2.32-.65-4.9L16.7,11.24,17,14h-3.1l-1,1h4.23l1.3,3H10l-2,2H10a2,2,0,0,0,4,0h6.27a0.74,0.74,0,0,0,.67-1ZM3.33,22L22,3.3,20.68,2,2,20.68Z" style="fill: currentColor"></path>
+                  </svg>
+                  <svg viewBox="0 0 25 25" width="25px" height="25px" x="0" y="0" preserveAspectRatio="xMinYMin meet" class="bell bell-enable" focusable="false">
+                    <path d="M18.94,14H5.06L5.79,8.44A6.26,6.26,0,0,1,12,3h0a6.26,6.26,0,0,1,6.21,5.44Zm2,5-1.71-4H4.78L3.06,19a0.71,0.71,0,0,0-.06.28,0.75,0.75,0,0,0,.75.76H10a2,2,0,1,0,4,0h6.27A0.74,0.74,0,0,0,20.94,19Z" style="fill: #05b169"></path>
+                  </svg>
+                  </span> <span class="onoffswitch-switch"></span> </label>
+              </div>
+              <span class="pull-left"><a href="#" class="border-left search-setting-icon"><i class="fa fa-gear"></i></a></span> </div>
+          </div>
+        </div>
+        <div class="new-feed employers-feed plain-feed">
+          <div class="feed-item"> <a href="student-profile-view-employer-loggedin.html" class="cover-link d-none d-md-block"></a> <a href="#" class="cover-link d-block d-md-none" data-toggle="modal" data-target="#StudentProfileModal"></a>
+            <div class="media">
+              <div class="feed-thumbnail mr-3"> <a href="student-profile-view-employer-loggedin.html" class="d-none d-md-block"><img src="img/company-logo/company-logo-sample.png" alt="" title=""></a> <a href="#" class="d-block d-md-none" data-toggle="modal" data-target="#StudentProfileModal"><img src="img/company-logo/company-logo-sample.png" alt="" title=""></a>
+                
+              </div>
+              <div class="media-body feed-title">
+                <div class="row">
+                  <div class="col">
+                    <h4> <a href="student-profile-view-employer-loggedin.html" class="name d-none d-md-block">Achal S.</a> <a href="#" class="name d-block d-md-none" data-toggle="modal" data-target="#StudentProfileModal">Achal S.</a> <span class="rated top-rated ml-1"> <a data-container="body" data-toggle="popover" data-placement="bottom" data-content="Top Rated talent delivers quality work performance with stellar feedback. <a href='#'>Learn more.</a><a class='close custom-close'></a>">
+                      
+                      
+<svg class="svg-icon-align" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="15px" viewBox="0 0 759.387 610.894" enable-background="new 0 0 759.387 610.894" xml:space="preserve">
+<path fill="#EA5921" d="M764.542,172.697c-72.65,69.189-145.299,138.379-217.947,207.568  C494.704,254.572,442.811,130.031,389.766,3.183C336.721,130.03,284.829,254.57,232.937,380.265  C159.135,309.921,86.486,241.886,13.838,172.697c-1.153,2.307,0,3.459,0,4.611c3.459,13.839,6.919,27.676,11.532,42.668  c25.369,94.559,49.585,189.117,73.802,282.521l-1.153,61.117l0,0c0,16.145,0,31.137,0,46.127c196.036,0,388.612,1.152,583.495,1.152  V488.66c24.217-93.404,49.586-186.811,73.803-281.369C758.774,195.759,761.081,184.228,764.542,172.697  C765.694,172.697,765.694,172.697,764.542,172.697z"/>
+</svg>
+                      <span class="d-none d-md-block i-b">TOP RATED</span></a></span>
+                      <div class="clearfix"></div>
+                    </h4>
+                    <div class="location">
+                      <svg class="mr-1" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="21.341 0 101.318 144" enable-background="new 21.341 0 101.318 144" xml:space="preserve">
+                        <path fill="currentColor" d="M72.703,144c-1.459,0-2.817-0.753-3.586-1.994l-40.213-64.76c-4.949-7.984-7.563-17.189-7.563-26.621  C21.34,22.71,44.068,0,72,0c27.934,0,50.661,22.71,50.661,50.625c0,9.151-2.474,18.121-7.146,25.938l-39.188,65.387  c-0.759,1.263-2.117,2.04-3.589,2.052C72.727,144,72.715,144,72.703,144z M72,8.438c-23.277,0-42.215,18.926-42.215,42.188  c0,7.861,2.176,15.528,6.295,22.176l36.559,58.878l35.631-59.45c3.89-6.506,5.945-13.979,5.945-21.604  C114.217,27.363,95.279,8.438,72,8.438z M72,75.938c-8.836,0-16.898-4.493-21.566-12.021c-2.462-3.979-3.763-8.573-3.763-13.293  c0-13.957,11.362-25.312,25.329-25.312c13.969,0,25.331,11.354,25.331,25.312c0,4.58-1.229,9.06-3.558,12.953  C89.145,71.318,81.006,75.938,72,75.938z M72,33.75c-9.312,0-16.887,7.57-16.887,16.875c0,3.148,0.863,6.21,2.498,8.852  C60.726,64.499,66.107,67.5,72,67.5c6.006,0,11.434-3.084,14.523-8.25c1.545-2.585,2.361-5.568,2.361-8.625  C88.887,41.32,81.313,33.75,72,33.75z"/>
+                      </svg>
+                      <a href="#">New Delhi</a>, India </div>
+                  </div>
+                  <div class="col-auto d-none d-md-block"><a href="#" class="btn btn-success">Message</a></div>
+                </div>
+                <div class=" feed-details">
+                  <div class="feed-details-item">
+                    <svg class="svg-icon-align mr-1" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="312 440 144 144" enable-background="new 312 440 144 144" xml:space="preserve">
+                      <path fill="currentColor" d="M455.398,554.768l-26.118-45.342c2.7-6.111,4.221-12.843,4.221-19.926c0-27.297-22.203-49.5-49.5-49.5  s-49.5,22.203-49.5,49.5c0,7.083,1.521,13.815,4.221,19.917l-26.118,45.333c-0.909,1.584-0.783,3.555,0.333,4.995  c1.116,1.44,2.979,2.088,4.734,1.602l26.424-7.109l7.029,26.415c0.468,1.764,1.953,3.068,3.753,3.303  c0.207,0.036,0.405,0.045,0.594,0.045c1.593,0,3.087-0.846,3.897-2.25l24.633-42.642l24.633,42.642  c0.811,1.404,2.305,2.25,3.897,2.25c0.189,0,0.396-0.009,0.594-0.036c1.8-0.234,3.285-1.539,3.753-3.303l7.029-26.415l26.424,7.11  c1.755,0.485,3.627-0.162,4.734-1.603C456.172,558.314,456.308,556.343,455.398,554.768z M357.019,567.827l-5.391-20.259  c-0.306-1.152-1.062-2.143-2.097-2.745c-1.035-0.595-2.277-0.747-3.42-0.45l-20.286,5.454l18.09-31.401  c7.173,9.918,17.892,17.101,30.321,19.603L357.019,567.827z M343.501,489.5c0-22.329,18.171-40.5,40.5-40.5  c22.329,0,40.5,18.171,40.5,40.5s-18.171,40.5-40.5,40.5C361.672,530,343.501,511.829,343.501,489.5z M421.892,544.382  c-1.152-0.306-2.386-0.144-3.421,0.45c-1.034,0.594-1.79,1.584-2.097,2.745l-5.391,20.259l-17.217-29.799  c12.42-2.493,23.147-9.685,30.32-19.602l18.09,31.4L421.892,544.382z M410.768,478.268c-0.478-1.449-1.656-2.547-3.133-2.934  l-12.762-3.339l-7.002-11.79c-1.62-2.736-6.12-2.736-7.731,0l-7.002,11.79l-12.771,3.339c-1.485,0.387-2.655,1.485-3.141,2.934  c-0.486,1.449-0.198,3.033,0.756,4.23l8.559,10.71l-0.936,13.995c-0.099,1.557,0.612,3.06,1.89,3.969  c1.278,0.909,2.934,1.08,4.365,0.468l12.141-5.157l12.142,5.157c0.566,0.243,1.17,0.36,1.764,0.36c0.918,0,1.836-0.279,2.61-0.828  c1.277-0.909,1.988-2.412,1.881-3.969l-0.937-13.995l8.55-10.71C410.965,481.31,411.244,479.717,410.768,478.268z M393.343,488.96  c-0.701,0.882-1.053,1.989-0.972,3.105l0.567,8.433l-7.173-3.051c-0.567-0.243-1.17-0.36-1.765-0.36  c-0.594,0-1.197,0.117-1.764,0.36l-7.164,3.051l0.558-8.433c0.082-1.116-0.27-2.223-0.972-3.105l-5.319-6.669l7.857-2.061  c1.143-0.297,2.124-1.044,2.727-2.052l4.077-6.867l4.077,6.867c0.604,1.008,1.584,1.755,2.728,2.052l7.856,2.061L393.343,488.96z"/>
+                    </svg>
+                    <a href="#" class="skills-tag">Autocad</a><a href="#" class="skills-tag">Catia</a> </span></div>
+                  <div class="feed-details-item">
+                    <svg class="svg-icon-align mr-1" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="14px" viewBox="312.414 440 143.172 144" enable-background="new 312.414 440 143.172 144" xml:space="preserve">
+                      <title>11</title>
+                      <path fill="currentColor" d="M384,459.55c-6.824,0-12.356,5.532-12.356,12.356s5.532,12.356,12.356,12.356s12.356-5.532,12.356-12.356  l0,0C396.349,465.086,390.821,459.559,384,459.55z M384,475.114c-1.763,0-3.192-1.429-3.192-3.192s1.429-3.192,3.192-3.192  c1.764,0,3.192,1.429,3.192,3.192c-0.009,1.757-1.436,3.177-3.192,3.177V475.114z M312.413,550.994V584h143.175v-33.006h-12.692  v-50.266h12.692v-26.729L384,440l-71.587,33.999v26.729h12.692v50.266H312.413z M321.577,491.564v-11.776L384,450.142l62.424,29.646  v11.776H321.577z M433.731,500.728v50.266h-14.098v-50.266H433.731z M410.484,500.728v50.266h-7.987v-50.266H410.484z   M393.348,500.728v50.266h-20.207v-50.266H393.348z M363.992,500.728v50.266h-7.988v-50.266H363.992z M346.854,500.728v50.266  h-12.585v-50.266H346.854z M446.438,560.158v14.678H321.577v-14.678H446.438z"/>
+                    </svg>
+                    <span>MCKV Institute of Engineering</span></div>
+                  <div class="feed-details-item">
+                    <svg class="svg-icon-align mr-1" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="320.719 440 126.562 144" enable-background="new 320.719 440 126.562 144" xml:space="preserve">
+                      <path fill="currentColor" d="M444.05,529.156c2.008-2.241,3.231-5.2,3.231-8.438c0-6.978-5.679-12.656-12.656-12.656h-24.564  c2.433-7.383,3.471-17.179,3.471-21.378v-4.216c0-9.304-7.571-16.875-16.875-16.875h-4.219c-1.936,0-3.623,1.316-4.092,3.195  l-2.298,9.194c-3.221,12.875-13.444,27.082-24.025,29.664c-1.854-4.691-6.429-8.021-11.773-8.021h-25.313  c-2.329,0-4.219,1.89-4.219,4.219v75.938c0,2.329,1.89,4.219,4.219,4.219h25.313c5.032,0,9.385-2.95,11.424-7.214l14.496,4.832  c4.739,1.58,9.678,2.382,14.676,2.382h35.342c6.978,0,12.656-5.679,12.656-12.656c0-1.646-0.314-3.221-0.889-4.663  c5.366-1.465,9.326-6.385,9.326-12.212c0-3.237-1.224-6.196-3.231-8.438c2.008-2.241,3.231-5.2,3.231-8.438  S446.058,531.397,444.05,529.156z M354.469,571.344c0,2.326-1.893,4.219-4.219,4.219h-21.094v-67.5h21.094  c2.326,0,4.219,1.893,4.219,4.219V571.344z M426.188,533.375h8.438c2.326,0,4.219,1.893,4.219,4.219s-1.893,4.219-4.219,4.219  h-8.438c-2.329,0-4.219,1.89-4.219,4.219s1.89,4.219,4.219,4.219h8.438c2.326,0,4.219,1.893,4.219,4.219s-1.893,4.219-4.219,4.219  h-8.438c-2.329,0-4.219,1.89-4.219,4.219s1.89,4.219,4.219,4.219c2.326,0,4.219,1.893,4.219,4.219s-1.893,4.219-4.219,4.219h-35.342  c-4.09,0-8.131-0.655-12.009-1.949l-15.93-5.31v-52.203c6.618-1.257,13.095-5.448,18.942-12.308  c5.709-6.699,10.339-15.581,12.384-23.763l1.499-5.999h0.925c4.651,0,8.438,3.786,8.438,8.438v4.216  c0,5.665-1.771,16.529-4.039,21.378h-8.617c-2.329,0-4.219,1.89-4.219,4.219c0,2.329,1.89,4.219,4.219,4.219h42.188  c2.326,0,4.219,1.893,4.219,4.219s-1.893,4.219-4.219,4.219h-8.438c-2.329,0-4.219,1.89-4.219,4.219  S423.858,533.375,426.188,533.375z M341.813,558.688c2.33,0,4.219,1.889,4.219,4.219s-1.889,4.219-4.219,4.219  s-4.219-1.889-4.219-4.219S339.482,558.688,341.813,558.688z M400.875,440c-2.33,0-4.219,1.889-4.219,4.219v8.719  c0,2.33,1.889,4.219,4.219,4.219s4.219-1.889,4.219-4.219v-8.719C405.094,441.889,403.205,440,400.875,440z M382.976,458.604  l-5.966-5.966c-1.647-1.647-4.319-1.647-5.966,0c-1.647,1.648-1.647,4.319,0,5.966l5.966,5.966c1.647,1.647,4.319,1.647,5.966,0  C384.624,462.923,384.624,460.251,382.976,458.604z M430.706,452.638c-1.647-1.647-4.318-1.647-5.966,0l-5.967,5.966  c-1.647,1.647-1.647,4.318,0,5.966c1.647,1.648,4.318,1.648,5.967,0l5.966-5.966C432.354,456.957,432.354,454.286,430.706,452.638z"/>
+                    </svg>
+                    <span>Web Designing & Development and Graphic Design Projects</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-3 d-block d-md-none"> <a href="#" class="btn btn-success btn-block">Message</a> </div>
+          </div>
+          <div class="feed-item"> <a href="student-profile-view-employer-loggedin.html" class="cover-link d-none d-md-block"></a> <a href="#" class="cover-link d-block d-md-none" data-toggle="modal" data-target="#StudentProfileModal"></a>
+            <div class="media">
+              <div class="feed-thumbnail mr-3"> <a href="student-profile-view-employer-loggedin.html" class="d-none d-md-block"><img src="img/company-logo/company-logo-sample.png" alt="" title=""></a> <a href="#" class="d-block d-md-none" data-toggle="modal" data-target="#StudentProfileModal"><img src="img/company-logo/company-logo-sample.png" alt="" title=""></a>
+                
+              </div>
+              <div class="media-body feed-title">
+                <div class="row">
+                  <div class="col">
+                    <h4><a href="student-profile-view-employer-loggedin.html" class="name d-none d-md-block">Neha M.</a> <a href="#" class="name d-block d-md-none" data-toggle="modal" data-target="#StudentProfileModal">Neha M.</a> <span class="rated rising-star ml-1"> <a data-container="body" data-toggle="popover" data-placement="bottom" data-content="Rising talent shows strong potential based on their profile and early success on Switchidea. <a href='#'>Learn more.</a><a class='close custom-close'></a>">
+                      
+                      <svg class="svg-icon-align" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="16px" viewBox="0 0 755 709" enable-background="new 0 0 755 709" xml:space="preserve">
+<path fill="#F49819" d="M755.692,267.625c1.229,3.691,3.691,7.385,3.691,11.077c0,3.691-1.229,6.152-2.462,9.846  c-3.691,3.692-8.615,9.847-13.538,13.539c-36.923,36.923-75.077,73.846-110.77,110.769c-14.771,14.771-36.923,25.848-41.847,45.539  c-3.691,18.461,4.924,40.615,8.615,61.538C608,571.625,617.846,623.317,624,676.24c3.692,25.847-17.23,39.385-41.846,29.538  c-2.462-1.23-6.154-2.462-8.616-4.924c-56.615-29.538-114.461-59.076-171.076-88.614c-13.539-7.386-23.385-6.153-35.692,0  c-59.076,30.77-118.153,61.538-176,91.076c-12.308,6.154-23.384,7.386-34.461-1.229c-11.077-8.615-12.308-19.692-11.077-32  c11.077-66.462,22.154-134.154,34.461-200.615c1.23-9.847,0-16-7.385-23.385c-22.154-22.154-44.308-43.077-66.461-64  c-22.153-20.923-44.308-43.077-66.462-65.231c-4.923-4.923-9.846-11.076-14.77-16c-2.461-2.461-4.923-4.923-7.384-8.614  c-2.462-2.462-3.692-4.924-4.923-8.615c0-1.23-1.23-3.692-1.23-4.923c0-1.231,0-2.462,1.23-4.924  c4.923-17.23,25.846-24.614,43.077-27.076c61.538-8.615,123.077-18.461,184.615-25.846c13.539-2.462,22.154-7.386,28.308-20.924  c28.308-59.077,57.847-116.923,87.385-174.769C361.846,12.856,368,3.01,385.23,3.01c16,0,24.614,9.846,30.77,23.385  c29.538,59.077,59.077,118.154,88.615,176c4.923,9.846,12.308,16,23.385,17.23c62.77,8.615,125.538,18.462,189.538,27.077  C732.308,249.164,745.846,254.087,755.692,267.625z"/>
+</svg>
+                      <span class="d-none d-md-block i-b">RISING STAR</span></a></span>
+                      <div class="clearfix"></div>
+                    </h4>
+                    <div class="location">
+                      <svg class="mr-1" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="21.341 0 101.318 144" enable-background="new 21.341 0 101.318 144" xml:space="preserve">
+                        <path fill="currentColor" d="M72.703,144c-1.459,0-2.817-0.753-3.586-1.994l-40.213-64.76c-4.949-7.984-7.563-17.189-7.563-26.621  C21.34,22.71,44.068,0,72,0c27.934,0,50.661,22.71,50.661,50.625c0,9.151-2.474,18.121-7.146,25.938l-39.188,65.387  c-0.759,1.263-2.117,2.04-3.589,2.052C72.727,144,72.715,144,72.703,144z M72,8.438c-23.277,0-42.215,18.926-42.215,42.188  c0,7.861,2.176,15.528,6.295,22.176l36.559,58.878l35.631-59.45c3.89-6.506,5.945-13.979,5.945-21.604  C114.217,27.363,95.279,8.438,72,8.438z M72,75.938c-8.836,0-16.898-4.493-21.566-12.021c-2.462-3.979-3.763-8.573-3.763-13.293  c0-13.957,11.362-25.312,25.329-25.312c13.969,0,25.331,11.354,25.331,25.312c0,4.58-1.229,9.06-3.558,12.953  C89.145,71.318,81.006,75.938,72,75.938z M72,33.75c-9.312,0-16.887,7.57-16.887,16.875c0,3.148,0.863,6.21,2.498,8.852  C60.726,64.499,66.107,67.5,72,67.5c6.006,0,11.434-3.084,14.523-8.25c1.545-2.585,2.361-5.568,2.361-8.625  C88.887,41.32,81.313,33.75,72,33.75z"/>
+                      </svg>
+                      <a href="#">New Delhi</a>, India </div>
+                  </div>
+                  <div class="col-auto d-none d-md-block"><a href="#" class="btn btn-success">Message</a></div>
+                </div>
+                <div class=" feed-details">
+                  <div class="feed-details-item">
+                    <svg class="svg-icon-align mr-1" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="312 440 144 144" enable-background="new 312 440 144 144" xml:space="preserve">
+                      <path fill="currentColor" d="M455.398,554.768l-26.118-45.342c2.7-6.111,4.221-12.843,4.221-19.926c0-27.297-22.203-49.5-49.5-49.5  s-49.5,22.203-49.5,49.5c0,7.083,1.521,13.815,4.221,19.917l-26.118,45.333c-0.909,1.584-0.783,3.555,0.333,4.995  c1.116,1.44,2.979,2.088,4.734,1.602l26.424-7.109l7.029,26.415c0.468,1.764,1.953,3.068,3.753,3.303  c0.207,0.036,0.405,0.045,0.594,0.045c1.593,0,3.087-0.846,3.897-2.25l24.633-42.642l24.633,42.642  c0.811,1.404,2.305,2.25,3.897,2.25c0.189,0,0.396-0.009,0.594-0.036c1.8-0.234,3.285-1.539,3.753-3.303l7.029-26.415l26.424,7.11  c1.755,0.485,3.627-0.162,4.734-1.603C456.172,558.314,456.308,556.343,455.398,554.768z M357.019,567.827l-5.391-20.259  c-0.306-1.152-1.062-2.143-2.097-2.745c-1.035-0.595-2.277-0.747-3.42-0.45l-20.286,5.454l18.09-31.401  c7.173,9.918,17.892,17.101,30.321,19.603L357.019,567.827z M343.501,489.5c0-22.329,18.171-40.5,40.5-40.5  c22.329,0,40.5,18.171,40.5,40.5s-18.171,40.5-40.5,40.5C361.672,530,343.501,511.829,343.501,489.5z M421.892,544.382  c-1.152-0.306-2.386-0.144-3.421,0.45c-1.034,0.594-1.79,1.584-2.097,2.745l-5.391,20.259l-17.217-29.799  c12.42-2.493,23.147-9.685,30.32-19.602l18.09,31.4L421.892,544.382z M410.768,478.268c-0.478-1.449-1.656-2.547-3.133-2.934  l-12.762-3.339l-7.002-11.79c-1.62-2.736-6.12-2.736-7.731,0l-7.002,11.79l-12.771,3.339c-1.485,0.387-2.655,1.485-3.141,2.934  c-0.486,1.449-0.198,3.033,0.756,4.23l8.559,10.71l-0.936,13.995c-0.099,1.557,0.612,3.06,1.89,3.969  c1.278,0.909,2.934,1.08,4.365,0.468l12.141-5.157l12.142,5.157c0.566,0.243,1.17,0.36,1.764,0.36c0.918,0,1.836-0.279,2.61-0.828  c1.277-0.909,1.988-2.412,1.881-3.969l-0.937-13.995l8.55-10.71C410.965,481.31,411.244,479.717,410.768,478.268z M393.343,488.96  c-0.701,0.882-1.053,1.989-0.972,3.105l0.567,8.433l-7.173-3.051c-0.567-0.243-1.17-0.36-1.765-0.36  c-0.594,0-1.197,0.117-1.764,0.36l-7.164,3.051l0.558-8.433c0.082-1.116-0.27-2.223-0.972-3.105l-5.319-6.669l7.857-2.061  c1.143-0.297,2.124-1.044,2.727-2.052l4.077-6.867l4.077,6.867c0.604,1.008,1.584,1.755,2.728,2.052l7.856,2.061L393.343,488.96z"/>
+                    </svg>
+                    <a href="#" class="skills-tag verified">Autocad</a><a href="#" class="skills-tag">Catia</a> </span></div>
+                  <div class="feed-details-item">
+                    <svg class="svg-icon-align mr-1" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="14px" viewBox="312.414 440 143.172 144" enable-background="new 312.414 440 143.172 144" xml:space="preserve">
+                      <title>11</title>
+                      <path fill="currentColor" d="M384,459.55c-6.824,0-12.356,5.532-12.356,12.356s5.532,12.356,12.356,12.356s12.356-5.532,12.356-12.356  l0,0C396.349,465.086,390.821,459.559,384,459.55z M384,475.114c-1.763,0-3.192-1.429-3.192-3.192s1.429-3.192,3.192-3.192  c1.764,0,3.192,1.429,3.192,3.192c-0.009,1.757-1.436,3.177-3.192,3.177V475.114z M312.413,550.994V584h143.175v-33.006h-12.692  v-50.266h12.692v-26.729L384,440l-71.587,33.999v26.729h12.692v50.266H312.413z M321.577,491.564v-11.776L384,450.142l62.424,29.646  v11.776H321.577z M433.731,500.728v50.266h-14.098v-50.266H433.731z M410.484,500.728v50.266h-7.987v-50.266H410.484z   M393.348,500.728v50.266h-20.207v-50.266H393.348z M363.992,500.728v50.266h-7.988v-50.266H363.992z M346.854,500.728v50.266  h-12.585v-50.266H346.854z M446.438,560.158v14.678H321.577v-14.678H446.438z"/>
+                    </svg>
+                    <span>MCKV Institute of Engineering</span></div>
+                  <div class="feed-details-item">
+                    <svg class="svg-icon-align mr-1" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="320.719 440 126.562 144" enable-background="new 320.719 440 126.562 144" xml:space="preserve">
+                      <path fill="currentColor" d="M444.05,529.156c2.008-2.241,3.231-5.2,3.231-8.438c0-6.978-5.679-12.656-12.656-12.656h-24.564  c2.433-7.383,3.471-17.179,3.471-21.378v-4.216c0-9.304-7.571-16.875-16.875-16.875h-4.219c-1.936,0-3.623,1.316-4.092,3.195  l-2.298,9.194c-3.221,12.875-13.444,27.082-24.025,29.664c-1.854-4.691-6.429-8.021-11.773-8.021h-25.313  c-2.329,0-4.219,1.89-4.219,4.219v75.938c0,2.329,1.89,4.219,4.219,4.219h25.313c5.032,0,9.385-2.95,11.424-7.214l14.496,4.832  c4.739,1.58,9.678,2.382,14.676,2.382h35.342c6.978,0,12.656-5.679,12.656-12.656c0-1.646-0.314-3.221-0.889-4.663  c5.366-1.465,9.326-6.385,9.326-12.212c0-3.237-1.224-6.196-3.231-8.438c2.008-2.241,3.231-5.2,3.231-8.438  S446.058,531.397,444.05,529.156z M354.469,571.344c0,2.326-1.893,4.219-4.219,4.219h-21.094v-67.5h21.094  c2.326,0,4.219,1.893,4.219,4.219V571.344z M426.188,533.375h8.438c2.326,0,4.219,1.893,4.219,4.219s-1.893,4.219-4.219,4.219  h-8.438c-2.329,0-4.219,1.89-4.219,4.219s1.89,4.219,4.219,4.219h8.438c2.326,0,4.219,1.893,4.219,4.219s-1.893,4.219-4.219,4.219  h-8.438c-2.329,0-4.219,1.89-4.219,4.219s1.89,4.219,4.219,4.219c2.326,0,4.219,1.893,4.219,4.219s-1.893,4.219-4.219,4.219h-35.342  c-4.09,0-8.131-0.655-12.009-1.949l-15.93-5.31v-52.203c6.618-1.257,13.095-5.448,18.942-12.308  c5.709-6.699,10.339-15.581,12.384-23.763l1.499-5.999h0.925c4.651,0,8.438,3.786,8.438,8.438v4.216  c0,5.665-1.771,16.529-4.039,21.378h-8.617c-2.329,0-4.219,1.89-4.219,4.219c0,2.329,1.89,4.219,4.219,4.219h42.188  c2.326,0,4.219,1.893,4.219,4.219s-1.893,4.219-4.219,4.219h-8.438c-2.329,0-4.219,1.89-4.219,4.219  S423.858,533.375,426.188,533.375z M341.813,558.688c2.33,0,4.219,1.889,4.219,4.219s-1.889,4.219-4.219,4.219  s-4.219-1.889-4.219-4.219S339.482,558.688,341.813,558.688z M400.875,440c-2.33,0-4.219,1.889-4.219,4.219v8.719  c0,2.33,1.889,4.219,4.219,4.219s4.219-1.889,4.219-4.219v-8.719C405.094,441.889,403.205,440,400.875,440z M382.976,458.604  l-5.966-5.966c-1.647-1.647-4.319-1.647-5.966,0c-1.647,1.648-1.647,4.319,0,5.966l5.966,5.966c1.647,1.647,4.319,1.647,5.966,0  C384.624,462.923,384.624,460.251,382.976,458.604z M430.706,452.638c-1.647-1.647-4.318-1.647-5.966,0l-5.967,5.966  c-1.647,1.647-1.647,4.318,0,5.966c1.647,1.648,4.318,1.648,5.967,0l5.966-5.966C432.354,456.957,432.354,454.286,430.706,452.638z"/>
+                    </svg>
+                    <span>Web Designing & Development and Graphic Design Projects</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-3 d-block d-md-none"> <a href="#" class="btn btn-success btn-block">Message</a> </div>
+          </div>
+          <div class="feed-item"> <a href="student-profile-view-employer-loggedin.html" class="cover-link d-none d-md-block"></a> <a href="#" class="cover-link d-block d-md-none" data-toggle="modal" data-target="#StudentProfileModal"></a>
+            <div class="media">
+              <div class="feed-thumbnail mr-3"> <a href="student-profile-view-employer-loggedin.html" class="d-none d-md-block"><img src="img/company-logo/company-logo-sample.png" alt="" title=""></a> <a href="#" class="d-block d-md-none" data-toggle="modal" data-target="#StudentProfileModal"><img src="img/company-logo/company-logo-sample.png" alt="" title=""></a>
+                
+              </div>
+              <div class="media-body feed-title">
+                <div class="row">
+                  <div class="col">
+                    <h4><a href="student-profile-view-employer-loggedin.html" class="name d-none d-md-block">Achal S.</a> <a href="#" class="name d-block d-md-none" data-toggle="modal" data-target="#StudentProfileModal">Achal S.</a> <span class="rated top-rated ml-1 not-passed"> <a data-container="body" data-toggle="popover" data-placement="bottom" data-content="Top Rated talent delivers quality work performance with stellar feedback. <a href='#'>Learn more.</a><a class='close custom-close'></a>">
+                      <img src="img/icons/top-rated.png" srcset="img/icons/top-rated.svg" alt="" title="" height="15" class="svg-icon-align" />
+                      <span class="d-none d-md-block i-b">TOP RATED</span></a></span>
+                      <div class="clearfix"></div>
+                    </h4>
+                    <div class="location">
+                      <svg class="mr-1" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="21.341 0 101.318 144" enable-background="new 21.341 0 101.318 144" xml:space="preserve">
+                        <path fill="currentColor" d="M72.703,144c-1.459,0-2.817-0.753-3.586-1.994l-40.213-64.76c-4.949-7.984-7.563-17.189-7.563-26.621  C21.34,22.71,44.068,0,72,0c27.934,0,50.661,22.71,50.661,50.625c0,9.151-2.474,18.121-7.146,25.938l-39.188,65.387  c-0.759,1.263-2.117,2.04-3.589,2.052C72.727,144,72.715,144,72.703,144z M72,8.438c-23.277,0-42.215,18.926-42.215,42.188  c0,7.861,2.176,15.528,6.295,22.176l36.559,58.878l35.631-59.45c3.89-6.506,5.945-13.979,5.945-21.604  C114.217,27.363,95.279,8.438,72,8.438z M72,75.938c-8.836,0-16.898-4.493-21.566-12.021c-2.462-3.979-3.763-8.573-3.763-13.293  c0-13.957,11.362-25.312,25.329-25.312c13.969,0,25.331,11.354,25.331,25.312c0,4.58-1.229,9.06-3.558,12.953  C89.145,71.318,81.006,75.938,72,75.938z M72,33.75c-9.312,0-16.887,7.57-16.887,16.875c0,3.148,0.863,6.21,2.498,8.852  C60.726,64.499,66.107,67.5,72,67.5c6.006,0,11.434-3.084,14.523-8.25c1.545-2.585,2.361-5.568,2.361-8.625  C88.887,41.32,81.313,33.75,72,33.75z"/>
+                      </svg>
+                      <a href="#">Pune</a>, India </div>
+                  </div>
+                  <div class="col-auto d-none d-md-block"><a href="#" class="btn btn-success">Message</a></div>
+                </div>
+                <div class=" feed-details">
+                  <div class="feed-details-item">
+                    <svg class="svg-icon-align mr-1" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="312 440 144 144" enable-background="new 312 440 144 144" xml:space="preserve">
+                      <path fill="currentColor" d="M455.398,554.768l-26.118-45.342c2.7-6.111,4.221-12.843,4.221-19.926c0-27.297-22.203-49.5-49.5-49.5  s-49.5,22.203-49.5,49.5c0,7.083,1.521,13.815,4.221,19.917l-26.118,45.333c-0.909,1.584-0.783,3.555,0.333,4.995  c1.116,1.44,2.979,2.088,4.734,1.602l26.424-7.109l7.029,26.415c0.468,1.764,1.953,3.068,3.753,3.303  c0.207,0.036,0.405,0.045,0.594,0.045c1.593,0,3.087-0.846,3.897-2.25l24.633-42.642l24.633,42.642  c0.811,1.404,2.305,2.25,3.897,2.25c0.189,0,0.396-0.009,0.594-0.036c1.8-0.234,3.285-1.539,3.753-3.303l7.029-26.415l26.424,7.11  c1.755,0.485,3.627-0.162,4.734-1.603C456.172,558.314,456.308,556.343,455.398,554.768z M357.019,567.827l-5.391-20.259  c-0.306-1.152-1.062-2.143-2.097-2.745c-1.035-0.595-2.277-0.747-3.42-0.45l-20.286,5.454l18.09-31.401  c7.173,9.918,17.892,17.101,30.321,19.603L357.019,567.827z M343.501,489.5c0-22.329,18.171-40.5,40.5-40.5  c22.329,0,40.5,18.171,40.5,40.5s-18.171,40.5-40.5,40.5C361.672,530,343.501,511.829,343.501,489.5z M421.892,544.382  c-1.152-0.306-2.386-0.144-3.421,0.45c-1.034,0.594-1.79,1.584-2.097,2.745l-5.391,20.259l-17.217-29.799  c12.42-2.493,23.147-9.685,30.32-19.602l18.09,31.4L421.892,544.382z M410.768,478.268c-0.478-1.449-1.656-2.547-3.133-2.934  l-12.762-3.339l-7.002-11.79c-1.62-2.736-6.12-2.736-7.731,0l-7.002,11.79l-12.771,3.339c-1.485,0.387-2.655,1.485-3.141,2.934  c-0.486,1.449-0.198,3.033,0.756,4.23l8.559,10.71l-0.936,13.995c-0.099,1.557,0.612,3.06,1.89,3.969  c1.278,0.909,2.934,1.08,4.365,0.468l12.141-5.157l12.142,5.157c0.566,0.243,1.17,0.36,1.764,0.36c0.918,0,1.836-0.279,2.61-0.828  c1.277-0.909,1.988-2.412,1.881-3.969l-0.937-13.995l8.55-10.71C410.965,481.31,411.244,479.717,410.768,478.268z M393.343,488.96  c-0.701,0.882-1.053,1.989-0.972,3.105l0.567,8.433l-7.173-3.051c-0.567-0.243-1.17-0.36-1.765-0.36  c-0.594,0-1.197,0.117-1.764,0.36l-7.164,3.051l0.558-8.433c0.082-1.116-0.27-2.223-0.972-3.105l-5.319-6.669l7.857-2.061  c1.143-0.297,2.124-1.044,2.727-2.052l4.077-6.867l4.077,6.867c0.604,1.008,1.584,1.755,2.728,2.052l7.856,2.061L393.343,488.96z"/>
+                    </svg>
+                    <a href="#" class="skills-tag">Autocad</a><a href="#" class="skills-tag">Catia</a> </span></div>
+                  <div class="feed-details-item">
+                    <svg class="svg-icon-align mr-1" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="14px" viewBox="312.414 440 143.172 144" enable-background="new 312.414 440 143.172 144" xml:space="preserve">
+                      <title>11</title>
+                      <path fill="currentColor" d="M384,459.55c-6.824,0-12.356,5.532-12.356,12.356s5.532,12.356,12.356,12.356s12.356-5.532,12.356-12.356  l0,0C396.349,465.086,390.821,459.559,384,459.55z M384,475.114c-1.763,0-3.192-1.429-3.192-3.192s1.429-3.192,3.192-3.192  c1.764,0,3.192,1.429,3.192,3.192c-0.009,1.757-1.436,3.177-3.192,3.177V475.114z M312.413,550.994V584h143.175v-33.006h-12.692  v-50.266h12.692v-26.729L384,440l-71.587,33.999v26.729h12.692v50.266H312.413z M321.577,491.564v-11.776L384,450.142l62.424,29.646  v11.776H321.577z M433.731,500.728v50.266h-14.098v-50.266H433.731z M410.484,500.728v50.266h-7.987v-50.266H410.484z   M393.348,500.728v50.266h-20.207v-50.266H393.348z M363.992,500.728v50.266h-7.988v-50.266H363.992z M346.854,500.728v50.266  h-12.585v-50.266H346.854z M446.438,560.158v14.678H321.577v-14.678H446.438z"/>
+                    </svg>
+                    <span>MCKV Institute of Engineering</span></div>
+                  <div class="feed-details-item">
+                    <svg class="svg-icon-align mr-1" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="320.719 440 126.562 144" enable-background="new 320.719 440 126.562 144" xml:space="preserve">
+                      <path fill="currentColor" d="M444.05,529.156c2.008-2.241,3.231-5.2,3.231-8.438c0-6.978-5.679-12.656-12.656-12.656h-24.564  c2.433-7.383,3.471-17.179,3.471-21.378v-4.216c0-9.304-7.571-16.875-16.875-16.875h-4.219c-1.936,0-3.623,1.316-4.092,3.195  l-2.298,9.194c-3.221,12.875-13.444,27.082-24.025,29.664c-1.854-4.691-6.429-8.021-11.773-8.021h-25.313  c-2.329,0-4.219,1.89-4.219,4.219v75.938c0,2.329,1.89,4.219,4.219,4.219h25.313c5.032,0,9.385-2.95,11.424-7.214l14.496,4.832  c4.739,1.58,9.678,2.382,14.676,2.382h35.342c6.978,0,12.656-5.679,12.656-12.656c0-1.646-0.314-3.221-0.889-4.663  c5.366-1.465,9.326-6.385,9.326-12.212c0-3.237-1.224-6.196-3.231-8.438c2.008-2.241,3.231-5.2,3.231-8.438  S446.058,531.397,444.05,529.156z M354.469,571.344c0,2.326-1.893,4.219-4.219,4.219h-21.094v-67.5h21.094  c2.326,0,4.219,1.893,4.219,4.219V571.344z M426.188,533.375h8.438c2.326,0,4.219,1.893,4.219,4.219s-1.893,4.219-4.219,4.219  h-8.438c-2.329,0-4.219,1.89-4.219,4.219s1.89,4.219,4.219,4.219h8.438c2.326,0,4.219,1.893,4.219,4.219s-1.893,4.219-4.219,4.219  h-8.438c-2.329,0-4.219,1.89-4.219,4.219s1.89,4.219,4.219,4.219c2.326,0,4.219,1.893,4.219,4.219s-1.893,4.219-4.219,4.219h-35.342  c-4.09,0-8.131-0.655-12.009-1.949l-15.93-5.31v-52.203c6.618-1.257,13.095-5.448,18.942-12.308  c5.709-6.699,10.339-15.581,12.384-23.763l1.499-5.999h0.925c4.651,0,8.438,3.786,8.438,8.438v4.216  c0,5.665-1.771,16.529-4.039,21.378h-8.617c-2.329,0-4.219,1.89-4.219,4.219c0,2.329,1.89,4.219,4.219,4.219h42.188  c2.326,0,4.219,1.893,4.219,4.219s-1.893,4.219-4.219,4.219h-8.438c-2.329,0-4.219,1.89-4.219,4.219  S423.858,533.375,426.188,533.375z M341.813,558.688c2.33,0,4.219,1.889,4.219,4.219s-1.889,4.219-4.219,4.219  s-4.219-1.889-4.219-4.219S339.482,558.688,341.813,558.688z M400.875,440c-2.33,0-4.219,1.889-4.219,4.219v8.719  c0,2.33,1.889,4.219,4.219,4.219s4.219-1.889,4.219-4.219v-8.719C405.094,441.889,403.205,440,400.875,440z M382.976,458.604  l-5.966-5.966c-1.647-1.647-4.319-1.647-5.966,0c-1.647,1.648-1.647,4.319,0,5.966l5.966,5.966c1.647,1.647,4.319,1.647,5.966,0  C384.624,462.923,384.624,460.251,382.976,458.604z M430.706,452.638c-1.647-1.647-4.318-1.647-5.966,0l-5.967,5.966  c-1.647,1.647-1.647,4.318,0,5.966c1.647,1.648,4.318,1.648,5.967,0l5.966-5.966C432.354,456.957,432.354,454.286,430.706,452.638z"/>
+                    </svg>
+                    <span>Web Designing & Development and Graphic Design Projects</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-3 d-block d-md-none"> <a href="#" class="btn btn-success btn-block">Message</a> </div>
+          </div>
+          <div class="feed-item"> <a href="student-profile-view-employer-loggedin.html" class="cover-link d-none d-md-block"></a> <a href="#" class="cover-link d-block d-md-none" data-toggle="modal" data-target="#StudentProfileModal"></a>
+            <div class="media">
+              <div class="feed-thumbnail mr-3"> <a href="student-profile-view-employer-loggedin.html" class="d-none d-md-block"><img src="img/company-logo/company-logo-sample.png" alt="" title=""></a> <a href="#" class="d-block d-md-none" data-toggle="modal" data-target="#StudentProfileModal"><img src="img/company-logo/company-logo-sample.png" alt="" title=""></a>
+                
+              </div>
+              <div class="media-body feed-title">
+                <div class="row">
+                  <div class="col">
+                    <h4><a href="student-profile-view-employer-loggedin.html" class="name d-none d-md-block">Achal S.</a> <a href="#" class="name d-block d-md-none" data-toggle="modal" data-target="#StudentProfileModal">Achal S.</a> <span class="rated rising-star ml-1"> <a data-container="body" data-toggle="popover" data-placement="bottom" data-content="Rising talent shows strong potential based on their profile and early success on Switchidea. <a href='#'>Learn more.</a><a class='close custom-close'></a>">
+                      <svg class="svg-icon-align" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="16px" viewBox="0 0 755 709" enable-background="new 0 0 755 709" xml:space="preserve">
+<path fill="#F49819" d="M755.692,267.625c1.229,3.691,3.691,7.385,3.691,11.077c0,3.691-1.229,6.152-2.462,9.846  c-3.691,3.692-8.615,9.847-13.538,13.539c-36.923,36.923-75.077,73.846-110.77,110.769c-14.771,14.771-36.923,25.848-41.847,45.539  c-3.691,18.461,4.924,40.615,8.615,61.538C608,571.625,617.846,623.317,624,676.24c3.692,25.847-17.23,39.385-41.846,29.538  c-2.462-1.23-6.154-2.462-8.616-4.924c-56.615-29.538-114.461-59.076-171.076-88.614c-13.539-7.386-23.385-6.153-35.692,0  c-59.076,30.77-118.153,61.538-176,91.076c-12.308,6.154-23.384,7.386-34.461-1.229c-11.077-8.615-12.308-19.692-11.077-32  c11.077-66.462,22.154-134.154,34.461-200.615c1.23-9.847,0-16-7.385-23.385c-22.154-22.154-44.308-43.077-66.461-64  c-22.153-20.923-44.308-43.077-66.462-65.231c-4.923-4.923-9.846-11.076-14.77-16c-2.461-2.461-4.923-4.923-7.384-8.614  c-2.462-2.462-3.692-4.924-4.923-8.615c0-1.23-1.23-3.692-1.23-4.923c0-1.231,0-2.462,1.23-4.924  c4.923-17.23,25.846-24.614,43.077-27.076c61.538-8.615,123.077-18.461,184.615-25.846c13.539-2.462,22.154-7.386,28.308-20.924  c28.308-59.077,57.847-116.923,87.385-174.769C361.846,12.856,368,3.01,385.23,3.01c16,0,24.614,9.846,30.77,23.385  c29.538,59.077,59.077,118.154,88.615,176c4.923,9.846,12.308,16,23.385,17.23c62.77,8.615,125.538,18.462,189.538,27.077  C732.308,249.164,745.846,254.087,755.692,267.625z"/>
+</svg>
+                      <span class="d-none d-md-block i-b">RISING STAR</span></a></span>
+                      <div class="clearfix"></div>
+                    </h4>
+                    <div class="location">
+                      <svg class="mr-1" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="21.341 0 101.318 144" enable-background="new 21.341 0 101.318 144" xml:space="preserve">
+                        <path fill="currentColor" d="M72.703,144c-1.459,0-2.817-0.753-3.586-1.994l-40.213-64.76c-4.949-7.984-7.563-17.189-7.563-26.621  C21.34,22.71,44.068,0,72,0c27.934,0,50.661,22.71,50.661,50.625c0,9.151-2.474,18.121-7.146,25.938l-39.188,65.387  c-0.759,1.263-2.117,2.04-3.589,2.052C72.727,144,72.715,144,72.703,144z M72,8.438c-23.277,0-42.215,18.926-42.215,42.188  c0,7.861,2.176,15.528,6.295,22.176l36.559,58.878l35.631-59.45c3.89-6.506,5.945-13.979,5.945-21.604  C114.217,27.363,95.279,8.438,72,8.438z M72,75.938c-8.836,0-16.898-4.493-21.566-12.021c-2.462-3.979-3.763-8.573-3.763-13.293  c0-13.957,11.362-25.312,25.329-25.312c13.969,0,25.331,11.354,25.331,25.312c0,4.58-1.229,9.06-3.558,12.953  C89.145,71.318,81.006,75.938,72,75.938z M72,33.75c-9.312,0-16.887,7.57-16.887,16.875c0,3.148,0.863,6.21,2.498,8.852  C60.726,64.499,66.107,67.5,72,67.5c6.006,0,11.434-3.084,14.523-8.25c1.545-2.585,2.361-5.568,2.361-8.625  C88.887,41.32,81.313,33.75,72,33.75z"/>
+                      </svg>
+                      <a href="#">Kolkata</a>, India </div>
+                  </div>
+                  <div class="col-auto d-none d-md-block"><a href="#" class="btn btn-success">Message</a></div>
+                </div>
+                <div class=" feed-details">
+                  <div class="feed-details-item">
+                    <svg class="svg-icon-align mr-1" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="312 440 144 144" enable-background="new 312 440 144 144" xml:space="preserve">
+                      <path fill="currentColor" d="M455.398,554.768l-26.118-45.342c2.7-6.111,4.221-12.843,4.221-19.926c0-27.297-22.203-49.5-49.5-49.5  s-49.5,22.203-49.5,49.5c0,7.083,1.521,13.815,4.221,19.917l-26.118,45.333c-0.909,1.584-0.783,3.555,0.333,4.995  c1.116,1.44,2.979,2.088,4.734,1.602l26.424-7.109l7.029,26.415c0.468,1.764,1.953,3.068,3.753,3.303  c0.207,0.036,0.405,0.045,0.594,0.045c1.593,0,3.087-0.846,3.897-2.25l24.633-42.642l24.633,42.642  c0.811,1.404,2.305,2.25,3.897,2.25c0.189,0,0.396-0.009,0.594-0.036c1.8-0.234,3.285-1.539,3.753-3.303l7.029-26.415l26.424,7.11  c1.755,0.485,3.627-0.162,4.734-1.603C456.172,558.314,456.308,556.343,455.398,554.768z M357.019,567.827l-5.391-20.259  c-0.306-1.152-1.062-2.143-2.097-2.745c-1.035-0.595-2.277-0.747-3.42-0.45l-20.286,5.454l18.09-31.401  c7.173,9.918,17.892,17.101,30.321,19.603L357.019,567.827z M343.501,489.5c0-22.329,18.171-40.5,40.5-40.5  c22.329,0,40.5,18.171,40.5,40.5s-18.171,40.5-40.5,40.5C361.672,530,343.501,511.829,343.501,489.5z M421.892,544.382  c-1.152-0.306-2.386-0.144-3.421,0.45c-1.034,0.594-1.79,1.584-2.097,2.745l-5.391,20.259l-17.217-29.799  c12.42-2.493,23.147-9.685,30.32-19.602l18.09,31.4L421.892,544.382z M410.768,478.268c-0.478-1.449-1.656-2.547-3.133-2.934  l-12.762-3.339l-7.002-11.79c-1.62-2.736-6.12-2.736-7.731,0l-7.002,11.79l-12.771,3.339c-1.485,0.387-2.655,1.485-3.141,2.934  c-0.486,1.449-0.198,3.033,0.756,4.23l8.559,10.71l-0.936,13.995c-0.099,1.557,0.612,3.06,1.89,3.969  c1.278,0.909,2.934,1.08,4.365,0.468l12.141-5.157l12.142,5.157c0.566,0.243,1.17,0.36,1.764,0.36c0.918,0,1.836-0.279,2.61-0.828  c1.277-0.909,1.988-2.412,1.881-3.969l-0.937-13.995l8.55-10.71C410.965,481.31,411.244,479.717,410.768,478.268z M393.343,488.96  c-0.701,0.882-1.053,1.989-0.972,3.105l0.567,8.433l-7.173-3.051c-0.567-0.243-1.17-0.36-1.765-0.36  c-0.594,0-1.197,0.117-1.764,0.36l-7.164,3.051l0.558-8.433c0.082-1.116-0.27-2.223-0.972-3.105l-5.319-6.669l7.857-2.061  c1.143-0.297,2.124-1.044,2.727-2.052l4.077-6.867l4.077,6.867c0.604,1.008,1.584,1.755,2.728,2.052l7.856,2.061L393.343,488.96z"/>
+                    </svg>
+                    <a href="#" class="skills-tag">Autocad</a><a href="#" class="skills-tag">Catia</a> </span></div>
+                  <div class="feed-details-item">
+                    <svg class="svg-icon-align mr-1" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="14px" viewBox="312.414 440 143.172 144" enable-background="new 312.414 440 143.172 144" xml:space="preserve">
+                      <title>11</title>
+                      <path fill="currentColor" d="M384,459.55c-6.824,0-12.356,5.532-12.356,12.356s5.532,12.356,12.356,12.356s12.356-5.532,12.356-12.356  l0,0C396.349,465.086,390.821,459.559,384,459.55z M384,475.114c-1.763,0-3.192-1.429-3.192-3.192s1.429-3.192,3.192-3.192  c1.764,0,3.192,1.429,3.192,3.192c-0.009,1.757-1.436,3.177-3.192,3.177V475.114z M312.413,550.994V584h143.175v-33.006h-12.692  v-50.266h12.692v-26.729L384,440l-71.587,33.999v26.729h12.692v50.266H312.413z M321.577,491.564v-11.776L384,450.142l62.424,29.646  v11.776H321.577z M433.731,500.728v50.266h-14.098v-50.266H433.731z M410.484,500.728v50.266h-7.987v-50.266H410.484z   M393.348,500.728v50.266h-20.207v-50.266H393.348z M363.992,500.728v50.266h-7.988v-50.266H363.992z M346.854,500.728v50.266  h-12.585v-50.266H346.854z M446.438,560.158v14.678H321.577v-14.678H446.438z"/>
+                    </svg>
+                    <span>MCKV Institute of Engineering</span></div>
+                  <div class="feed-details-item">
+                    <svg class="svg-icon-align mr-1" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="320.719 440 126.562 144" enable-background="new 320.719 440 126.562 144" xml:space="preserve">
+                      <path fill="currentColor" d="M444.05,529.156c2.008-2.241,3.231-5.2,3.231-8.438c0-6.978-5.679-12.656-12.656-12.656h-24.564  c2.433-7.383,3.471-17.179,3.471-21.378v-4.216c0-9.304-7.571-16.875-16.875-16.875h-4.219c-1.936,0-3.623,1.316-4.092,3.195  l-2.298,9.194c-3.221,12.875-13.444,27.082-24.025,29.664c-1.854-4.691-6.429-8.021-11.773-8.021h-25.313  c-2.329,0-4.219,1.89-4.219,4.219v75.938c0,2.329,1.89,4.219,4.219,4.219h25.313c5.032,0,9.385-2.95,11.424-7.214l14.496,4.832  c4.739,1.58,9.678,2.382,14.676,2.382h35.342c6.978,0,12.656-5.679,12.656-12.656c0-1.646-0.314-3.221-0.889-4.663  c5.366-1.465,9.326-6.385,9.326-12.212c0-3.237-1.224-6.196-3.231-8.438c2.008-2.241,3.231-5.2,3.231-8.438  S446.058,531.397,444.05,529.156z M354.469,571.344c0,2.326-1.893,4.219-4.219,4.219h-21.094v-67.5h21.094  c2.326,0,4.219,1.893,4.219,4.219V571.344z M426.188,533.375h8.438c2.326,0,4.219,1.893,4.219,4.219s-1.893,4.219-4.219,4.219  h-8.438c-2.329,0-4.219,1.89-4.219,4.219s1.89,4.219,4.219,4.219h8.438c2.326,0,4.219,1.893,4.219,4.219s-1.893,4.219-4.219,4.219  h-8.438c-2.329,0-4.219,1.89-4.219,4.219s1.89,4.219,4.219,4.219c2.326,0,4.219,1.893,4.219,4.219s-1.893,4.219-4.219,4.219h-35.342  c-4.09,0-8.131-0.655-12.009-1.949l-15.93-5.31v-52.203c6.618-1.257,13.095-5.448,18.942-12.308  c5.709-6.699,10.339-15.581,12.384-23.763l1.499-5.999h0.925c4.651,0,8.438,3.786,8.438,8.438v4.216  c0,5.665-1.771,16.529-4.039,21.378h-8.617c-2.329,0-4.219,1.89-4.219,4.219c0,2.329,1.89,4.219,4.219,4.219h42.188  c2.326,0,4.219,1.893,4.219,4.219s-1.893,4.219-4.219,4.219h-8.438c-2.329,0-4.219,1.89-4.219,4.219  S423.858,533.375,426.188,533.375z M341.813,558.688c2.33,0,4.219,1.889,4.219,4.219s-1.889,4.219-4.219,4.219  s-4.219-1.889-4.219-4.219S339.482,558.688,341.813,558.688z M400.875,440c-2.33,0-4.219,1.889-4.219,4.219v8.719  c0,2.33,1.889,4.219,4.219,4.219s4.219-1.889,4.219-4.219v-8.719C405.094,441.889,403.205,440,400.875,440z M382.976,458.604  l-5.966-5.966c-1.647-1.647-4.319-1.647-5.966,0c-1.647,1.648-1.647,4.319,0,5.966l5.966,5.966c1.647,1.647,4.319,1.647,5.966,0  C384.624,462.923,384.624,460.251,382.976,458.604z M430.706,452.638c-1.647-1.647-4.318-1.647-5.966,0l-5.967,5.966  c-1.647,1.647-1.647,4.318,0,5.966c1.647,1.648,4.318,1.648,5.967,0l5.966-5.966C432.354,456.957,432.354,454.286,430.706,452.638z"/>
+                    </svg>
+                    <span>Web Designing & Development and Graphic Design Projects</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-3 d-block d-md-none"> <a href="#" class="btn btn-success btn-block">Message</a> </div>
+          </div>
+          <div class="feed-item"> <a href="student-profile-view-employer-loggedin.html" class="cover-link d-none d-md-block"></a> <a href="#" class="cover-link d-block d-md-none" data-toggle="modal" data-target="#StudentProfileModal"></a>
+            <div class="media">
+              <div class="feed-thumbnail mr-3"> <a href="student-profile-view-employer-loggedin.html" class="d-none d-md-block"><img src="img/company-logo/company-logo-sample.png" alt="" title=""></a> <a href="#" class="d-block d-md-none" data-toggle="modal" data-target="#StudentProfileModal"><img src="img/company-logo/company-logo-sample.png" alt="" title=""></a>
+                
+              </div>
+              <div class="media-body feed-title">
+                <div class="row">
+                  <div class="col">
+                    <h4><a href="student-profile-view-employer-loggedin.html" class="name d-none d-md-block">Achal S.</a> <a href="#" class="name d-block d-md-none" data-toggle="modal" data-target="#StudentProfileModal">Achal S.</a> <span class="rated top-rated ml-1 not-passed"> <a data-container="body" data-toggle="popover" data-placement="bottom" data-content="Top Rated talent delivers quality work performance with stellar feedback. <a href='#'>Learn more.</a><a class='close custom-close'></a>">
+                      <img src="img/icons/top-rated.png" srcset="img/icons/top-rated.svg" alt="" title="" height="15" class="svg-icon-align" />
+                      <span class="d-none d-md-block i-b">TOP RATED</span></a></span>
+                      <div class="clearfix"></div>
+                    </h4>
+                    <div class="location">
+                      <svg class="mr-1" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="21.341 0 101.318 144" enable-background="new 21.341 0 101.318 144" xml:space="preserve">
+                        <path fill="currentColor" d="M72.703,144c-1.459,0-2.817-0.753-3.586-1.994l-40.213-64.76c-4.949-7.984-7.563-17.189-7.563-26.621  C21.34,22.71,44.068,0,72,0c27.934,0,50.661,22.71,50.661,50.625c0,9.151-2.474,18.121-7.146,25.938l-39.188,65.387  c-0.759,1.263-2.117,2.04-3.589,2.052C72.727,144,72.715,144,72.703,144z M72,8.438c-23.277,0-42.215,18.926-42.215,42.188  c0,7.861,2.176,15.528,6.295,22.176l36.559,58.878l35.631-59.45c3.89-6.506,5.945-13.979,5.945-21.604  C114.217,27.363,95.279,8.438,72,8.438z M72,75.938c-8.836,0-16.898-4.493-21.566-12.021c-2.462-3.979-3.763-8.573-3.763-13.293  c0-13.957,11.362-25.312,25.329-25.312c13.969,0,25.331,11.354,25.331,25.312c0,4.58-1.229,9.06-3.558,12.953  C89.145,71.318,81.006,75.938,72,75.938z M72,33.75c-9.312,0-16.887,7.57-16.887,16.875c0,3.148,0.863,6.21,2.498,8.852  C60.726,64.499,66.107,67.5,72,67.5c6.006,0,11.434-3.084,14.523-8.25c1.545-2.585,2.361-5.568,2.361-8.625  C88.887,41.32,81.313,33.75,72,33.75z"/>
+                      </svg>
+                      <a href="#">Pune</a>, India </div>
+                  </div>
+                  <div class="col-auto d-none d-md-block"><a href="#" class="btn btn-success">Message</a></div>
+                </div>
+                <div class=" feed-details">
+                  <div class="feed-details-item">
+                    <svg class="svg-icon-align mr-1" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="312 440 144 144" enable-background="new 312 440 144 144" xml:space="preserve">
+                      <path fill="currentColor" d="M455.398,554.768l-26.118-45.342c2.7-6.111,4.221-12.843,4.221-19.926c0-27.297-22.203-49.5-49.5-49.5  s-49.5,22.203-49.5,49.5c0,7.083,1.521,13.815,4.221,19.917l-26.118,45.333c-0.909,1.584-0.783,3.555,0.333,4.995  c1.116,1.44,2.979,2.088,4.734,1.602l26.424-7.109l7.029,26.415c0.468,1.764,1.953,3.068,3.753,3.303  c0.207,0.036,0.405,0.045,0.594,0.045c1.593,0,3.087-0.846,3.897-2.25l24.633-42.642l24.633,42.642  c0.811,1.404,2.305,2.25,3.897,2.25c0.189,0,0.396-0.009,0.594-0.036c1.8-0.234,3.285-1.539,3.753-3.303l7.029-26.415l26.424,7.11  c1.755,0.485,3.627-0.162,4.734-1.603C456.172,558.314,456.308,556.343,455.398,554.768z M357.019,567.827l-5.391-20.259  c-0.306-1.152-1.062-2.143-2.097-2.745c-1.035-0.595-2.277-0.747-3.42-0.45l-20.286,5.454l18.09-31.401  c7.173,9.918,17.892,17.101,30.321,19.603L357.019,567.827z M343.501,489.5c0-22.329,18.171-40.5,40.5-40.5  c22.329,0,40.5,18.171,40.5,40.5s-18.171,40.5-40.5,40.5C361.672,530,343.501,511.829,343.501,489.5z M421.892,544.382  c-1.152-0.306-2.386-0.144-3.421,0.45c-1.034,0.594-1.79,1.584-2.097,2.745l-5.391,20.259l-17.217-29.799  c12.42-2.493,23.147-9.685,30.32-19.602l18.09,31.4L421.892,544.382z M410.768,478.268c-0.478-1.449-1.656-2.547-3.133-2.934  l-12.762-3.339l-7.002-11.79c-1.62-2.736-6.12-2.736-7.731,0l-7.002,11.79l-12.771,3.339c-1.485,0.387-2.655,1.485-3.141,2.934  c-0.486,1.449-0.198,3.033,0.756,4.23l8.559,10.71l-0.936,13.995c-0.099,1.557,0.612,3.06,1.89,3.969  c1.278,0.909,2.934,1.08,4.365,0.468l12.141-5.157l12.142,5.157c0.566,0.243,1.17,0.36,1.764,0.36c0.918,0,1.836-0.279,2.61-0.828  c1.277-0.909,1.988-2.412,1.881-3.969l-0.937-13.995l8.55-10.71C410.965,481.31,411.244,479.717,410.768,478.268z M393.343,488.96  c-0.701,0.882-1.053,1.989-0.972,3.105l0.567,8.433l-7.173-3.051c-0.567-0.243-1.17-0.36-1.765-0.36  c-0.594,0-1.197,0.117-1.764,0.36l-7.164,3.051l0.558-8.433c0.082-1.116-0.27-2.223-0.972-3.105l-5.319-6.669l7.857-2.061  c1.143-0.297,2.124-1.044,2.727-2.052l4.077-6.867l4.077,6.867c0.604,1.008,1.584,1.755,2.728,2.052l7.856,2.061L393.343,488.96z"/>
+                    </svg>
+                    <a href="#" class="skills-tag">Autocad</a><a href="#" class="skills-tag verified">Catia</a> </span></div>
+                  <div class="feed-details-item">
+                    <svg class="svg-icon-align mr-1" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="14px" viewBox="312.414 440 143.172 144" enable-background="new 312.414 440 143.172 144" xml:space="preserve">
+                      <title>11</title>
+                      <path fill="currentColor" d="M384,459.55c-6.824,0-12.356,5.532-12.356,12.356s5.532,12.356,12.356,12.356s12.356-5.532,12.356-12.356  l0,0C396.349,465.086,390.821,459.559,384,459.55z M384,475.114c-1.763,0-3.192-1.429-3.192-3.192s1.429-3.192,3.192-3.192  c1.764,0,3.192,1.429,3.192,3.192c-0.009,1.757-1.436,3.177-3.192,3.177V475.114z M312.413,550.994V584h143.175v-33.006h-12.692  v-50.266h12.692v-26.729L384,440l-71.587,33.999v26.729h12.692v50.266H312.413z M321.577,491.564v-11.776L384,450.142l62.424,29.646  v11.776H321.577z M433.731,500.728v50.266h-14.098v-50.266H433.731z M410.484,500.728v50.266h-7.987v-50.266H410.484z   M393.348,500.728v50.266h-20.207v-50.266H393.348z M363.992,500.728v50.266h-7.988v-50.266H363.992z M346.854,500.728v50.266  h-12.585v-50.266H346.854z M446.438,560.158v14.678H321.577v-14.678H446.438z"/>
+                    </svg>
+                    <span>MCKV Institute of Engineering</span></div>
+                  <div class="feed-details-item">
+                    <svg class="svg-icon-align mr-1" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="320.719 440 126.562 144" enable-background="new 320.719 440 126.562 144" xml:space="preserve">
+                      <path fill="currentColor" d="M444.05,529.156c2.008-2.241,3.231-5.2,3.231-8.438c0-6.978-5.679-12.656-12.656-12.656h-24.564  c2.433-7.383,3.471-17.179,3.471-21.378v-4.216c0-9.304-7.571-16.875-16.875-16.875h-4.219c-1.936,0-3.623,1.316-4.092,3.195  l-2.298,9.194c-3.221,12.875-13.444,27.082-24.025,29.664c-1.854-4.691-6.429-8.021-11.773-8.021h-25.313  c-2.329,0-4.219,1.89-4.219,4.219v75.938c0,2.329,1.89,4.219,4.219,4.219h25.313c5.032,0,9.385-2.95,11.424-7.214l14.496,4.832  c4.739,1.58,9.678,2.382,14.676,2.382h35.342c6.978,0,12.656-5.679,12.656-12.656c0-1.646-0.314-3.221-0.889-4.663  c5.366-1.465,9.326-6.385,9.326-12.212c0-3.237-1.224-6.196-3.231-8.438c2.008-2.241,3.231-5.2,3.231-8.438  S446.058,531.397,444.05,529.156z M354.469,571.344c0,2.326-1.893,4.219-4.219,4.219h-21.094v-67.5h21.094  c2.326,0,4.219,1.893,4.219,4.219V571.344z M426.188,533.375h8.438c2.326,0,4.219,1.893,4.219,4.219s-1.893,4.219-4.219,4.219  h-8.438c-2.329,0-4.219,1.89-4.219,4.219s1.89,4.219,4.219,4.219h8.438c2.326,0,4.219,1.893,4.219,4.219s-1.893,4.219-4.219,4.219  h-8.438c-2.329,0-4.219,1.89-4.219,4.219s1.89,4.219,4.219,4.219c2.326,0,4.219,1.893,4.219,4.219s-1.893,4.219-4.219,4.219h-35.342  c-4.09,0-8.131-0.655-12.009-1.949l-15.93-5.31v-52.203c6.618-1.257,13.095-5.448,18.942-12.308  c5.709-6.699,10.339-15.581,12.384-23.763l1.499-5.999h0.925c4.651,0,8.438,3.786,8.438,8.438v4.216  c0,5.665-1.771,16.529-4.039,21.378h-8.617c-2.329,0-4.219,1.89-4.219,4.219c0,2.329,1.89,4.219,4.219,4.219h42.188  c2.326,0,4.219,1.893,4.219,4.219s-1.893,4.219-4.219,4.219h-8.438c-2.329,0-4.219,1.89-4.219,4.219  S423.858,533.375,426.188,533.375z M341.813,558.688c2.33,0,4.219,1.889,4.219,4.219s-1.889,4.219-4.219,4.219  s-4.219-1.889-4.219-4.219S339.482,558.688,341.813,558.688z M400.875,440c-2.33,0-4.219,1.889-4.219,4.219v8.719  c0,2.33,1.889,4.219,4.219,4.219s4.219-1.889,4.219-4.219v-8.719C405.094,441.889,403.205,440,400.875,440z M382.976,458.604  l-5.966-5.966c-1.647-1.647-4.319-1.647-5.966,0c-1.647,1.648-1.647,4.319,0,5.966l5.966,5.966c1.647,1.647,4.319,1.647,5.966,0  C384.624,462.923,384.624,460.251,382.976,458.604z M430.706,452.638c-1.647-1.647-4.318-1.647-5.966,0l-5.967,5.966  c-1.647,1.647-1.647,4.318,0,5.966c1.647,1.648,4.318,1.648,5.967,0l5.966-5.966C432.354,456.957,432.354,454.286,430.706,452.638z"/>
+                    </svg>
+                    <span>Web Designing & Development and Graphic Design Projects</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-3 d-block d-md-none"> <a href="#" class="btn btn-success btn-block">Message</a> </div>
+          </div>
+          
+          <div class="feed-item"> <a href="student-profile-view-employer-loggedin.html" class="cover-link d-none d-md-block"></a> <a href="#" class="cover-link d-block d-md-none" data-toggle="modal" data-target="#StudentProfileModal"></a>
+            <div class="media">
+              <div class="feed-thumbnail mr-3"> <a href="student-profile-view-employer-loggedin.html" class="d-none d-md-block"><img src="img/company-logo/company-logo-sample.png" alt="" title=""></a> <a href="#" class="d-block d-md-none" data-toggle="modal" data-target="#StudentProfileModal"><img src="img/company-logo/company-logo-sample.png" alt="" title=""></a>
+                
+              </div>
+              <div class="media-body feed-title">
+                <div class="row">
+                  <div class="col">
+                    <h4> <a href="student-profile-view-employer-loggedin.html" class="name d-none d-md-block">Achal S.</a> <a href="#" class="name d-block d-md-none" data-toggle="modal" data-target="#StudentProfileModal">Achal S.</a> <span class="rated top-rated-plus ml-1"> <a data-container="body" data-toggle="popover" data-placement="bottom" data-content="Top rated plus represent the top 3% of talent on Switchidea. <a href='#'>Learn more.</a><a class='close custom-close'></a>">
+                      
+
+
+<svg class="svg-icon-align" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="15px" viewBox="0 0 751 617" enable-background="new 0 0 751 617" xml:space="preserve">
+<path fill="#EFB600" d="M723.242,186.792c-66.921,63.734-133.843,127.469-200.763,191.204  c-47.802-115.785-95.603-230.507-144.465-347.354c-48.863,116.846-96.664,231.569-144.466,347.354  C165.566,313.199,98.645,250.527,31.724,186.792c-1.062,2.125,0,3.187,0,4.249c3.187,12.747,6.374,25.494,10.623,39.303  c23.369,87.105,45.676,174.207,67.983,260.248l-2.125,57.361h-1.062c0,14.871,0,28.682,0,42.49h540.68V477.846  c22.307-86.041,45.677-172.083,67.982-259.187c3.188-10.622,5.313-21.244,8.498-31.867  C724.305,186.792,724.305,186.792,723.242,186.792z"/>
+<g>
+	<g>
+		<path fill="#BD8B28" d="M82.712,539.455l1.062-45.676C65.716,425.797,47.658,357.813,29.6,289.83L5.169,198.476    c-2.125-6.374-1.063-12.747,0-19.12c3.187-8.498,9.56-15.935,19.12-18.059c8.498-2.125,18.058,0,25.494,6.373l174.206,164.648    L353.583,21.083c5.311-11.685,18.058-19.121,31.867-15.934c8.498,2.125,14.871,8.498,18.058,16.996l128.531,310.174    l173.146-164.647c7.437-7.437,19.12-9.56,28.682-5.312l-10.623,24.433l10.623-24.433c12.746,5.312,20.183,19.121,15.934,31.868    l-75.419,286.805v109.412c0,14.869-11.686,26.555-26.557,26.555h-540.68c-13.809,0-25.494-11.684-25.494-25.494L82.712,539.455z     M134.761,563.887h487.568v-86.041c0-2.125,0-4.248,1.063-6.373l53.112-202.888L540.537,397.115    c-6.374,6.373-14.871,8.498-23.369,6.373c-8.498-2.123-15.935-7.436-19.12-15.934L378.015,100.75L257.981,388.617    c-3.187,8.498-10.623,13.811-19.12,15.934c-8.498,2.125-16.996-1.063-23.37-6.373L79.525,268.584l2.125,7.436    c18.058,69.046,36.116,139.154,54.174,208.199c1.063,2.125,1.063,5.313,1.063,7.438l-1.063,79.668"/>
+	</g>
+</g>
+</svg>
+                      <span class="d-none d-md-block i-b">TOP RATED PlUS</span></a></span>
+                      <div class="clearfix"></div>
+                    </h4>
+                    <div class="location">
+                      <svg class="mr-1" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="21.341 0 101.318 144" enable-background="new 21.341 0 101.318 144" xml:space="preserve">
+                        <path fill="currentColor" d="M72.703,144c-1.459,0-2.817-0.753-3.586-1.994l-40.213-64.76c-4.949-7.984-7.563-17.189-7.563-26.621  C21.34,22.71,44.068,0,72,0c27.934,0,50.661,22.71,50.661,50.625c0,9.151-2.474,18.121-7.146,25.938l-39.188,65.387  c-0.759,1.263-2.117,2.04-3.589,2.052C72.727,144,72.715,144,72.703,144z M72,8.438c-23.277,0-42.215,18.926-42.215,42.188  c0,7.861,2.176,15.528,6.295,22.176l36.559,58.878l35.631-59.45c3.89-6.506,5.945-13.979,5.945-21.604  C114.217,27.363,95.279,8.438,72,8.438z M72,75.938c-8.836,0-16.898-4.493-21.566-12.021c-2.462-3.979-3.763-8.573-3.763-13.293  c0-13.957,11.362-25.312,25.329-25.312c13.969,0,25.331,11.354,25.331,25.312c0,4.58-1.229,9.06-3.558,12.953  C89.145,71.318,81.006,75.938,72,75.938z M72,33.75c-9.312,0-16.887,7.57-16.887,16.875c0,3.148,0.863,6.21,2.498,8.852  C60.726,64.499,66.107,67.5,72,67.5c6.006,0,11.434-3.084,14.523-8.25c1.545-2.585,2.361-5.568,2.361-8.625  C88.887,41.32,81.313,33.75,72,33.75z"/>
+                      </svg>
+                      <a href="#">New Delhi</a>, India </div>
+                  </div>
+                  <div class="col-auto d-none d-md-block"><a href="#" class="btn btn-success">Message</a></div>
+                </div>
+                <div class=" feed-details">
+                  <div class="feed-details-item">
+                    <svg class="svg-icon-align mr-1" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="312 440 144 144" enable-background="new 312 440 144 144" xml:space="preserve">
+                      <path fill="currentColor" d="M455.398,554.768l-26.118-45.342c2.7-6.111,4.221-12.843,4.221-19.926c0-27.297-22.203-49.5-49.5-49.5  s-49.5,22.203-49.5,49.5c0,7.083,1.521,13.815,4.221,19.917l-26.118,45.333c-0.909,1.584-0.783,3.555,0.333,4.995  c1.116,1.44,2.979,2.088,4.734,1.602l26.424-7.109l7.029,26.415c0.468,1.764,1.953,3.068,3.753,3.303  c0.207,0.036,0.405,0.045,0.594,0.045c1.593,0,3.087-0.846,3.897-2.25l24.633-42.642l24.633,42.642  c0.811,1.404,2.305,2.25,3.897,2.25c0.189,0,0.396-0.009,0.594-0.036c1.8-0.234,3.285-1.539,3.753-3.303l7.029-26.415l26.424,7.11  c1.755,0.485,3.627-0.162,4.734-1.603C456.172,558.314,456.308,556.343,455.398,554.768z M357.019,567.827l-5.391-20.259  c-0.306-1.152-1.062-2.143-2.097-2.745c-1.035-0.595-2.277-0.747-3.42-0.45l-20.286,5.454l18.09-31.401  c7.173,9.918,17.892,17.101,30.321,19.603L357.019,567.827z M343.501,489.5c0-22.329,18.171-40.5,40.5-40.5  c22.329,0,40.5,18.171,40.5,40.5s-18.171,40.5-40.5,40.5C361.672,530,343.501,511.829,343.501,489.5z M421.892,544.382  c-1.152-0.306-2.386-0.144-3.421,0.45c-1.034,0.594-1.79,1.584-2.097,2.745l-5.391,20.259l-17.217-29.799  c12.42-2.493,23.147-9.685,30.32-19.602l18.09,31.4L421.892,544.382z M410.768,478.268c-0.478-1.449-1.656-2.547-3.133-2.934  l-12.762-3.339l-7.002-11.79c-1.62-2.736-6.12-2.736-7.731,0l-7.002,11.79l-12.771,3.339c-1.485,0.387-2.655,1.485-3.141,2.934  c-0.486,1.449-0.198,3.033,0.756,4.23l8.559,10.71l-0.936,13.995c-0.099,1.557,0.612,3.06,1.89,3.969  c1.278,0.909,2.934,1.08,4.365,0.468l12.141-5.157l12.142,5.157c0.566,0.243,1.17,0.36,1.764,0.36c0.918,0,1.836-0.279,2.61-0.828  c1.277-0.909,1.988-2.412,1.881-3.969l-0.937-13.995l8.55-10.71C410.965,481.31,411.244,479.717,410.768,478.268z M393.343,488.96  c-0.701,0.882-1.053,1.989-0.972,3.105l0.567,8.433l-7.173-3.051c-0.567-0.243-1.17-0.36-1.765-0.36  c-0.594,0-1.197,0.117-1.764,0.36l-7.164,3.051l0.558-8.433c0.082-1.116-0.27-2.223-0.972-3.105l-5.319-6.669l7.857-2.061  c1.143-0.297,2.124-1.044,2.727-2.052l4.077-6.867l4.077,6.867c0.604,1.008,1.584,1.755,2.728,2.052l7.856,2.061L393.343,488.96z"/>
+                    </svg>
+                    <a href="#" class="skills-tag">Autocad</a><a href="#" class="skills-tag">Catia</a> </span></div>
+                  <div class="feed-details-item">
+                    <svg class="svg-icon-align mr-1" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="14px" viewBox="312.414 440 143.172 144" enable-background="new 312.414 440 143.172 144" xml:space="preserve">
+                      <title>11</title>
+                      <path fill="currentColor" d="M384,459.55c-6.824,0-12.356,5.532-12.356,12.356s5.532,12.356,12.356,12.356s12.356-5.532,12.356-12.356  l0,0C396.349,465.086,390.821,459.559,384,459.55z M384,475.114c-1.763,0-3.192-1.429-3.192-3.192s1.429-3.192,3.192-3.192  c1.764,0,3.192,1.429,3.192,3.192c-0.009,1.757-1.436,3.177-3.192,3.177V475.114z M312.413,550.994V584h143.175v-33.006h-12.692  v-50.266h12.692v-26.729L384,440l-71.587,33.999v26.729h12.692v50.266H312.413z M321.577,491.564v-11.776L384,450.142l62.424,29.646  v11.776H321.577z M433.731,500.728v50.266h-14.098v-50.266H433.731z M410.484,500.728v50.266h-7.987v-50.266H410.484z   M393.348,500.728v50.266h-20.207v-50.266H393.348z M363.992,500.728v50.266h-7.988v-50.266H363.992z M346.854,500.728v50.266  h-12.585v-50.266H346.854z M446.438,560.158v14.678H321.577v-14.678H446.438z"/>
+                    </svg>
+                    <span>MCKV Institute of Engineering</span></div>
+                  <div class="feed-details-item">
+                    <svg class="svg-icon-align mr-1" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="320.719 440 126.562 144" enable-background="new 320.719 440 126.562 144" xml:space="preserve">
+                      <path fill="currentColor" d="M444.05,529.156c2.008-2.241,3.231-5.2,3.231-8.438c0-6.978-5.679-12.656-12.656-12.656h-24.564  c2.433-7.383,3.471-17.179,3.471-21.378v-4.216c0-9.304-7.571-16.875-16.875-16.875h-4.219c-1.936,0-3.623,1.316-4.092,3.195  l-2.298,9.194c-3.221,12.875-13.444,27.082-24.025,29.664c-1.854-4.691-6.429-8.021-11.773-8.021h-25.313  c-2.329,0-4.219,1.89-4.219,4.219v75.938c0,2.329,1.89,4.219,4.219,4.219h25.313c5.032,0,9.385-2.95,11.424-7.214l14.496,4.832  c4.739,1.58,9.678,2.382,14.676,2.382h35.342c6.978,0,12.656-5.679,12.656-12.656c0-1.646-0.314-3.221-0.889-4.663  c5.366-1.465,9.326-6.385,9.326-12.212c0-3.237-1.224-6.196-3.231-8.438c2.008-2.241,3.231-5.2,3.231-8.438  S446.058,531.397,444.05,529.156z M354.469,571.344c0,2.326-1.893,4.219-4.219,4.219h-21.094v-67.5h21.094  c2.326,0,4.219,1.893,4.219,4.219V571.344z M426.188,533.375h8.438c2.326,0,4.219,1.893,4.219,4.219s-1.893,4.219-4.219,4.219  h-8.438c-2.329,0-4.219,1.89-4.219,4.219s1.89,4.219,4.219,4.219h8.438c2.326,0,4.219,1.893,4.219,4.219s-1.893,4.219-4.219,4.219  h-8.438c-2.329,0-4.219,1.89-4.219,4.219s1.89,4.219,4.219,4.219c2.326,0,4.219,1.893,4.219,4.219s-1.893,4.219-4.219,4.219h-35.342  c-4.09,0-8.131-0.655-12.009-1.949l-15.93-5.31v-52.203c6.618-1.257,13.095-5.448,18.942-12.308  c5.709-6.699,10.339-15.581,12.384-23.763l1.499-5.999h0.925c4.651,0,8.438,3.786,8.438,8.438v4.216  c0,5.665-1.771,16.529-4.039,21.378h-8.617c-2.329,0-4.219,1.89-4.219,4.219c0,2.329,1.89,4.219,4.219,4.219h42.188  c2.326,0,4.219,1.893,4.219,4.219s-1.893,4.219-4.219,4.219h-8.438c-2.329,0-4.219,1.89-4.219,4.219  S423.858,533.375,426.188,533.375z M341.813,558.688c2.33,0,4.219,1.889,4.219,4.219s-1.889,4.219-4.219,4.219  s-4.219-1.889-4.219-4.219S339.482,558.688,341.813,558.688z M400.875,440c-2.33,0-4.219,1.889-4.219,4.219v8.719  c0,2.33,1.889,4.219,4.219,4.219s4.219-1.889,4.219-4.219v-8.719C405.094,441.889,403.205,440,400.875,440z M382.976,458.604  l-5.966-5.966c-1.647-1.647-4.319-1.647-5.966,0c-1.647,1.648-1.647,4.319,0,5.966l5.966,5.966c1.647,1.647,4.319,1.647,5.966,0  C384.624,462.923,384.624,460.251,382.976,458.604z M430.706,452.638c-1.647-1.647-4.318-1.647-5.966,0l-5.967,5.966  c-1.647,1.647-1.647,4.318,0,5.966c1.647,1.648,4.318,1.648,5.967,0l5.966-5.966C432.354,456.957,432.354,454.286,430.706,452.638z"/>
+                    </svg>
+                    <span>Web Designing & Development and Graphic Design Projects</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-3 d-block d-md-none"> <a href="#" class="btn btn-success btn-block">Message</a> </div>
+          </div>
+          <div class="feed-item"> <a href="student-profile-view-employer-loggedin.html" class="cover-link d-none d-md-block"></a> <a href="#" class="cover-link d-block d-md-none" data-toggle="modal" data-target="#StudentProfileModal"></a>
+            <div class="media">
+              <div class="feed-thumbnail mr-3"> <a href="student-profile-view-employer-loggedin.html" class="d-none d-md-block"><img src="img/company-logo/company-logo-sample.png" alt="" title=""></a> <a href="#" class="d-block d-md-none" data-toggle="modal" data-target="#StudentProfileModal"><img src="img/company-logo/company-logo-sample.png" alt="" title=""></a>
+                
+              </div>
+              <div class="media-body feed-title">
+                <div class="row">
+                  <div class="col">
+                    <h4><a href="student-profile-view-employer-loggedin.html" class="name d-none d-md-block">Neha M.</a> <a href="#" class="name d-block d-md-none" data-toggle="modal" data-target="#StudentProfileModal">Neha M.</a> <span class="rated expert-vetted ml-1"> <a data-container="body" data-toggle="popover" data-placement="bottom" data-content="All Expert-Vetted candidates are fully pre-screened to ensure high-quality and professionalism. They represent the top 1% of talent on Switchidea. <a href='#'>Learn more.</a><a class='close custom-close'></a>">
+                      
+                      <svg class="svg-icon-align" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="120 222.5 540 527.5" enable-background="new 120 222.5 540 527.5" xml:space="preserve">
+<path fill="#67B438" d="M417.113,684.591c-3.485,2.324-6.972,4.647-8.133,5.811c8.133,12.78,16.267,25.562,24.398,38.342  c4.647,6.971,5.811,15.104-3.485,19.752c-9.295,4.648-12.78-2.324-17.429-9.295c-5.81-10.457-12.78-20.914-22.075-34.856  c-9.295,13.942-16.267,23.237-22.075,34.856c-4.647,6.971-8.134,13.942-17.429,9.295c-10.457-4.647-8.134-12.781-3.484-19.752  c6.971-12.78,15.104-24.399,23.236-37.18c-2.323-1.162-4.646-3.486-8.134-5.811c-1.161,0-2.323,0-2.323,1.161  c-19.752,27.886-46.476,33.695-77.846,25.563c-16.266-4.647-31.371-11.618-46.475-19.752c-11.619-5.811-11.619-15.104-1.162-23.237  c17.428-13.942,38.342-20.914,63.903-23.237c-8.133-5.81-15.104-11.619-23.237-16.267c-2.324-1.162-5.81,0-9.295,2.323  c-46.475,27.886-90.626,15.104-116.188-32.532c-6.971-13.942-5.809-18.591,8.133-24.399c19.752-8.133,39.504-12.78,61.58-6.971  c-3.486-12.78-8.133-19.752-23.238-18.59c-23.237,1.16-41.828-9.295-51.123-30.209c-9.295-22.076-16.266-45.313-22.076-68.552  c-2.324-9.295,4.647-16.267,15.104-12.779c15.104,4.646,30.209,10.457,44.151,16.266c3.486,1.162,5.81,3.486,9.295,4.647  c2.324-9.296,0-15.104-8.133-20.913c-31.371-18.591-42.989-42.99-34.856-81.333c2.324-13.942,8.133-26.722,13.942-39.503  c5.809-12.781,15.104-13.942,24.399-2.324c9.295,12.781,17.428,27.885,25.562,41.827c1.162-3.485,2.324-6.971,3.485-10.457  c0-8.132,0-16.265,0-25.561c-2.324-40.666,19.752-68.551,49.961-91.789c9.295-6.971,15.104-4.646,20.914,6.971  c20.914,40.666,12.781,79.008-22.076,108.055c-6.971,5.81-13.942,9.295-20.914,15.104c-4.647,3.484-9.295,9.295-12.781,13.941  c1.162,1.162,1.162,1.162,2.324,2.324c9.295-5.811,18.59-11.619,29.047-16.268c18.59-9.295,25.562-4.646,24.399,15.104  c-1.162,46.475-19.752,74.358-62.741,91.788c-2.324,1.162-5.81,5.81-5.81,9.295c0,8.133,1.162,16.267,3.486,25.562  c6.971-8.134,12.781-16.267,18.59-23.236c10.457-11.619,17.428-11.619,26.723,1.161c19.752,26.724,32.533,68.551,2.324,103.406  c-1.162,1.162-1.162,2.324-3.485,4.647c9.295,8.133,17.428,15.104,27.885,24.398c-2.324-12.779-4.647-22.074-5.809-32.531  c-1.162-11.619,3.485-17.43,16.266-15.104c22.076,3.485,41.828,11.618,58.093,26.723c17.429,16.268,22.076,36.02,17.429,58.095  c-2.323,12.78-1.162,22.076,12.78,26.724c11.619-4.646,15.104-11.619,12.781-25.562c-6.973-33.694,5.809-56.933,36.018-72.036  c11.619-5.811,24.399-9.295,36.02-12.78c15.104-3.486,20.913,2.323,18.59,18.59c-1.162,9.295-3.485,17.428-5.811,29.047  c10.457-9.295,19.752-16.267,27.886-24.398c-1.161-2.324-2.323-4.647-3.485-5.811c-24.399-32.531-23.237-73.197,3.485-104.567  c9.295-10.457,15.104-10.457,24.398-1.162c3.486,3.484,6.972,6.971,9.295,11.618c3.486,3.485,5.811,8.134,9.295,13.942  c1.162-4.647,1.162-6.972,2.324-9.296c4.647-22.075,4.647-23.237-16.267-32.532c-40.665-18.59-52.284-56.932-51.122-95.272  c0-10.457,8.133-13.943,17.428-10.457c12.781,5.81,24.399,12.78,38.342,17.428c-4.646-4.646-8.133-9.295-12.78-13.942  c-11.619-9.295-24.398-17.428-34.855-29.046c-29.047-30.208-22.075-68.551-6.971-98.759c3.484-6.971,10.457-9.295,17.428-3.486  c29.047,22.076,51.123,48.799,51.123,88.303c0,10.457,0,19.752,0,30.209c0,3.484,1.161,8.133,4.646,11.619  c2.323-4.647,3.485-9.295,5.81-13.943c6.972-10.457,12.78-22.075,20.914-32.532c5.81-8.133,15.104-6.971,19.752,2.324  c15.104,25.561,22.075,52.285,16.267,81.332c-3.486,19.752-17.429,32.532-33.693,41.827c-9.296,4.646-13.942,10.457-10.457,19.752  c15.104-5.811,31.369-12.78,46.475-18.59c17.429-6.973,26.724,2.322,20.914,19.752c-6.972,20.914-11.619,41.827-20.914,61.579  c-9.295,20.914-27.885,30.209-51.122,30.209c-17.429,0-17.429,0-24.399,17.428c22.075-5.81,42.989-1.161,61.579,6.972  c12.78,5.811,13.942,11.619,8.134,23.237c-24.399,48.799-70.875,61.579-116.188,33.694c-5.809-3.485-9.295-3.485-13.942,1.162  c-4.646,4.646-10.457,8.133-17.428,12.779c9.295,2.324,18.59,3.486,25.563,5.811c12.779,5.81,26.723,11.619,38.342,19.752  c9.295,5.81,8.133,15.104-1.162,20.914c-20.914,12.779-44.151,22.074-69.713,23.236c-22.075,1.162-39.504-6.972-52.284-24.398  C421.761,686.915,419.438,685.753,417.113,684.591C418.275,684.591,417.113,684.591,417.113,684.591z"/>
+</svg>
+                      <span class="d-none d-md-block i-b">Expert-Vetted</span></a></span>
+                      <div class="clearfix"></div>
+                    </h4>
+                    <div class="location">
+                      <svg class="mr-1" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="21.341 0 101.318 144" enable-background="new 21.341 0 101.318 144" xml:space="preserve">
+                        <path fill="currentColor" d="M72.703,144c-1.459,0-2.817-0.753-3.586-1.994l-40.213-64.76c-4.949-7.984-7.563-17.189-7.563-26.621  C21.34,22.71,44.068,0,72,0c27.934,0,50.661,22.71,50.661,50.625c0,9.151-2.474,18.121-7.146,25.938l-39.188,65.387  c-0.759,1.263-2.117,2.04-3.589,2.052C72.727,144,72.715,144,72.703,144z M72,8.438c-23.277,0-42.215,18.926-42.215,42.188  c0,7.861,2.176,15.528,6.295,22.176l36.559,58.878l35.631-59.45c3.89-6.506,5.945-13.979,5.945-21.604  C114.217,27.363,95.279,8.438,72,8.438z M72,75.938c-8.836,0-16.898-4.493-21.566-12.021c-2.462-3.979-3.763-8.573-3.763-13.293  c0-13.957,11.362-25.312,25.329-25.312c13.969,0,25.331,11.354,25.331,25.312c0,4.58-1.229,9.06-3.558,12.953  C89.145,71.318,81.006,75.938,72,75.938z M72,33.75c-9.312,0-16.887,7.57-16.887,16.875c0,3.148,0.863,6.21,2.498,8.852  C60.726,64.499,66.107,67.5,72,67.5c6.006,0,11.434-3.084,14.523-8.25c1.545-2.585,2.361-5.568,2.361-8.625  C88.887,41.32,81.313,33.75,72,33.75z"/>
+                      </svg>
+                      <a href="#">New Delhi</a>, India </div>
+                  </div>
+                  <div class="col-auto d-none d-md-block"><a href="#" class="btn btn-success">Message</a></div>
+                </div>
+                <div class=" feed-details">
+                  <div class="feed-details-item">
+                    <svg class="svg-icon-align mr-1" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="312 440 144 144" enable-background="new 312 440 144 144" xml:space="preserve">
+                      <path fill="currentColor" d="M455.398,554.768l-26.118-45.342c2.7-6.111,4.221-12.843,4.221-19.926c0-27.297-22.203-49.5-49.5-49.5  s-49.5,22.203-49.5,49.5c0,7.083,1.521,13.815,4.221,19.917l-26.118,45.333c-0.909,1.584-0.783,3.555,0.333,4.995  c1.116,1.44,2.979,2.088,4.734,1.602l26.424-7.109l7.029,26.415c0.468,1.764,1.953,3.068,3.753,3.303  c0.207,0.036,0.405,0.045,0.594,0.045c1.593,0,3.087-0.846,3.897-2.25l24.633-42.642l24.633,42.642  c0.811,1.404,2.305,2.25,3.897,2.25c0.189,0,0.396-0.009,0.594-0.036c1.8-0.234,3.285-1.539,3.753-3.303l7.029-26.415l26.424,7.11  c1.755,0.485,3.627-0.162,4.734-1.603C456.172,558.314,456.308,556.343,455.398,554.768z M357.019,567.827l-5.391-20.259  c-0.306-1.152-1.062-2.143-2.097-2.745c-1.035-0.595-2.277-0.747-3.42-0.45l-20.286,5.454l18.09-31.401  c7.173,9.918,17.892,17.101,30.321,19.603L357.019,567.827z M343.501,489.5c0-22.329,18.171-40.5,40.5-40.5  c22.329,0,40.5,18.171,40.5,40.5s-18.171,40.5-40.5,40.5C361.672,530,343.501,511.829,343.501,489.5z M421.892,544.382  c-1.152-0.306-2.386-0.144-3.421,0.45c-1.034,0.594-1.79,1.584-2.097,2.745l-5.391,20.259l-17.217-29.799  c12.42-2.493,23.147-9.685,30.32-19.602l18.09,31.4L421.892,544.382z M410.768,478.268c-0.478-1.449-1.656-2.547-3.133-2.934  l-12.762-3.339l-7.002-11.79c-1.62-2.736-6.12-2.736-7.731,0l-7.002,11.79l-12.771,3.339c-1.485,0.387-2.655,1.485-3.141,2.934  c-0.486,1.449-0.198,3.033,0.756,4.23l8.559,10.71l-0.936,13.995c-0.099,1.557,0.612,3.06,1.89,3.969  c1.278,0.909,2.934,1.08,4.365,0.468l12.141-5.157l12.142,5.157c0.566,0.243,1.17,0.36,1.764,0.36c0.918,0,1.836-0.279,2.61-0.828  c1.277-0.909,1.988-2.412,1.881-3.969l-0.937-13.995l8.55-10.71C410.965,481.31,411.244,479.717,410.768,478.268z M393.343,488.96  c-0.701,0.882-1.053,1.989-0.972,3.105l0.567,8.433l-7.173-3.051c-0.567-0.243-1.17-0.36-1.765-0.36  c-0.594,0-1.197,0.117-1.764,0.36l-7.164,3.051l0.558-8.433c0.082-1.116-0.27-2.223-0.972-3.105l-5.319-6.669l7.857-2.061  c1.143-0.297,2.124-1.044,2.727-2.052l4.077-6.867l4.077,6.867c0.604,1.008,1.584,1.755,2.728,2.052l7.856,2.061L393.343,488.96z"/>
+                    </svg>
+                    <a href="#" class="skills-tag verified">Autocad</a><a href="#" class="skills-tag">Catia</a> </span></div>
+                  <div class="feed-details-item">
+                    <svg class="svg-icon-align mr-1" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="14px" viewBox="312.414 440 143.172 144" enable-background="new 312.414 440 143.172 144" xml:space="preserve">
+                      <title>11</title>
+                      <path fill="currentColor" d="M384,459.55c-6.824,0-12.356,5.532-12.356,12.356s5.532,12.356,12.356,12.356s12.356-5.532,12.356-12.356  l0,0C396.349,465.086,390.821,459.559,384,459.55z M384,475.114c-1.763,0-3.192-1.429-3.192-3.192s1.429-3.192,3.192-3.192  c1.764,0,3.192,1.429,3.192,3.192c-0.009,1.757-1.436,3.177-3.192,3.177V475.114z M312.413,550.994V584h143.175v-33.006h-12.692  v-50.266h12.692v-26.729L384,440l-71.587,33.999v26.729h12.692v50.266H312.413z M321.577,491.564v-11.776L384,450.142l62.424,29.646  v11.776H321.577z M433.731,500.728v50.266h-14.098v-50.266H433.731z M410.484,500.728v50.266h-7.987v-50.266H410.484z   M393.348,500.728v50.266h-20.207v-50.266H393.348z M363.992,500.728v50.266h-7.988v-50.266H363.992z M346.854,500.728v50.266  h-12.585v-50.266H346.854z M446.438,560.158v14.678H321.577v-14.678H446.438z"/>
+                    </svg>
+                    <span>MCKV Institute of Engineering</span></div>
+                  <div class="feed-details-item">
+                    <svg class="svg-icon-align mr-1" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="320.719 440 126.562 144" enable-background="new 320.719 440 126.562 144" xml:space="preserve">
+                      <path fill="currentColor" d="M444.05,529.156c2.008-2.241,3.231-5.2,3.231-8.438c0-6.978-5.679-12.656-12.656-12.656h-24.564  c2.433-7.383,3.471-17.179,3.471-21.378v-4.216c0-9.304-7.571-16.875-16.875-16.875h-4.219c-1.936,0-3.623,1.316-4.092,3.195  l-2.298,9.194c-3.221,12.875-13.444,27.082-24.025,29.664c-1.854-4.691-6.429-8.021-11.773-8.021h-25.313  c-2.329,0-4.219,1.89-4.219,4.219v75.938c0,2.329,1.89,4.219,4.219,4.219h25.313c5.032,0,9.385-2.95,11.424-7.214l14.496,4.832  c4.739,1.58,9.678,2.382,14.676,2.382h35.342c6.978,0,12.656-5.679,12.656-12.656c0-1.646-0.314-3.221-0.889-4.663  c5.366-1.465,9.326-6.385,9.326-12.212c0-3.237-1.224-6.196-3.231-8.438c2.008-2.241,3.231-5.2,3.231-8.438  S446.058,531.397,444.05,529.156z M354.469,571.344c0,2.326-1.893,4.219-4.219,4.219h-21.094v-67.5h21.094  c2.326,0,4.219,1.893,4.219,4.219V571.344z M426.188,533.375h8.438c2.326,0,4.219,1.893,4.219,4.219s-1.893,4.219-4.219,4.219  h-8.438c-2.329,0-4.219,1.89-4.219,4.219s1.89,4.219,4.219,4.219h8.438c2.326,0,4.219,1.893,4.219,4.219s-1.893,4.219-4.219,4.219  h-8.438c-2.329,0-4.219,1.89-4.219,4.219s1.89,4.219,4.219,4.219c2.326,0,4.219,1.893,4.219,4.219s-1.893,4.219-4.219,4.219h-35.342  c-4.09,0-8.131-0.655-12.009-1.949l-15.93-5.31v-52.203c6.618-1.257,13.095-5.448,18.942-12.308  c5.709-6.699,10.339-15.581,12.384-23.763l1.499-5.999h0.925c4.651,0,8.438,3.786,8.438,8.438v4.216  c0,5.665-1.771,16.529-4.039,21.378h-8.617c-2.329,0-4.219,1.89-4.219,4.219c0,2.329,1.89,4.219,4.219,4.219h42.188  c2.326,0,4.219,1.893,4.219,4.219s-1.893,4.219-4.219,4.219h-8.438c-2.329,0-4.219,1.89-4.219,4.219  S423.858,533.375,426.188,533.375z M341.813,558.688c2.33,0,4.219,1.889,4.219,4.219s-1.889,4.219-4.219,4.219  s-4.219-1.889-4.219-4.219S339.482,558.688,341.813,558.688z M400.875,440c-2.33,0-4.219,1.889-4.219,4.219v8.719  c0,2.33,1.889,4.219,4.219,4.219s4.219-1.889,4.219-4.219v-8.719C405.094,441.889,403.205,440,400.875,440z M382.976,458.604  l-5.966-5.966c-1.647-1.647-4.319-1.647-5.966,0c-1.647,1.648-1.647,4.319,0,5.966l5.966,5.966c1.647,1.647,4.319,1.647,5.966,0  C384.624,462.923,384.624,460.251,382.976,458.604z M430.706,452.638c-1.647-1.647-4.318-1.647-5.966,0l-5.967,5.966  c-1.647,1.647-1.647,4.318,0,5.966c1.647,1.648,4.318,1.648,5.967,0l5.966-5.966C432.354,456.957,432.354,454.286,430.706,452.638z"/>
+                    </svg>
+                    <span>Web Designing & Development and Graphic Design Projects</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-3 d-block d-md-none"> <a href="#" class="btn btn-success btn-block">Message</a> </div>
+          </div>
+          
+          <!-- Content Placeholders -->
+          <div class="feed-item placeholder-loading-feed-item border-0">
+            <div class="media">
+              <div class="feed-thumbnail mr-2 placeholder_loading_line rounded-circle mt-0 mb-0"></div>
+              <div class="media-body feed-title">
+              
+              <div class="row">
+                  <div class="col">
+                  <div class="placeholder_loading_line" style="width:40%;"></div>
+                <div class="placeholder_loading_line" style="width:25%;"></div>
+                <div class="placeholder_loading_line" style="width:30%;"></div>
+                <div class="placeholder_loading_line" style="width:50%;"></div>
+                <div class="placeholder_loading_line" style="width:70%;"></div>
+                  </div>
+              <div class="col-auto d-none d-md-block">
+              <div class="placeholder_loading_line" style="width:70px; height:30px;"></div>
+              </div>
+              </div>
+              
+                
+              </div>
+            </div>
+            <div class="mt-3 d-block d-md-none"> <div class="placeholder_loading_line" style="width:100%; height:30px;"></div> </div>
+          </div>
+          <div class="row justify-content-center mt-4">
+            <div class="col-md-5 col-sm-9">
+              <div class="text-center"> <a href="#" class="btn btn-default btn-lg dark-brdr btn-block d-none d-md-block">See more candidates</a>
+                <div class="d-block d-md-none">
+                  <div class="loader">Loading...</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center mt-3 alpha-6">
+            <div class="col-auto">
+              <div class="media"> <img src="img/icons/tick-inside-circle.png" alt="" title=""  srcset="img/icons/tick-inside-circle.svg" height="22" class="icon-gray align-self-center mr-2" />
+                <div class="media-body align-self-center">You've viewed all profiles for this search</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+        <div class="row justify-content-center mt-4">
+            <div class="col-lg-6 col-md-8 col-sm-10">
+              <div class="card assistant-widget mt-3 mb-3">
+  <div class="card-header alpha-7">
+    Hi, need help finding the right talent?
+  </div>
+  <div class="card-body">
+  
+  <div class="row gutter10">
+  <div class="col mb-2">
+  <div class="media">
+  <div class="assistant-pic-container align-self-center mr-3">
+                    <div class="assistant-pic"> <img src="img/students/profile-pic3.jpg" alt="Profile Image" title="Profile Image"> <div class="available"></div></div>
+                  </div>
+  <div class="media-body">
+    <h5 class="mt-0"><strong>I'm yoor Executive Assistant</strong></h5>
+    <span class="alpha-6">Get help in under 1 min.</span>
+  </div>
+</div>
+  </div>
+  <div class="col-sm-auto text-right">
+  <button class="btn btn-dark mt-1">Let's Chat</button>
+  </div>
+  </div>
+  
+    
+  </div>
+</div>
+            </div>
+          </div>
+        
+        
+        
+        
+        
+        
+        <div class="bottom-alert d-none d-sm-block mt-3 pr-0 mr-0">
+          <div class="row align-items-center">
+            <div class="col">
+              <div class="media"> <img src="img/icons/bell-alert-icon.png" class="align-self-center mr-3" alt="Alert Icon" title="Alert Icon">
+                <div class="media-body"> Create alert for this search<br>
+                  <span class="small">Get notified when new internships become available</span> </div>
+              </div>
+            </div>
+            <div class="col-auto">
+              <div class="create-alert-col2">
+                <button class="btn btn-primary btn-sm" id="CreateAlert2">Create Alert</button>
+                <div id="AlertCreated2" class="alert-created">
+                  <div class="alert-created-container">
+                    <div class="alert-created-col1"><i class="fa fa-check-circle"></i></div>
+                    <div class="alert-created-col2">Alert Created</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- Newsletter Section -->
+<div class="newsletter-section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-7">
+        <h4>Get the latest trends and tips for intern recruiting, retention and branding.</h4>
+      </div>
+      <div class="col-md-5">
+        <div class="input-group">
+          <input type="text" class="form-control">
+          <img src="img/icons/e-mail-envelope.png" alt="" title=""  srcset="img/icons/e-mail-envelope.svg" height="23" class="newsletter-img" />
+          <div class="input-group-append"> <a class="input-group-addon btn btn-primary" href="#"> Subscribe </a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="">
+  <div class="footer1">
+    <div class="container">
+      <div class="footer-menu">
+        <div class="row">
+          <div class="col-lg-9">
+            <div class="row">
+              <div class="col-auto">
+                <h3><strong>Categories</strong></h3>
+                <ul class="list-unstyled">
+                  <li><a href="#">Business Development</a></li>
+                  <li><a href="#">Web Development</a></li>
+                  <li><a href="#">Mobile App Development</a></li>
+                  <li><a href="#">Social Media Marketing</a></li>
+                  <li><a href="#">Content Writing</a></li>
+                  <li><a href="#">Information Technology</a></li>
+                  <li><a href="#">Human Resources</a></li>
+                  <li><a href="#">Graphic & Design</a></li>
+                  <li><a href="#">Core Engineering</a></li>
+                  <li><a href="#">Business Development</a></li>
+                  <li><a href="#">Research & Development</a></li>
+                  <li><a href="#">AI & Machine Learning</a></li>
+                  <li><a href="#">Accounting & Finance</a></li>
+                  <li><a href="#">Digital Marketing</a></li>
+                </ul>
+              </div>
+              <div class="col-auto">
+                <h3><strong>Locations</strong></h3>
+                <ul class="list-unstyled">
+                  <li><a href="#">Internships in Mumbai</a></li>
+                  <li><a href="#">Internships in Delhi</a></li>
+                  <li><a href="#">Internships in Bangalore</a></li>
+                  <li><a href="#">Internships in Pune</a></li>
+                  <li><a href="#">Internships in Hyderabad</a></li>
+                  <li><a href="#">Internships in Chennai</a></li>
+                  <li><a href="#">Internships in Kolkata</a></li>
+                  <li><a href="#">Internships in Ahmedabad</a></li>
+                  <li><a href="#">Remote Internships</a></li>
+                </ul>
+              </div>
+              <div class="col-auto">
+                <h3><strong>Get to Know Us</strong></h3>
+                <ul class="list-unstyled">
+                  <li><a href="#">About Switch Idea</a></li>
+                  <li><a href="#">Project-Based Internship Test (PBIT)</a></li>
+                  <li><a href="#">National Talent Acquisition Test (NTAT)</a></li>
+                  <li><a href="#">Verify Scores</a></li>
+                  <li><a href="#">FAQs</a></li>
+                  <li><a href="#">Help Center</a></li>
+                  <li><a href="#">Switch Idea Internship Blog</a></li>
+                  <li><a href="#">Join Us</a></li>
+                  <li><a href="#">Resources</a></li>
+                  <li><a href="#">Terms and Conditions</a></li>
+                  <li><a href="#">Privacy</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">National Internship Helpline</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 text-center">
+            <h3 class="mb-3"><strong>More with Switchidea</strong></h3>
+            <div class="exam-logos">
+              <div class="exam-logos-cols"> <img src="img/PBIT-logo-badge.png" alt="" title="" class="d-block d-lg-none" /> <img src="img/PBIT-logo-badge-small_footer.png" alt="" title="" class="d-none d-lg-block" /> </div>
+              <div class="exam-logos-cols"> <img src="img/NTAT-logo-icon.png" alt="" title="" class="d-block d-lg-none" /> <img src="img/NTAT-logo-icon-small_footer.png" alt="" title="" class="d-none d-lg-block" /> </div>
+            </div>
+            <div class="clearfix mb-4"></div>
+            <h3 class="mb-3"><strong>Connect with us</strong></h3>
+            <h2 class="mb-3"> <a href="https://www.facebook.com/switchidea" target="_blank" class="mr-1 ml-1"><i class="fa fa-facebook"></i></a> <a href="https://twitter.com/switch_idea" target="_blank" class="mr-1 ml-1"><i class="fa fa-twitter"></i></a> <a href="https://www.youtube.com/channel/UC6x2CCv2wi7sozC0fbnXG3w" target="_blank" class="mr-1 ml-1"><i class="fa fa-youtube-play"></i></a> <a href="https://www.linkedin.com/company/switch-idea/" target="_blank" class="mr-1 ml-1"><i class="fa fa-linkedin"></i></a> <a href="https://www.instagram.com/switch_idea/" target="_blank" class="mr-1 ml-1"><i class="fa fa-instagram"></i></a> </h2>
+            <h3><a class="tel" href="tel:+91-9555-141-142"><strong>+91 9555 141 142</strong></a></h3>
+            <h4 class="mt-3">Made with <img src="img/icons/heart-outline-footer.png" alt="" title=""  srcset="img/icons/heart-outline-footer.svg" height="20" /> in India</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer2">
+    <div class="container"> </div>
+  </div>
+</div>
+
+<!-- Feedback/Report Modal -->
+<div class="modal fade mobile-modal" id="FeedbackReportModal" tabindex="-1" role="dialog" aria-labelledby="FeedbackReportModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body"> <a href="#" class="custom-close" data-dismiss="modal" aria-label="Close"></a>
+        <div class="modal-mobile-header media"> <a href="#" class="modal-thumbs align-self-center mr-2"><img src="img/company-logo/company-logo-sample.png" class="rounded-circle" alt="" title=""></a>
+          <div class="modal-title media-body align-self-center">
+            <h4><a href="#">Anchal S.</a></h4>
+          </div>
+        </div>
+        <ul class="share-options">
+          <li><a class="save-btn" href="#" data-toggle="modal" data-target="#SaveListModal" data-dismiss="modal"><span class="center-share-options gray"><img src="img/icons/heart.png" alt="" title="" srcset="img/icons/heart.svg" width="15"><img src="img/icons/heart-red.png" alt="" title="" srcset="img/icons/heart-red.svg" class="red-heart" width="15"> Save Candidate</span></a></li>
+          <li><a href="#"><span class="gray"><i class="fa fa-user-o gray"></i>&nbsp; View Profile</span></a></li>
+          <li><a href="#"><span class="gray"><i class="fa fa-edit gray"></i>&nbsp; Send feedback</span></a></li>
+          <li><a href="#"><span class="gray"><i class="fa fa-flag gray"></i>&nbsp; Report</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Student Profile Modal -->
+<div class="modal fade mobile-modal" id="StudentProfileModal" tabindex="-1" role="dialog" aria-labelledby="StudentProfileModalLabel">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header border-0"><a href="#" class="custom-close" data-dismiss="modal" aria-label="Close"></a></div>
+      <div class="modal-body">
+        <div class="score-details profile-box mb-5 text-center">
+          <div class="profile-pic-container">
+            <div class="profile-pic"> <img src="img/students/profile-pic.png" alt="Profile Image" title="Profile Image" /> </div>
+            <div class="verified-check verified-checked"> <a data-container="body" data-toggle="popover" data-placement="bottom" data-content="Student-name has verified skills required for Web Development & Designing and Information Technology projects. The identity of this candidate has been verified through a government ID check. <a href='#'>Learn more.</a><a class='close custom-close'></a>"><img src="img/icons/profile-check.png" alt="Profile Check" title="Profile Check" /></a> </div>
+          </div>
+          <a href="#">
+          <h3 class="mb-2 f-24">Venkatesh R.</h3>
+          </a> <span class="rated rising-star mb-2"> <a data-container="body" data-toggle="popover" data-placement="bottom" data-content="Rising talent shows strong potential based on their profile and early success on Switchidea. <a href='#'>Learn more.</a><a class='close custom-close'></a>">
+          <svg preserveAspectRatio="xMidYMid meet" data-bbox="0 3.162 126.729 120.405" viewBox="0 3.162 126.729 120.405"  data-type="shape" role="img" width="18">
+            <g>
+              <path d="M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z" style="fill: #ff9900"></path>
+            </g>
+          </svg>
+          RISING STAR</a></span>
+          <h4 class="gray mb-2"><img src="img/icons/location-pin.png" alt="" title=""  srcset="img/icons/location-pin.svg" height="17" class="icon-gray icon-img mob-icon-img" /> <a class="gray" href="#">Pune</a>, India </h4>
+          <div class="gray mb-1"><em>DYNAMIC SELF DRIVEN TECHNOCRAT</em></div>
+          <div class="socials"> <a href="#" target="_blank"><img src="img/icons/dribbble-logo.png" alt="" title="" srcset="img/icons/dribbble-logo.svg" height="24" /></a> <a href="#" target="_blank"><img src="img/icons/linkedin-logo.png" alt="" title="" srcset="img/icons/linkedin-logo.svg" height="24" /></a> <a href="#" target="_blank"><img src="img/icons/github-logo.png" alt="" title="" srcset="img/icons/github-logo.svg" height="24" /></a> <a href="#" target="_blank"><img src="img/icons/behance.png" alt="" title="" srcset="img/icons/behance.svg" height="24" /></a> <a href="#" target="_blank"><img src="img/icons/stack-overflow.png" alt="" title="" srcset="img/icons/stack-overflow.svg" height="24" /></a> <a href="#" target="_blank"><img src="img/icons/youtube.png" alt="" title="" srcset="img/icons/youtube.svg" height="24" /></a> <a href="#" target="_blank"><img src="img/icons/internet.png" alt="" title="" srcset="img/icons/internet.svg" height="24" /></a> <a href="#" target="_blank"><img src="img/icons/kaggle.png" alt="" title="" srcset="img/icons/kaggle.svg" height="24" /></a> <a href="#" target="_blank"><img src="img/icons/researchgate-logo.png" alt="" title="" srcset="img/icons/researchgate-logo.svg" height="24" /></a> </div>
+          <div class="yellow-bar mt-3 mb-4 no-brdr">
+            <h4 class="mb-1"><a href="#">B.E.</a> / <a href="#">B.Tech</a></h4>
+            <h4>Pandit Deendayal Petroleum University, Gandhinagar</h4>
+          </div>
+          <h3 class="mb-2 title-underline"><span>Skills & Competencies</span></h3>
+          <div class="mb-4"> <a href="#" class="label-tag">Java</a> <a href="#" class="label-tag">Microsoft Office</a> <a href="#" class="label-tag">CSS</a> <a href="#" class="label-tag">HTML</a> <a href="#" class="label-tag">Presentation</a> <a href="#" class="label-tag">C++</a> <a href="#" class="label-tag">Communication</a> <a href="#" class="label-tag">.Net</a></div>
+          <h3 class="mb-2 title-underline"><span>Project Preferences</span></h3>
+          <div class="project-preferences mb-4">
+            <ul class="list-unstyled">
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Data Science and Engineering</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Chatbot Development & Automation</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Python Programming</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Models Analysis & Development</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Statistical Research Work</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Predictive Modelling and Analysis</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Data Science and Engineering</a></li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Chatbot Development & Automation</a></li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Python Programming</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Models Analysis & Development</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Statistical Research Work</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Predictive Modelling and Analysis</a> </li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Data Science and Engineering</a></li>
+              <li><a class="badge badge-light popover-click" data-container="body" data-placement="bottom" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href='https://en.wikipedia.org/' target='_blank'>wikipedia.org</a><a class='close custom-close'></a>">Chatbot Development & Automation</a></li>
+            </ul>
+          </div>
+          <h3 class="mb-3 title-underline"><span>Availability</span></h3>
+          <div class="row justify-content-center">
+            <div class="col-md-11">
+              <p class="student-bio">Venkatesh is presently available to start new internship projects related to <a href="#" class="new-blue">Website Development & Designing</a> and <a href="#" class="new-blue">IT & Computers</a>. The convenient hours to reach Venkatesh over the call is between 5 PM - 8 PM from Monday to Friday.</p>
+            </div>
+          </div>
+          <h3 class="mb-2 mt-3 title-underline"><span>Certification Details</span></h3>
+          <a class="certification-details mt-2 mb-3" href="https://www.switchidea.com/verify-scores/">
+          <div class="certification-details-inner">
+            <div class="certification-stamp"> <img src="img/ntat-logo-dark-white-bg.png" class="stamp-shadow" width="75" alt="" title="" /> </div>
+            <div class="certification-data"> <span class="m-d-b">Date:</span> 12 September, 2018<br>
+              Resume Status: <span class="text-success">Verified</span> </div>
+          </div>
+          </a> <a class="certification-details mt0 mb-4" href="https://www.switchidea.com/verify-scores/">
+          <div class="certification-details-inner">
+            <div class="certification-stamp"> <img src="img/pbit-verified-stamp.png" class="stamp-shadow" width="75" alt="" title="" /> </div>
+            <div class="certification-data"> <span class="m-d-b">Date:</span> 15 August, 2019<br>
+              Resume Status: <span class="text-success">Verified</span> </div>
+          </div>
+          </a>
+          <div class="profile-footer">
+            <div class="row gutter15 justify-content-center">
+              <div class="col-auto"><a href="#" class="btn btn-success font-weight-bolder">Invite <span class="d-none d-md-block i-b">to Internship</span></a></div>
+              <div class="col-auto"><a href="#" class="btn btn-default font-weight-bolder"><img src="img/icons/email.png" alt="" title=""  srcset="img/icons/email.svg" width="20" /> Message</a></div>
+              <div class="col-auto"><a href="#" class="btn btn-default font-weight-bolder d-block d-sm-none" data-toggle="modal" data-target="#MoreOptionsModal">More...</a>
+                <div class="dropdown"> <a href="#" class="btn btn-default font-weight-bolder dropdown-toggle d-none d-sm-block" id="MoreProfileOptions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More...</a>
+                  <div class="dropdown-menu dropright gray" aria-labelledby="MoreProfileOptions">
+                    <ul class="list-unstyled mb-0">
+                      <li class="dropdown-item"><a href="#"><img src="img/icons/phone-call.png" alt="" title=""  srcset="img/icons/phone-call.svg" width="17" /> Call Student-name</a> </li>
+                      <li class="dropdown-item"><a href="#"><img src="img/icons/down-arrow.png" alt="" title=""  srcset="img/icons/down-arrow.svg" width="17" /> Download Resume</a> </li>
+                      <li class="dropdown-item"><a class="dropdown-toggle save-btn d-none d-sm-block" href="#"><img src="img/icons/heart.png" alt="" title=""  srcset="img/icons/heart.svg" width="17" /><img src="img/icons/heart-red.png" alt="" title=""  srcset="img/icons/heart-red.svg"  width="17" class="red-heart" /> Save Candidate</a>
+                        <div class="dropdown-menu savelist-dropdown">
+                          <ul class="list-unstyled">
+                            <li><a href="#!" class="active"><img src="img/icons/heart.png" alt="" title=""  srcset="img/icons/heart.svg" height="15" /><img src="img/icons/heart-red.png" alt="" title=""  srcset="img/icons/heart-red.svg" height="13" class="red-heart" />Branding</a></li>
+                            <li><a href="#!"><img src="img/icons/heart.png" alt="" title=""  srcset="img/icons/heart.svg" height="15" /><img src="img/icons/heart-red.png" alt="" title=""  srcset="img/icons/heart-red.svg" height="13" class="red-heart" />Flyers</a></li>
+                            <li><a href="#!"><img src="img/icons/heart.png" alt="" title=""  srcset="img/icons/heart.svg" height="15" /><img src="img/icons/heart-red.png" alt="" title=""  srcset="img/icons/heart-red.svg" height="13" class="red-heart" />Gigs I Love</a></li>
+                            <li><a href="#!"><img src="img/icons/heart.png" alt="" title=""  srcset="img/icons/heart.svg" height="15" /><img src="img/icons/heart-red.png" alt="" title=""  srcset="img/icons/heart-red.svg" height="13" class="red-heart" />Graphic Design</a></li>
+                            <li><a href="#!"><img src="img/icons/heart.png" alt="" title=""  srcset="img/icons/heart.svg" height="15" /><img src="img/icons/heart-red.png" alt="" title=""  srcset="img/icons/heart-red.svg" height="13" class="red-heart" />Logo Design</a></li>
+                            <li><a href="#!"><img src="img/icons/heart.png" alt="" title=""  srcset="img/icons/heart.svg" height="15" /><img src="img/icons/heart-red.png" alt="" title=""  srcset="img/icons/heart-red.svg" height="13" class="red-heart" />Mobile</a></li>
+                            <li><a href="#!"><img src="img/icons/heart.png" alt="" title=""  srcset="img/icons/heart.svg" height="15" /><img src="img/icons/heart-red.png" alt="" title=""  srcset="img/icons/heart-red.svg" height="13" class="red-heart" />Photoshop</a></li>
+                            <li><a href="#!"><img src="img/icons/heart.png" alt="" title=""  srcset="img/icons/heart.svg" height="15" /><img src="img/icons/heart-red.png" alt="" title=""  srcset="img/icons/heart-red.svg" height="13" class="red-heart" />Template Design</a></li>
+                            <li><a href="#!"><img src="img/icons/heart.png" alt="" title=""  srcset="img/icons/heart.svg" height="15" /><img src="img/icons/heart-red.png" alt="" title=""  srcset="img/icons/heart-red.svg" height="13" class="red-heart" />Web Design</a></li>
+                          </ul>
+                          <a href="#" class="createnewlist-btn" data-toggle="modal" data-target="#CreateNewSaveList"><i class="fa fa-plus"></i>Create new list</a> </div>
+                      </li>
+                      <li class="dropdown-item d-none d-sm-block"><a class="dropdown-toggle" href="#"><img src="img/icons/export.png" alt="" title=""  srcset="img/icons/export.svg" width="17" /> Share Profile</a>
+                        <div class="dropdown-menu ShareModal"> <a class="dropdown-item" href="#"><i class="fa fa-facebook-square"></i> Facebook</a> <a class="dropdown-item" href="#"><i class="fa fa-twitter"></i> Twitter</a> <a class="dropdown-item" href="#"><i class="fa fa-linkedin-square"></i> Linkedin</a> <a class="dropdown-item" id="copylink1" href="https://www.google.com/"><i class="fa fa-link"></i> Copy Link</a> </div>
+                      </li>
+                      <li class="dropdown-item"><a href="#"><i class="fa fa-flag gray align-self-center mr-1"></i> Report / Block</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="mb-5">
+          <div class="container">
+            <h2 class="text-center black section-heading"><strong>People also viewed</strong></h2>
+            <div class="row justify-content-center">
+              <div class="col-lg-10 col-md-11 col-sm-12">
+                <div class="row gutter20">
+                  <div class="col-md-6 mb-4">
+                    <div class="white-box-shadow"><a href="https://www.google.com/" class="cover-link"></a>
+                      <div class="media widget-internship-listing employers-listing">
+                        <div class="internship-listing-thumb align-self-center mr-2"> <a href="#" class="thumb-shadow"><img src="img/students/profile-pic2.jpg" alt="" title="" /></a>
+                          <div class="verified-check verified-checked"> <a data-container="body" data-toggle="popover" data-placement="bottom" data-content="Student-name has verified skills required for Web Development & Designing and Information Technology projects. The identity of this candidate has been verified through a government ID check. <a href='#'>Learn more.</a><a class='close custom-close'></a>"><img src="img/icons/profile-check.png" alt="Profile Check" title="Profile Check" /></a> </div>
+                        </div>
+                        <div class="media-body align-self-center">
+                          <h4 class="widget-internship-title"><a href="#">Monali N.</a></h4>
+                          <div class="location"><img src="img/icons/location-pin.png" alt="" title=""  srcset="img/icons/location-pin.svg" height="17" class="icon-gray-l icon-img" /> <a href="#">Mumbai</a>, India </div>
+                          <div class="widget-internship-skills"><img src="img/icons/recommendation.png" alt="" title=""  srcset="img/icons/recommendation.svg" height="19" class="icon-gray-l icon-img" /> <a href="#">Web Designing and Development</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <div class="white-box-shadow"><a href="https://www.google.com/" class="cover-link"></a>
+                      <div class="media widget-internship-listing employers-listing">
+                        <div class="internship-listing-thumb align-self-center mr-2"> <a href="#" class="thumb-shadow"><img src="img/students/profile-pic3.jpg" alt="" title="" /></a>
+                          <div class="verified-check verified-checked"> <a data-container="body" data-toggle="popover" data-placement="bottom" data-content="Student-name has verified skills required for Web Development & Designing and Information Technology projects. The identity of this candidate has been verified through a government ID check. <a href='#'>Learn more.</a><a class='close custom-close'></a>"><img src="img/icons/profile-check.png" alt="Profile Check" title="Profile Check" /></a> </div>
+                        </div>
+                        <div class="media-body align-self-center">
+                          <h4 class="widget-internship-title"><a href="#">Darshan B.</a></h4>
+                          <div class="location"><img src="img/icons/location-pin.png" alt="" title=""  srcset="img/icons/location-pin.svg" height="17" class="icon-gray-l icon-img" /> <a href="#">Hyderabad</a>, India </div>
+                          <div class="widget-internship-skills"><img src="img/icons/recommendation.png" alt="" title=""  srcset="img/icons/recommendation.svg" height="19" class="icon-gray-l icon-img" /> <a href="#">Web Designing and Development</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <div class="white-box-shadow"><a href="https://www.google.com/" class="cover-link"></a>
+                      <div class="media widget-internship-listing employers-listing">
+                        <div class="internship-listing-thumb align-self-center mr-2"> <a href="#" class="thumb-shadow"><img src="img/students/profile-pic2.jpg" alt="" title="" /></a>
+                          <div class="verified-check verified-checked"> <a data-container="body" data-toggle="popover" data-placement="bottom" data-content="Student-name has verified skills required for Web Development & Designing and Information Technology projects. The identity of this candidate has been verified through a government ID check. <a href='#'>Learn more.</a><a class='close custom-close'></a>"><img src="img/icons/profile-check.png" alt="Profile Check" title="Profile Check" /></a> </div>
+                        </div>
+                        <div class="media-body align-self-center">
+                          <h4 class="widget-internship-title"><a href="#">Monali N.</a></h4>
+                          <div class="location"><img src="img/icons/location-pin.png" alt="" title=""  srcset="img/icons/location-pin.svg" height="17" class="icon-gray-l icon-img" /> <a href="#">Mumbai</a>, India </div>
+                          <div class="widget-internship-skills"><img src="img/icons/recommendation.png" alt="" title=""  srcset="img/icons/recommendation.svg" height="19" class="icon-gray-l icon-img" /> <a href="#">Web Designing and Development</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <div class="white-box-shadow"><a href="https://www.google.com/" class="cover-link"></a>
+                      <div class="media widget-internship-listing employers-listing">
+                        <div class="internship-listing-thumb align-self-center mr-2"> <a href="#" class="thumb-shadow"><img src="img/students/profile-pic3.jpg" alt="" title="" /></a>
+                          <div class="verified-check verified-checked"> <a data-container="body" data-toggle="popover" data-placement="bottom" data-content="Student-name has verified skills required for Web Development & Designing and Information Technology projects. The identity of this candidate has been verified through a government ID check. <a href='#'>Learn more.</a><a class='close custom-close'></a>"><img src="img/icons/profile-check.png" alt="Profile Check" title="Profile Check" /></a> </div>
+                        </div>
+                        <div class="media-body align-self-center">
+                          <h4 class="widget-internship-title"><a href="#">Darshan B.</a></h4>
+                          <div class="location"><img src="img/icons/location-pin.png" alt="" title=""  srcset="img/icons/location-pin.svg" height="17" class="icon-gray-l icon-img" /> <a href="#">Hyderabad</a>, India </div>
+                          <div class="widget-internship-skills"><img src="img/icons/recommendation.png" alt="" title=""  srcset="img/icons/recommendation.svg" height="19" class="icon-gray-l icon-img" /> <a href="#">Web Designing and Development</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <div class="white-box-shadow"><a href="https://www.google.com/" class="cover-link"></a>
+                      <div class="media widget-internship-listing employers-listing">
+                        <div class="internship-listing-thumb align-self-center mr-2"> <a href="#" class="thumb-shadow"><img src="img/students/profile-pic2.jpg" alt="" title="" /></a>
+                          <div class="verified-check verified-checked"> <a data-container="body" data-toggle="popover" data-placement="bottom" data-content="Student-name has verified skills required for Web Development & Designing and Information Technology projects. The identity of this candidate has been verified through a government ID check. <a href='#'>Learn more.</a><a class='close custom-close'></a>"><img src="img/icons/profile-check.png" alt="Profile Check" title="Profile Check" /></a> </div>
+                        </div>
+                        <div class="media-body align-self-center">
+                          <h4 class="widget-internship-title"><a href="#">Monali N.</a></h4>
+                          <div class="location"><img src="img/icons/location-pin.png" alt="" title=""  srcset="img/icons/location-pin.svg" height="17" class="icon-gray-l icon-img" /> <a href="#">Mumbai</a>, India </div>
+                          <div class="widget-internship-skills"><img src="img/icons/recommendation.png" alt="" title=""  srcset="img/icons/recommendation.svg" height="19" class="icon-gray-l icon-img" /> <a href="#">Web Designing and Development</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <div class="white-box-shadow"><a href="https://www.google.com/" class="cover-link"></a>
+                      <div class="media widget-internship-listing employers-listing">
+                        <div class="internship-listing-thumb align-self-center mr-2"> <a href="#" class="thumb-shadow"><img src="img/students/profile-pic3.jpg" alt="" title="" /></a>
+                          <div class="verified-check verified-checked"> <a data-container="body" data-toggle="popover" data-placement="bottom" data-content="Student-name has verified skills required for Web Development & Designing and Information Technology projects. The identity of this candidate has been verified through a government ID check. <a href='#'>Learn more.</a><a class='close custom-close'></a>"><img src="img/icons/profile-check.png" alt="Profile Check" title="Profile Check" /></a> </div>
+                        </div>
+                        <div class="media-body align-self-center">
+                          <h4 class="widget-internship-title"><a href="#">Darshan B.</a></h4>
+                          <div class="location"><img src="img/icons/location-pin.png" alt="" title=""  srcset="img/icons/location-pin.svg" height="17" class="icon-gray-l icon-img" /> <a href="#">Hyderabad</a>, India </div>
+                          <div class="widget-internship-skills"><img src="img/icons/recommendation.png" alt="" title=""  srcset="img/icons/recommendation.svg" height="19" class="icon-gray-l icon-img" /> <a href="#">Web Designing and Development</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="mb-4">
+          <div class="container">
+            <h2 class="text-center black section-heading"><strong>Similar Profiles</strong></h2>
+            <div class="profile-vertical SimilarProfilesPopupSlider">
+              <div class="InnerContainer">
+                <div class="SliderItem">
+                  <div class="profile-widget-container"><a href="https://www.google.com/" class="cover-link"></a>
+                    <div class="profile-widget">
+                      <div class="profile-widget-col1">
+                        <div class="profile-pic-container">
+                          <div class="profile-pic"> <img src="img/students/profile-pic2.jpg" alt="Profile Image" title="Profile Image" /> </div>
+                          <div class="verified-check verified-checked"> <a data-container="body" data-toggle="popover" data-placement="bottom" data-content="Student-name has verified skills required for Web Development & Designing and Information Technology projects. The identity of this candidate has been verified through a government ID check. <a href='#'>Learn more.</a><a class='close custom-close'></a>"><img src="img/icons/profile-check.png" alt="Profile Check" title="Profile Check" /></a> </div>
+                        </div>
+                      </div>
+                      <div class="profile-widget-col2">
+                        <h4><a href="#">Kiran H.</a></h4>
+                        <div class="profile-location"><img src="img/icons/location-pin.png" alt="" title=""  srcset="img/icons/location-pin.svg" height="17" class="icon-gray icon-img" /> <a href="#">Bangalore</a></div>
+                        <h5>National Institute of Technology, Duragpur</h5>
+                        <a href="#" class="btn btn-yellow btn-round-shadow mt-3">View Profile</a> </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="SliderItem">
+                  <div class="profile-widget-container"><a href="https://www.google.com/" class="cover-link"></a>
+                    <div class="profile-widget">
+                      <div class="profile-widget-col1">
+                        <div class="profile-pic-container">
+                          <div class="profile-pic"> <img src="img/students/profile-pic2.jpg" alt="Profile Image" title="Profile Image" /> </div>
+                          <div class="verified-check"> <a data-container="body" data-toggle="popover" data-placement="bottom" data-content="Student-name has verified skills required for Web Development & Designing and Information Technology projects. The identity of this candidate has been verified through a government ID check. <a href='#'>Learn more.</a><a class='close custom-close'></a>"><img src="img/icons/profile-check.png" alt="Profile Check" title="Profile Check" /></a> </div>
+                        </div>
+                      </div>
+                      <div class="profile-widget-col2">
+                        <h4><a href="#">Kiran H.</a></h4>
+                        <div class="profile-location"><img src="img/icons/location-pin.png" alt="" title=""  srcset="img/icons/location-pin.svg" height="17" class="icon-gray icon-img" /> <a href="#">Bangalore</a></div>
+                        <h5>National Institute of Technology, Duragpur</h5>
+                        <a href="#" class="btn btn-yellow btn-round-shadow mt-3">View Profile</a> </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="SliderItem">
+                  <div class="profile-widget-container"><a href="https://www.google.com/" class="cover-link"></a>
+                    <div class="profile-widget">
+                      <div class="profile-widget-col1">
+                        <div class="profile-pic-container">
+                          <div class="profile-pic"> <img src="img/students/profile-pic2.jpg" alt="Profile Image" title="Profile Image" /> </div>
+                          <div class="verified-check"> <a data-container="body" data-toggle="popover" data-placement="bottom" data-content="Student-name has verified skills required for Web Development & Designing and Information Technology projects. The identity of this candidate has been verified through a government ID check. <a href='#'>Learn more.</a><a class='close custom-close'></a>"><img src="img/icons/profile-check.png" alt="Profile Check" title="Profile Check" /></a> </div>
+                        </div>
+                      </div>
+                      <div class="profile-widget-col2">
+                        <h4><a href="#">Kiran H.</a></h4>
+                        <div class="profile-location"><img src="img/icons/location-pin.png" alt="" title=""  srcset="img/icons/location-pin.svg" height="17" class="icon-gray icon-img" /> <a href="#">Bangalore</a></div>
+                        <h5>National Institute of Technology, Duragpur</h5>
+                        <a href="#" class="btn btn-yellow btn-round-shadow mt-3">View Profile</a> </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="SliderItem">
+                  <div class="profile-widget-container"><a href="https://www.google.com/" class="cover-link"></a>
+                    <div class="profile-widget">
+                      <div class="profile-widget-col1">
+                        <div class="profile-pic-container">
+                          <div class="profile-pic"> <img src="img/students/profile-pic2.jpg" alt="Profile Image" title="Profile Image" /> </div>
+                          <div class="verified-check"> <a data-container="body" data-toggle="popover" data-placement="bottom" data-content="Student-name has verified skills required for Web Development & Designing and Information Technology projects. The identity of this candidate has been verified through a government ID check. <a href='#'>Learn more.</a><a class='close custom-close'></a>"><img src="img/icons/profile-check.png" alt="Profile Check" title="Profile Check" /></a> </div>
+                        </div>
+                      </div>
+                      <div class="profile-widget-col2">
+                        <h4><a href="#">Kiran H.</a></h4>
+                        <div class="profile-location"><img src="img/icons/location-pin.png" alt="" title=""  srcset="img/icons/location-pin.svg" height="17" class="icon-gray icon-img" /> <a href="#">Bangalore</a></div>
+                        <h5>National Institute of Technology, Duragpur</h5>
+                        <a href="#" class="btn btn-yellow btn-round-shadow mt-3">View Profile</a> </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="SliderItem">
+                  <div class="profile-widget-container"><a href="https://www.google.com/" class="cover-link"></a>
+                    <div class="profile-widget">
+                      <div class="profile-widget-col1">
+                        <div class="profile-pic-container">
+                          <div class="profile-pic"> <img src="img/students/profile-pic2.jpg" alt="Profile Image" title="Profile Image" /> </div>
+                          <div class="verified-check verified-checked"> <a data-container="body" data-toggle="popover" data-placement="bottom" data-content="Student-name has verified skills required for Web Development & Designing and Information Technology projects. The identity of this candidate has been verified through a government ID check. <a href='#'>Learn more.</a><a class='close custom-close'></a>"><img src="img/icons/profile-check.png" alt="Profile Check" title="Profile Check" /></a> </div>
+                        </div>
+                      </div>
+                      <div class="profile-widget-col2">
+                        <h4><a href="#">Kiran H.</a></h4>
+                        <div class="profile-location"><img src="img/icons/location-pin.png" alt="" title=""  srcset="img/icons/location-pin.svg" height="17" class="icon-gray icon-img" /> <a href="#">Bangalore</a></div>
+                        <h5>National Institute of Technology, Duragpur</h5>
+                        <a href="#" class="btn btn-yellow btn-round-shadow mt-3">View Profile</a> </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="SliderItem">
+                  <div class="profile-widget-container"><a href="https://www.google.com/" class="cover-link"></a>
+                    <div class="profile-widget">
+                      <div class="profile-widget-col1">
+                        <div class="profile-pic-container">
+                          <div class="profile-pic"> <img src="img/students/profile-pic2.jpg" alt="Profile Image" title="Profile Image" /> </div>
+                          <div class="verified-check"> <a data-container="body" data-toggle="popover" data-placement="bottom" data-content="Student-name has verified skills required for Web Development & Designing and Information Technology projects. The identity of this candidate has been verified through a government ID check. <a href='#'>Learn more.</a><a class='close custom-close'></a>"><img src="img/icons/profile-check.png" alt="Profile Check" title="Profile Check" /></a> </div>
+                        </div>
+                      </div>
+                      <div class="profile-widget-col2">
+                        <h4><a href="#">Kiran H.</a></h4>
+                        <div class="profile-location"><img src="img/icons/location-pin.png" alt="" title=""  srcset="img/icons/location-pin.svg" height="17" class="icon-gray icon-img" /> <a href="#">Bangalore</a></div>
+                        <h5>National Institute of Technology, Duragpur</h5>
+                        <a href="#" class="btn btn-yellow btn-round-shadow mt-3">View Profile</a> </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="SliderItem">
+                  <div class="profile-widget-container"><a href="https://www.google.com/" class="cover-link"></a>
+                    <div class="profile-widget">
+                      <div class="profile-widget-col1">
+                        <div class="profile-pic-container">
+                          <div class="profile-pic"> <img src="img/students/profile-pic2.jpg" alt="Profile Image" title="Profile Image" /> </div>
+                          <div class="verified-check verified-checked"> <a data-container="body" data-toggle="popover" data-placement="bottom" data-content="Student-name has verified skills required for Web Development & Designing and Information Technology projects. The identity of this candidate has been verified through a government ID check. <a href='#'>Learn more.</a><a class='close custom-close'></a>"><img src="img/icons/profile-check.png" alt="Profile Check" title="Profile Check" /></a> </div>
+                        </div>
+                      </div>
+                      <div class="profile-widget-col2">
+                        <h4><a href="#">Kiran H.</a></h4>
+                        <div class="profile-location"><img src="img/icons/location-pin.png" alt="" title=""  srcset="img/icons/location-pin.svg" height="17" class="icon-gray icon-img" /> <a href="#">Bangalore</a></div>
+                        <h5>National Institute of Technology, Duragpur</h5>
+                        <a href="#" class="btn btn-yellow btn-round-shadow mt-3">View Profile</a> </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="SliderItem">
+                  <div class="profile-widget-container"><a href="https://www.google.com/" class="cover-link"></a>
+                    <div class="profile-widget">
+                      <div class="profile-widget-col1">
+                        <div class="profile-pic-container">
+                          <div class="profile-pic"> <img src="img/students/profile-pic2.jpg" alt="Profile Image" title="Profile Image" /> </div>
+                          <div class="verified-check"> <a data-container="body" data-toggle="popover" data-placement="bottom" data-content="Student-name has verified skills required for Web Development & Designing and Information Technology projects. The identity of this candidate has been verified through a government ID check. <a href='#'>Learn more.</a><a class='close custom-close'></a>"><img src="img/icons/profile-check.png" alt="Profile Check" title="Profile Check" /></a> </div>
+                        </div>
+                      </div>
+                      <div class="profile-widget-col2">
+                        <h4><a href="#">Kiran H.</a></h4>
+                        <div class="profile-location"><img src="img/icons/location-pin.png" alt="" title=""  srcset="img/icons/location-pin.svg" height="17" class="icon-gray icon-img" /> <a href="#">Bangalore</a></div>
+                        <h5>National Institute of Technology, Duragpur</h5>
+                        <a href="#" class="btn btn-yellow btn-round-shadow mt-3">View Profile</a> </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="container">
+          <div class="row justify-content-sm-center">
+            <div class="col-sm-5 mb-5">
+              <div class="text-center"> <a href="#" class="btn btn-default btn-lg dark-brdr btn-block">Search for more candidates</a> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- More Option Modal -->
+<div class="modal fade mobile-modal" id="MoreOptionsModal" tabindex="-1" role="dialog" aria-labelledby="MoreOptionsModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body"> <a href="#" class="custom-close" data-dismiss="modal" aria-label="Close"></a>
+        <div class="modal-mobile-header media mb-0"> <a href="#" class="modal-thumbs align-self-center mr-2"><img src="img/students/profile-pic.png" class="rounded-circle" alt="" title=""></a>
+          <div class="modal-title media-body align-self-center">
+            <h4><a href="#">Venkatesh R.</a></h4>
+          </div>
+        </div>
+        <ul class="share-options">
+          <li><a href="#"><span class="center-share-options gray"><img src="img/icons/phone-call.png" alt="" title=""  srcset="img/icons/phone-call.svg" width="17" /> Call Student-name</span></a></li>
+          <li><a href="#"><span class="center-share-options gray"><img src="img/icons/down-arrow.png" alt="" title=""  srcset="img/icons/down-arrow.svg" width="17" /> Download Resume</span></a></li>
+          <li><a class="save-btn" href="#" data-toggle="modal" data-target="#SaveListModal" data-dismiss="modal"><span class="center-share-options gray"><img src="img/icons/heart.png" alt="" title=""  srcset="img/icons/heart.svg" width="17" /><img src="img/icons/heart-red.png" alt="" title=""  srcset="img/icons/heart-red.svg"  width="17" class="red-heart" /> Save Candidate</span></a></li>
+          <li><a href="#" data-toggle="modal" data-target="#ShareModal" data-dismiss="modal"><span class="center-share-options gray"><img src="img/icons/export.png" alt="" title=""  srcset="img/icons/export.svg" width="17" /> Share Profile</span></a></li>
+          <li><a href="#"><span class="center-share-options gray"><i class="fa fa-flag gray"></i>&nbsp; Report / Block</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Save List Modal -->
+<div class="modal fade mobile-modal SaveListModal" id="SaveListModal" tabindex="-1" role="dialog" aria-labelledby="SaveListLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body"> <a href="#" class="custom-close" data-dismiss="modal" aria-label="Close"></a>
+        <div class="modal-mobile-header media"> <a href="#" class="modal-thumbs align-self-center mr-2"><img src="img/company-logo/company-logo-sample.png" class="rounded-circle" alt="" title=""></a>
+          <div class="modal-title media-body align-self-center">
+            <h4><a href="#">Anchal S.</a></h4>
+          </div>
+        </div>
+        <div class="savelist-header">
+          <div class="row align-items-start no-gutters">
+            <div class="col-3"><a href="#" id="CancelListButton">Cancel</a></div>
+            <div class="col-6">
+              <h4 class="text-center black"><strong>Saved Lists</strong></h4>
+            </div>
+            <div class="col-3 text-right"> <a href="#" data-dismiss="modal" aria-label="Close" id="DoneListButton">Done</a> <a href="#" class="gray" id="CreateListButton">Create</a> </div>
+          </div>
+        </div>
+        <input type="text" placeholder="Create a new list" class="form-control create-list-input" />
+        <ul class="savelist-options list-unstyled">
+          <li class="added-list"><a href="#">Video People<span class="total-save">Total 5 Gigs</span> <i class="savelist-icon"><img src="img/icons/rounded-add-button.png" alt="" title=""  srcset="img/icons/rounded-add-button.svg" height="20" /></i> <i class="savelist-icon added-icon"><img src="img/icons/profile-check.png" alt="" title="" height="21" /></i> <i class="savelist-icon loading-icon"><img src="img/icons/loading.gif" alt="" title="" height="21" /></i> </a></li>
+          <li><a href="#">Graphic Design<span class="total-save">Total 10 Gigs</span> <i class="savelist-icon"><img src="img/icons/rounded-add-button.png" alt="" title=""  srcset="img/icons/rounded-add-button.svg" height="20" /></i> <i class="savelist-icon added-icon"><img src="img/icons/profile-check.png" alt="" title="" height="21" /></i> <i class="savelist-icon loading-icon"><img src="img/icons/loading.gif" alt="" title="" height="21" /></i> </a></li>
+          <li><a href="#">Data Entry<span class="total-save">Total 3 Gigs</span> <i class="savelist-icon"><img src="img/icons/rounded-add-button.png" alt="" title=""  srcset="img/icons/rounded-add-button.svg" height="20" /></i> <i class="savelist-icon added-icon"><img src="img/icons/profile-check.png" alt="" title="" height="21" /></i> <i class="savelist-icon loading-icon"><img src="img/icons/loading.gif" alt="" title="" height="21" /></i> </a></li>
+          <li class="saving-list"><a href="#">Research Work<span class="total-save">Total 7 Gigs</span> <i class="savelist-icon"><img src="img/icons/rounded-add-button.png" alt="" title=""  srcset="img/icons/rounded-add-button.svg" height="20" /></i> <i class="savelist-icon added-icon"><img src="img/icons/profile-check.png" alt="" title="" height="21" /></i> <i class="savelist-icon loading-icon"><img src="img/icons/loading.gif" alt="" title="" height="21" /></i> </a></li>
+          <li><a href="#">IT Internships<span class="total-save">Total 2 Gigs</span> <i class="savelist-icon"><img src="img/icons/rounded-add-button.png" alt="" title=""  srcset="img/icons/rounded-add-button.svg" height="20" /></i> <i class="savelist-icon added-icon"><img src="img/icons/profile-check.png" alt="" title="" height="21" /></i> <i class="savelist-icon loading-icon"><img src="img/icons/loading.gif" alt="" title="" height="21" /></i> </a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Create New Save List Modal -->
+<div class="modal fade bd-example-modal-sm" id="CreateNewSaveList" tabindex="-1" role="dialog" aria-labelledby="CreateNewSaveListLabel" aria-hidden="true">
+  <div class="modal-dialog  modal-dialog-centered modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="CreateNewSaveListLabel">Name your new list</h5>
+        <a class="custom-close" data-dismiss="modal" aria-label="Close"></a> </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="List Name" />
+        </div>
+        <div class="row">
+          <div class="col-md-4 ml-md-auto">
+            <button type="button" class="btn btn-block btn-primary" data-dismiss="modal">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Share Modal -->
+<div class="modal fade mobile-modal ShareModal" id="ShareModal" tabindex="-1" role="dialog" aria-labelledby="ShareModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body"> <a href="#" class="custom-close" data-dismiss="modal" aria-label="Close"></a>
+        <div class="modal-mobile-header media mb-0"> <a href="#" class="modal-thumbs align-self-center mr-2"><img src="img/company-logo/company-logo-sample.png" class="rounded-circle" alt="" title=""></a>
+          <div class="modal-title media-body align-self-center">
+            <h4><a href="#">Anchal S.</a></h4>
+          </div>
+        </div>
+        <div class="ShareModal text-center"> <a class="dropdown-item" href="#"><i class="fa fa-facebook-square"></i> Facebook</a> <a class="dropdown-item" href="#"><i class="fa fa-twitter"></i> Twitter</a> <a class="dropdown-item" href="#"><i class="fa fa-linkedin-square"></i> Linkedin</a> <a class="dropdown-item" href="#"><img src="img/icons/whatsapp-colored.png" alt="" title=""  srcset="img/icons/whatsapp-colored.svg" height="20" class="whatsapp-icon" /> WhatsApp</a> <a class="dropdown-item" id="copylink1" href="https://www.google.com/"><i class="fa fa-link"></i> Copy Link</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Save Toast -->
+<div class="custom-toast-cont d-none">
+<div class="toast" id="SaveToast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="5000">
+  <div class="toast-body">
+    <div class="row gutter10 align-items-center">
+    <div class="col-auto"><svg class="rounded" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="22px" viewBox="184 184 144 144" enable-background="new 184 184 144 144" xml:space="preserve">
+                    <path fill="#05b169" d="M256,184c-39.702,0-72,32.298-72,72s32.298,72,72,72s72-32.298,72-72S295.702,184,256,184z"></path>
+                    <path fill="#FAFAFA" d="M292.492,240.742l-39,38.999c-1.17,1.17-2.706,1.759-4.242,1.759s-3.072-0.589-4.242-1.759l-19.5-19.499  c-2.347-2.346-2.347-6.139,0-8.484c2.345-2.347,6.137-2.347,8.483,0l15.258,15.257l34.759-34.757c2.346-2.347,6.137-2.347,8.483,0  C294.838,234.604,294.838,238.396,292.492,240.742z"></path>
+                  </svg></div>
+    <div class="col"><h5><strong>The item saved in: MCQ Question Creators.</strong></h5></div>
+    <div class="col-auto"><button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button></div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- Custom Fonts-->
+<link href="css/fonts.css" rel="stylesheet" type="text/css">
+<!-- Font Awesome-->
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+
+<!-- JavaScript
+    ================================================== --> 
+<!-- jQuery first, then Popper.js, then Bootstrap JS --> 
+<script src="js/jquery-3.3.1.slim.min.js"></script> 
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<!-- Custom JS --> 
+<script src="js/custom.js"></script> 
+<script src="js/dark-mode-switch.min.js"></script>
+<!-- Filters Dropdown close JS
+    ================================================== --> 
+<script type="text/javascript">
+$(document).on('click', '.search-filter .dropdown-menu', function (e) {
+  e.stopPropagation();
+});
+$(".search-done .btn").click(function() {
+   $(".dropdown").removeClass("show");
+   $(".dropdown-menu").removeClass("show");
+   $(".dropdown-backdrop").hide();
+});
+</script> 
+<!-- Create Alert JS
+    ================================================== --> 
+<script type="text/javascript">
+$("#CreateAlert").click(function() {
+   $("#CreateAlert").addClass("alert-creating");
+   setTimeout(function() { $("#CreateAlert").hide(1500); }, 1500)
+   setTimeout(function() { $("#AlertCreated").show(1500); }, 1500)
+});
+$("#CreateAlert2").click(function() {
+   $("#CreateAlert2").addClass("alert-creating");
+   setTimeout(function() { $("#CreateAlert2").hide(1500); }, 1500)
+   setTimeout(function() { $("#AlertCreated2").show(1500); }, 1500)
+});
+</script> 
+<!-- jquery sticky-sidebar JS
+    ================================================== --> 
+<script type="text/javascript" src="js/sticky-sidebar.js"></script> 
+<script type="text/javascript">
+if ( $(window).width() > 991) {
+  var stickySidebar = new StickySidebar('.sidebar', {
+			topSpacing: 70,
+			bottomSpacing: 35,
+			containerSelector: '.content-area',
+			innerWrapperSelector: '.sidebar_inner'
+		});
+}
+</script> 
+<!-- Equal Height JS
+    ================================================== --> 
+<script type="text/javascript">
+
+equalheight = function(container){
+
+var currentTallest = 0,
+     currentRowStart = 0,
+     rowDivs = new Array(),
+     $el,
+     topPosition = 0;
+ $(container).each(function() {
+
+   $el = $(this);
+   $($el).height('auto')
+   topPostion = $el.position().top;
+
+   if (currentRowStart != topPostion) {
+     for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+       rowDivs[currentDiv].height(currentTallest);
+     }
+     rowDivs.length = 0; // empty the array
+     currentRowStart = topPostion;
+     currentTallest = $el.height();
+     rowDivs.push($el);
+   } else {
+     rowDivs.push($el);
+     currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
+  }
+   for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+     rowDivs[currentDiv].height(currentTallest);
+   }
+ });
+}
+
+$(window).load(function() {
+  equalheight('.profile-horizontal .profile-widget-container');
+});
+$(window).resize(function(){
+  equalheight('.profile-horizontal .profile-widget-container');
+});
+
+$(window).load(function() {
+  equalheight('.profile-vertical .profile-widget-container');
+});
+$(window).resize(function(){
+  equalheight('.profile-vertical .profile-widget-container');
+});
+
+</script> 
+<!-- Show more Project Preferences JS
+    ================================================== --> 
+<script>
+var step_nbr = 50;
+var min_nbr = 8;
+
+$('.project-preferences ul').each(function() {
+  var LiN = $(this).find('li').length;
+  if (LiN > 4) {
+    $('li', this).eq(7).nextAll().hide().addClass('toggleable');
+    $(this).append('<li class="more">Show ' + (LiN - 8) + ' more preferences <span class="arrow"></span></li>');
+  }
+});
+
+$('.project-preferences ul').on('click', '.more', function() {
+  var visible_lis = $('.project-preferences ul li:visible').length;
+
+  if ($(this).hasClass('less')) {
+
+    $(this).prevAll('li:not(.toggleable)').slice(0, step_nbr).addClass('toggleable').hide();
+
+    if ($('li:visible').length <= (min_nbr + 1)) {
+      $(this).text('Show ' + (LiN - 8) + ' more preferences').removeClass('less');
+    }
+
+  } else {
+    $(this).siblings('li.toggleable').slice(0, step_nbr).removeClass('toggleable').show();
+
+    if ($('li.toggleable').length == 0) {
+      $(this).text('').addClass('less');
+    }
+  }
+
+});
+</script>
+</body>
+</html>
